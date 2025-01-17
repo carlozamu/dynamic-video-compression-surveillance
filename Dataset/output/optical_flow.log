@@ -1,0 +1,2676 @@
+2025-01-17 17:43:54,528 - INFO - Logging configurato. I log saranno salvati in: ../Dataset/output/optical_flow.log
+2025-01-17 17:43:54,528 - INFO - Video di input: ../Dataset/input/Stealing008_x264.mp4
+2025-01-17 17:43:54,528 - INFO - Cartella di output: ../Dataset/output/
+2025-01-17 17:43:54,532 - INFO - FPS del video: 30.0
+2025-01-17 17:43:54,532 - INFO - Dimensioni del video: 320x240
+2025-01-17 17:43:54,545 - INFO - Frame 1 - Aree di movimento: 0
+2025-01-17 17:43:54,706 - INFO - Frame 2 - Aree di movimento: 4
+2025-01-17 17:43:54,730 - INFO - Frame 3 - Aree di movimento: 0
+2025-01-17 17:43:54,757 - INFO - Frame 4 - Aree di movimento: 0
+2025-01-17 17:43:54,777 - INFO - Frame 5 - Aree di movimento: 0
+2025-01-17 17:43:54,798 - INFO - Frame 6 - Aree di movimento: 5
+2025-01-17 17:43:54,824 - INFO - Frame 7 - Aree di movimento: 0
+2025-01-17 17:43:54,845 - INFO - Frame 8 - Aree di movimento: 0
+2025-01-17 17:43:54,867 - INFO - Frame 9 - Aree di movimento: 1
+2025-01-17 17:43:54,888 - INFO - Frame 10 - Aree di movimento: 0
+2025-01-17 17:43:54,909 - INFO - Frame 11 - Aree di movimento: 7
+2025-01-17 17:43:54,930 - INFO - Frame 12 - Aree di movimento: 0
+2025-01-17 17:43:54,950 - INFO - Frame 13 - Aree di movimento: 0
+2025-01-17 17:43:54,971 - INFO - Frame 14 - Aree di movimento: 1
+2025-01-17 17:43:55,002 - INFO - Frame 15 - Aree di movimento: 0
+2025-01-17 17:43:55,027 - INFO - Frame 16 - Aree di movimento: 6
+2025-01-17 17:43:55,048 - INFO - Frame 17 - Aree di movimento: 0
+2025-01-17 17:43:55,068 - INFO - Frame 18 - Aree di movimento: 1
+2025-01-17 17:43:55,090 - INFO - Frame 19 - Aree di movimento: 0
+2025-01-17 17:43:55,111 - INFO - Frame 20 - Aree di movimento: 0
+2025-01-17 17:43:55,132 - INFO - Frame 21 - Aree di movimento: 5
+2025-01-17 17:43:55,153 - INFO - Frame 22 - Aree di movimento: 0
+2025-01-17 17:43:55,174 - INFO - Frame 23 - Aree di movimento: 2
+2025-01-17 17:43:55,195 - INFO - Frame 24 - Aree di movimento: 0
+2025-01-17 17:43:55,216 - INFO - Frame 25 - Aree di movimento: 0
+2025-01-17 17:43:55,237 - INFO - Frame 26 - Aree di movimento: 4
+2025-01-17 17:43:55,259 - INFO - Frame 27 - Aree di movimento: 0
+2025-01-17 17:43:55,280 - INFO - Frame 28 - Aree di movimento: 2
+2025-01-17 17:43:55,301 - INFO - Frame 29 - Aree di movimento: 0
+2025-01-17 17:43:55,321 - INFO - Frame 30 - Aree di movimento: 5
+2025-01-17 17:43:55,342 - INFO - Frame 31 - Aree di movimento: 0
+2025-01-17 17:43:55,363 - INFO - Frame 32 - Aree di movimento: 0
+2025-01-17 17:43:55,384 - INFO - Frame 33 - Aree di movimento: 2
+2025-01-17 17:43:55,405 - INFO - Frame 34 - Aree di movimento: 0
+2025-01-17 17:43:55,426 - INFO - Frame 35 - Aree di movimento: 4
+2025-01-17 17:43:55,447 - INFO - Frame 36 - Aree di movimento: 0
+2025-01-17 17:43:55,468 - INFO - Frame 37 - Aree di movimento: 0
+2025-01-17 17:43:55,490 - INFO - Frame 38 - Aree di movimento: 2
+2025-01-17 17:43:55,511 - INFO - Frame 39 - Aree di movimento: 0
+2025-01-17 17:43:55,532 - INFO - Frame 40 - Aree di movimento: 5
+2025-01-17 17:43:55,552 - INFO - Frame 41 - Aree di movimento: 0
+2025-01-17 17:43:55,573 - INFO - Frame 42 - Aree di movimento: 1
+2025-01-17 17:43:55,595 - INFO - Frame 43 - Aree di movimento: 0
+2025-01-17 17:43:55,616 - INFO - Frame 44 - Aree di movimento: 0
+2025-01-17 17:43:55,637 - INFO - Frame 45 - Aree di movimento: 5
+2025-01-17 17:43:55,658 - INFO - Frame 46 - Aree di movimento: 0
+2025-01-17 17:43:55,678 - INFO - Frame 47 - Aree di movimento: 1
+2025-01-17 17:43:55,700 - INFO - Frame 48 - Aree di movimento: 0
+2025-01-17 17:43:55,721 - INFO - Frame 49 - Aree di movimento: 0
+2025-01-17 17:43:55,743 - INFO - Frame 50 - Aree di movimento: 4
+2025-01-17 17:43:55,764 - INFO - Frame 51 - Aree di movimento: 0
+2025-01-17 17:43:55,785 - INFO - Frame 52 - Aree di movimento: 1
+2025-01-17 17:43:55,806 - INFO - Frame 53 - Aree di movimento: 0
+2025-01-17 17:43:55,828 - INFO - Frame 54 - Aree di movimento: 4
+2025-01-17 17:43:55,849 - INFO - Frame 55 - Aree di movimento: 0
+2025-01-17 17:43:55,870 - INFO - Frame 56 - Aree di movimento: 0
+2025-01-17 17:43:55,889 - INFO - Frame 57 - Aree di movimento: 0
+2025-01-17 17:43:55,910 - INFO - Frame 58 - Aree di movimento: 0
+2025-01-17 17:43:55,930 - INFO - Frame 59 - Aree di movimento: 5
+2025-01-17 17:43:55,951 - INFO - Frame 60 - Aree di movimento: 0
+2025-01-17 17:43:55,971 - INFO - Frame 61 - Aree di movimento: 0
+2025-01-17 17:43:55,992 - INFO - Frame 62 - Aree di movimento: 0
+2025-01-17 17:43:56,013 - INFO - Frame 63 - Aree di movimento: 0
+2025-01-17 17:43:56,034 - INFO - Frame 64 - Aree di movimento: 6
+2025-01-17 17:43:56,058 - INFO - Frame 65 - Aree di movimento: 0
+2025-01-17 17:43:56,079 - INFO - Frame 66 - Aree di movimento: 0
+2025-01-17 17:43:56,103 - INFO - Frame 67 - Aree di movimento: 0
+2025-01-17 17:43:56,123 - INFO - Frame 68 - Aree di movimento: 0
+2025-01-17 17:43:56,144 - INFO - Frame 69 - Aree di movimento: 4
+2025-01-17 17:43:56,165 - INFO - Frame 70 - Aree di movimento: 0
+2025-01-17 17:43:56,187 - INFO - Frame 71 - Aree di movimento: 0
+2025-01-17 17:43:56,207 - INFO - Frame 72 - Aree di movimento: 0
+2025-01-17 17:43:56,228 - INFO - Frame 73 - Aree di movimento: 0
+2025-01-17 17:43:56,249 - INFO - Frame 74 - Aree di movimento: 5
+2025-01-17 17:43:56,270 - INFO - Frame 75 - Aree di movimento: 0
+2025-01-17 17:43:56,292 - INFO - Frame 76 - Aree di movimento: 0
+2025-01-17 17:43:56,312 - INFO - Frame 77 - Aree di movimento: 0
+2025-01-17 17:43:56,337 - INFO - Frame 78 - Aree di movimento: 5
+2025-01-17 17:43:56,358 - INFO - Frame 79 - Aree di movimento: 0
+2025-01-17 17:43:56,384 - INFO - Frame 80 - Aree di movimento: 0
+2025-01-17 17:43:56,406 - INFO - Frame 81 - Aree di movimento: 0
+2025-01-17 17:43:56,426 - INFO - Frame 82 - Aree di movimento: 0
+2025-01-17 17:43:56,446 - INFO - Frame 83 - Aree di movimento: 4
+2025-01-17 17:43:56,470 - INFO - Frame 84 - Aree di movimento: 0
+2025-01-17 17:43:56,490 - INFO - Frame 85 - Aree di movimento: 0
+2025-01-17 17:43:56,510 - INFO - Frame 86 - Aree di movimento: 0
+2025-01-17 17:43:56,531 - INFO - Frame 87 - Aree di movimento: 0
+2025-01-17 17:43:56,551 - INFO - Frame 88 - Aree di movimento: 5
+2025-01-17 17:43:56,573 - INFO - Frame 89 - Aree di movimento: 0
+2025-01-17 17:43:57,242 - INFO - Frame 90 - Aree di movimento: 1
+2025-01-17 17:43:57,274 - INFO - Frame 91 - Aree di movimento: 0
+2025-01-17 17:43:57,298 - INFO - Frame 92 - Aree di movimento: 0
+2025-01-17 17:43:57,321 - INFO - Frame 93 - Aree di movimento: 4
+2025-01-17 17:43:57,344 - INFO - Frame 94 - Aree di movimento: 0
+2025-01-17 17:43:57,366 - INFO - Frame 95 - Aree di movimento: 1
+2025-01-17 17:43:57,388 - INFO - Frame 96 - Aree di movimento: 0
+2025-01-17 17:43:57,410 - INFO - Frame 97 - Aree di movimento: 0
+2025-01-17 17:43:57,431 - INFO - Frame 98 - Aree di movimento: 5
+2025-01-17 17:43:57,453 - INFO - Frame 99 - Aree di movimento: 0
+2025-01-17 17:43:57,474 - INFO - Frame 100 - Aree di movimento: 1
+2025-01-17 17:43:57,496 - INFO - Frame 101 - Aree di movimento: 0
+2025-01-17 17:43:57,516 - INFO - Frame 102 - Aree di movimento: 5
+2025-01-17 17:43:57,538 - INFO - Frame 103 - Aree di movimento: 0
+2025-01-17 17:43:57,560 - INFO - Frame 104 - Aree di movimento: 0
+2025-01-17 17:43:57,581 - INFO - Frame 105 - Aree di movimento: 1
+2025-01-17 17:43:57,601 - INFO - Frame 106 - Aree di movimento: 0
+2025-01-17 17:43:57,622 - INFO - Frame 107 - Aree di movimento: 4
+2025-01-17 17:43:57,644 - INFO - Frame 108 - Aree di movimento: 0
+2025-01-17 17:43:57,665 - INFO - Frame 109 - Aree di movimento: 0
+2025-01-17 17:43:57,686 - INFO - Frame 110 - Aree di movimento: 1
+2025-01-17 17:43:57,708 - INFO - Frame 111 - Aree di movimento: 0
+2025-01-17 17:43:57,729 - INFO - Frame 112 - Aree di movimento: 4
+2025-01-17 17:43:57,750 - INFO - Frame 113 - Aree di movimento: 0
+2025-01-17 17:43:57,770 - INFO - Frame 114 - Aree di movimento: 1
+2025-01-17 17:43:57,792 - INFO - Frame 115 - Aree di movimento: 0
+2025-01-17 17:43:57,813 - INFO - Frame 116 - Aree di movimento: 0
+2025-01-17 17:43:57,834 - INFO - Frame 117 - Aree di movimento: 3
+2025-01-17 17:43:57,855 - INFO - Frame 118 - Aree di movimento: 0
+2025-01-17 17:43:57,876 - INFO - Frame 119 - Aree di movimento: 1
+2025-01-17 17:43:57,898 - INFO - Frame 120 - Aree di movimento: 0
+2025-01-17 17:43:57,919 - INFO - Frame 121 - Aree di movimento: 0
+2025-01-17 17:43:57,940 - INFO - Frame 122 - Aree di movimento: 5
+2025-01-17 17:43:57,961 - INFO - Frame 123 - Aree di movimento: 0
+2025-01-17 17:43:57,982 - INFO - Frame 124 - Aree di movimento: 0
+2025-01-17 17:43:58,003 - INFO - Frame 125 - Aree di movimento: 0
+2025-01-17 17:43:58,024 - INFO - Frame 126 - Aree di movimento: 4
+2025-01-17 17:43:58,045 - INFO - Frame 127 - Aree di movimento: 0
+2025-01-17 17:43:58,067 - INFO - Frame 128 - Aree di movimento: 0
+2025-01-17 17:43:58,088 - INFO - Frame 129 - Aree di movimento: 1
+2025-01-17 17:43:58,109 - INFO - Frame 130 - Aree di movimento: 0
+2025-01-17 17:43:58,130 - INFO - Frame 131 - Aree di movimento: 5
+2025-01-17 17:43:58,151 - INFO - Frame 132 - Aree di movimento: 0
+2025-01-17 17:43:58,172 - INFO - Frame 133 - Aree di movimento: 0
+2025-01-17 17:43:58,194 - INFO - Frame 134 - Aree di movimento: 0
+2025-01-17 17:43:58,215 - INFO - Frame 135 - Aree di movimento: 0
+2025-01-17 17:43:58,235 - INFO - Frame 136 - Aree di movimento: 4
+2025-01-17 17:43:58,256 - INFO - Frame 137 - Aree di movimento: 0
+2025-01-17 17:43:58,277 - INFO - Frame 138 - Aree di movimento: 0
+2025-01-17 17:43:58,298 - INFO - Frame 139 - Aree di movimento: 0
+2025-01-17 17:43:58,318 - INFO - Frame 140 - Aree di movimento: 0
+2025-01-17 17:43:58,339 - INFO - Frame 141 - Aree di movimento: 5
+2025-01-17 17:43:58,360 - INFO - Frame 142 - Aree di movimento: 0
+2025-01-17 17:43:58,382 - INFO - Frame 143 - Aree di movimento: 0
+2025-01-17 17:43:58,403 - INFO - Frame 144 - Aree di movimento: 0
+2025-01-17 17:43:58,424 - INFO - Frame 145 - Aree di movimento: 0
+2025-01-17 17:43:58,445 - INFO - Frame 146 - Aree di movimento: 6
+2025-01-17 17:43:58,465 - INFO - Frame 147 - Aree di movimento: 0
+2025-01-17 17:43:58,486 - INFO - Frame 148 - Aree di movimento: 0
+2025-01-17 17:43:58,507 - INFO - Frame 149 - Aree di movimento: 0
+2025-01-17 17:43:58,528 - INFO - Frame 150 - Aree di movimento: 5
+2025-01-17 17:43:58,549 - INFO - Frame 151 - Aree di movimento: 0
+2025-01-17 17:43:58,570 - INFO - Frame 152 - Aree di movimento: 0
+2025-01-17 17:43:58,592 - INFO - Frame 153 - Aree di movimento: 1
+2025-01-17 17:43:58,613 - INFO - Frame 154 - Aree di movimento: 0
+2025-01-17 17:43:58,634 - INFO - Frame 155 - Aree di movimento: 5
+2025-01-17 17:43:58,655 - INFO - Frame 156 - Aree di movimento: 0
+2025-01-17 17:43:58,677 - INFO - Frame 157 - Aree di movimento: 0
+2025-01-17 17:43:58,698 - INFO - Frame 158 - Aree di movimento: 1
+2025-01-17 17:43:58,719 - INFO - Frame 159 - Aree di movimento: 0
+2025-01-17 17:43:58,741 - INFO - Frame 160 - Aree di movimento: 5
+2025-01-17 17:43:58,762 - INFO - Frame 161 - Aree di movimento: 0
+2025-01-17 17:43:58,783 - INFO - Frame 162 - Aree di movimento: 1
+2025-01-17 17:43:58,804 - INFO - Frame 163 - Aree di movimento: 0
+2025-01-17 17:43:58,825 - INFO - Frame 164 - Aree di movimento: 0
+2025-01-17 17:43:58,846 - INFO - Frame 165 - Aree di movimento: 4
+2025-01-17 17:43:58,866 - INFO - Frame 166 - Aree di movimento: 0
+2025-01-17 17:43:58,887 - INFO - Frame 167 - Aree di movimento: 1
+2025-01-17 17:43:58,908 - INFO - Frame 168 - Aree di movimento: 0
+2025-01-17 17:43:58,929 - INFO - Frame 169 - Aree di movimento: 0
+2025-01-17 17:43:58,950 - INFO - Frame 170 - Aree di movimento: 4
+2025-01-17 17:43:58,971 - INFO - Frame 171 - Aree di movimento: 0
+2025-01-17 17:43:58,992 - INFO - Frame 172 - Aree di movimento: 1
+2025-01-17 17:43:59,013 - INFO - Frame 173 - Aree di movimento: 0
+2025-01-17 17:43:59,034 - INFO - Frame 174 - Aree di movimento: 3
+2025-01-17 17:43:59,055 - INFO - Frame 175 - Aree di movimento: 0
+2025-01-17 17:43:59,076 - INFO - Frame 176 - Aree di movimento: 0
+2025-01-17 17:43:59,097 - INFO - Frame 177 - Aree di movimento: 1
+2025-01-17 17:43:59,118 - INFO - Frame 178 - Aree di movimento: 0
+2025-01-17 17:43:59,140 - INFO - Frame 179 - Aree di movimento: 2
+2025-01-17 17:43:59,160 - INFO - Frame 180 - Aree di movimento: 0
+2025-01-17 17:43:59,181 - INFO - Frame 181 - Aree di movimento: 0
+2025-01-17 17:43:59,205 - INFO - Frame 182 - Aree di movimento: 0
+2025-01-17 17:43:59,228 - INFO - Frame 183 - Aree di movimento: 0
+2025-01-17 17:43:59,248 - INFO - Frame 184 - Aree di movimento: 3
+2025-01-17 17:43:59,269 - INFO - Frame 185 - Aree di movimento: 0
+2025-01-17 17:43:59,290 - INFO - Frame 186 - Aree di movimento: 0
+2025-01-17 17:43:59,311 - INFO - Frame 187 - Aree di movimento: 0
+2025-01-17 17:43:59,332 - INFO - Frame 188 - Aree di movimento: 0
+2025-01-17 17:43:59,353 - INFO - Frame 189 - Aree di movimento: 5
+2025-01-17 17:43:59,375 - INFO - Frame 190 - Aree di movimento: 1
+2025-01-17 17:43:59,396 - INFO - Frame 191 - Aree di movimento: 1
+2025-01-17 17:43:59,417 - INFO - Frame 192 - Aree di movimento: 0
+2025-01-17 17:43:59,438 - INFO - Frame 193 - Aree di movimento: 0
+2025-01-17 17:43:59,459 - INFO - Frame 194 - Aree di movimento: 6
+2025-01-17 17:43:59,480 - INFO - Frame 195 - Aree di movimento: 0
+2025-01-17 17:43:59,502 - INFO - Frame 196 - Aree di movimento: 1
+2025-01-17 17:43:59,524 - INFO - Frame 197 - Aree di movimento: 0
+2025-01-17 17:43:59,545 - INFO - Frame 198 - Aree di movimento: 5
+2025-01-17 17:43:59,566 - INFO - Frame 199 - Aree di movimento: 0
+2025-01-17 17:43:59,587 - INFO - Frame 200 - Aree di movimento: 0
+2025-01-17 17:43:59,609 - INFO - Frame 201 - Aree di movimento: 0
+2025-01-17 17:43:59,630 - INFO - Frame 202 - Aree di movimento: 0
+2025-01-17 17:43:59,651 - INFO - Frame 203 - Aree di movimento: 6
+2025-01-17 17:43:59,676 - INFO - Frame 204 - Aree di movimento: 0
+2025-01-17 17:43:59,697 - INFO - Frame 205 - Aree di movimento: 0
+2025-01-17 17:43:59,717 - INFO - Frame 206 - Aree di movimento: 0
+2025-01-17 17:43:59,737 - INFO - Frame 207 - Aree di movimento: 0
+2025-01-17 17:43:59,758 - INFO - Frame 208 - Aree di movimento: 4
+2025-01-17 17:43:59,779 - INFO - Frame 209 - Aree di movimento: 0
+2025-01-17 17:43:59,800 - INFO - Frame 210 - Aree di movimento: 0
+2025-01-17 17:43:59,821 - INFO - Frame 211 - Aree di movimento: 0
+2025-01-17 17:43:59,841 - INFO - Frame 212 - Aree di movimento: 0
+2025-01-17 17:43:59,862 - INFO - Frame 213 - Aree di movimento: 5
+2025-01-17 17:43:59,883 - INFO - Frame 214 - Aree di movimento: 0
+2025-01-17 17:43:59,904 - INFO - Frame 215 - Aree di movimento: 0
+2025-01-17 17:43:59,925 - INFO - Frame 216 - Aree di movimento: 0
+2025-01-17 17:43:59,946 - INFO - Frame 217 - Aree di movimento: 0
+2025-01-17 17:43:59,966 - INFO - Frame 218 - Aree di movimento: 3
+2025-01-17 17:43:59,987 - INFO - Frame 219 - Aree di movimento: 0
+2025-01-17 17:44:00,009 - INFO - Frame 220 - Aree di movimento: 0
+2025-01-17 17:44:00,030 - INFO - Frame 221 - Aree di movimento: 0
+2025-01-17 17:44:00,051 - INFO - Frame 222 - Aree di movimento: 4
+2025-01-17 17:44:00,072 - INFO - Frame 223 - Aree di movimento: 0
+2025-01-17 17:44:00,093 - INFO - Frame 224 - Aree di movimento: 0
+2025-01-17 17:44:00,114 - INFO - Frame 225 - Aree di movimento: 0
+2025-01-17 17:44:00,134 - INFO - Frame 226 - Aree di movimento: 0
+2025-01-17 17:44:00,155 - INFO - Frame 227 - Aree di movimento: 5
+2025-01-17 17:44:00,176 - INFO - Frame 228 - Aree di movimento: 0
+2025-01-17 17:44:00,197 - INFO - Frame 229 - Aree di movimento: 0
+2025-01-17 17:44:00,218 - INFO - Frame 230 - Aree di movimento: 0
+2025-01-17 17:44:00,239 - INFO - Frame 231 - Aree di movimento: 0
+2025-01-17 17:44:00,260 - INFO - Frame 232 - Aree di movimento: 5
+2025-01-17 17:44:00,281 - INFO - Frame 233 - Aree di movimento: 0
+2025-01-17 17:44:00,302 - INFO - Frame 234 - Aree di movimento: 0
+2025-01-17 17:44:00,323 - INFO - Frame 235 - Aree di movimento: 0
+2025-01-17 17:44:00,344 - INFO - Frame 236 - Aree di movimento: 0
+2025-01-17 17:44:00,365 - INFO - Frame 237 - Aree di movimento: 5
+2025-01-17 17:44:00,388 - INFO - Frame 238 - Aree di movimento: 0
+2025-01-17 17:44:00,418 - INFO - Frame 239 - Aree di movimento: 0
+2025-01-17 17:44:00,438 - INFO - Frame 240 - Aree di movimento: 0
+2025-01-17 17:44:00,458 - INFO - Frame 241 - Aree di movimento: 0
+2025-01-17 17:44:00,479 - INFO - Frame 242 - Aree di movimento: 5
+2025-01-17 17:44:00,499 - INFO - Frame 243 - Aree di movimento: 0
+2025-01-17 17:44:00,520 - INFO - Frame 244 - Aree di movimento: 0
+2025-01-17 17:44:00,540 - INFO - Frame 245 - Aree di movimento: 0
+2025-01-17 17:44:00,561 - INFO - Frame 246 - Aree di movimento: 7
+2025-01-17 17:44:00,582 - INFO - Frame 247 - Aree di movimento: 0
+2025-01-17 17:44:00,602 - INFO - Frame 248 - Aree di movimento: 0
+2025-01-17 17:44:00,623 - INFO - Frame 249 - Aree di movimento: 1
+2025-01-17 17:44:00,644 - INFO - Frame 250 - Aree di movimento: 0
+2025-01-17 17:44:00,665 - INFO - Frame 251 - Aree di movimento: 5
+2025-01-17 17:44:00,686 - INFO - Frame 252 - Aree di movimento: 0
+2025-01-17 17:44:00,707 - INFO - Frame 253 - Aree di movimento: 0
+2025-01-17 17:44:00,728 - INFO - Frame 254 - Aree di movimento: 1
+2025-01-17 17:44:00,749 - INFO - Frame 255 - Aree di movimento: 0
+2025-01-17 17:44:00,770 - INFO - Frame 256 - Aree di movimento: 4
+2025-01-17 17:44:00,791 - INFO - Frame 257 - Aree di movimento: 0
+2025-01-17 17:44:00,812 - INFO - Frame 258 - Aree di movimento: 1
+2025-01-17 17:44:00,833 - INFO - Frame 259 - Aree di movimento: 0
+2025-01-17 17:44:00,854 - INFO - Frame 260 - Aree di movimento: 0
+2025-01-17 17:44:00,875 - INFO - Frame 261 - Aree di movimento: 5
+2025-01-17 17:44:00,895 - INFO - Frame 262 - Aree di movimento: 0
+2025-01-17 17:44:00,916 - INFO - Frame 263 - Aree di movimento: 0
+2025-01-17 17:44:00,937 - INFO - Frame 264 - Aree di movimento: 0
+2025-01-17 17:44:00,958 - INFO - Frame 265 - Aree di movimento: 0
+2025-01-17 17:44:00,980 - INFO - Frame 266 - Aree di movimento: 4
+2025-01-17 17:44:01,000 - INFO - Frame 267 - Aree di movimento: 0
+2025-01-17 17:44:01,021 - INFO - Frame 268 - Aree di movimento: 0
+2025-01-17 17:44:01,042 - INFO - Frame 269 - Aree di movimento: 0
+2025-01-17 17:44:01,063 - INFO - Frame 270 - Aree di movimento: 3
+2025-01-17 17:44:01,084 - INFO - Frame 271 - Aree di movimento: 0
+2025-01-17 17:44:01,105 - INFO - Frame 272 - Aree di movimento: 0
+2025-01-17 17:44:01,126 - INFO - Frame 273 - Aree di movimento: 0
+2025-01-17 17:44:01,147 - INFO - Frame 274 - Aree di movimento: 0
+2025-01-17 17:44:01,168 - INFO - Frame 275 - Aree di movimento: 6
+2025-01-17 17:44:01,190 - INFO - Frame 276 - Aree di movimento: 0
+2025-01-17 17:44:01,211 - INFO - Frame 277 - Aree di movimento: 0
+2025-01-17 17:44:01,232 - INFO - Frame 278 - Aree di movimento: 0
+2025-01-17 17:44:01,253 - INFO - Frame 279 - Aree di movimento: 0
+2025-01-17 17:44:01,274 - INFO - Frame 280 - Aree di movimento: 5
+2025-01-17 17:44:01,295 - INFO - Frame 281 - Aree di movimento: 0
+2025-01-17 17:44:01,315 - INFO - Frame 282 - Aree di movimento: 0
+2025-01-17 17:44:01,336 - INFO - Frame 283 - Aree di movimento: 0
+2025-01-17 17:44:01,357 - INFO - Frame 284 - Aree di movimento: 0
+2025-01-17 17:44:01,378 - INFO - Frame 285 - Aree di movimento: 6
+2025-01-17 17:44:01,399 - INFO - Frame 286 - Aree di movimento: 0
+2025-01-17 17:44:01,420 - INFO - Frame 287 - Aree di movimento: 0
+2025-01-17 17:44:01,441 - INFO - Frame 288 - Aree di movimento: 0
+2025-01-17 17:44:01,462 - INFO - Frame 289 - Aree di movimento: 0
+2025-01-17 17:44:01,483 - INFO - Frame 290 - Aree di movimento: 2
+2025-01-17 17:44:01,504 - INFO - Frame 291 - Aree di movimento: 0
+2025-01-17 17:44:01,525 - INFO - Frame 292 - Aree di movimento: 0
+2025-01-17 17:44:01,546 - INFO - Frame 293 - Aree di movimento: 0
+2025-01-17 17:44:01,567 - INFO - Frame 294 - Aree di movimento: 0
+2025-01-17 17:44:01,588 - INFO - Frame 295 - Aree di movimento: 0
+2025-01-17 17:44:01,609 - INFO - Frame 296 - Aree di movimento: 0
+2025-01-17 17:44:01,630 - INFO - Frame 297 - Aree di movimento: 2
+2025-01-17 17:44:01,651 - INFO - Frame 298 - Aree di movimento: 0
+2025-01-17 17:44:01,672 - INFO - Frame 299 - Aree di movimento: 2
+2025-01-17 17:44:01,693 - INFO - Frame 300 - Aree di movimento: 0
+2025-01-17 17:44:01,714 - INFO - Frame 301 - Aree di movimento: 0
+2025-01-17 17:44:01,735 - INFO - Frame 302 - Aree di movimento: 1
+2025-01-17 17:44:01,756 - INFO - Frame 303 - Aree di movimento: 0
+2025-01-17 17:44:01,777 - INFO - Frame 304 - Aree di movimento: 0
+2025-01-17 17:44:01,798 - INFO - Frame 305 - Aree di movimento: 0
+2025-01-17 17:44:01,819 - INFO - Frame 306 - Aree di movimento: 1
+2025-01-17 17:44:01,840 - INFO - Frame 307 - Aree di movimento: 0
+2025-01-17 17:44:01,861 - INFO - Frame 308 - Aree di movimento: 0
+2025-01-17 17:44:01,882 - INFO - Frame 309 - Aree di movimento: 0
+2025-01-17 17:44:01,903 - INFO - Frame 310 - Aree di movimento: 0
+2025-01-17 17:44:01,924 - INFO - Frame 311 - Aree di movimento: 1
+2025-01-17 17:44:01,945 - INFO - Frame 312 - Aree di movimento: 0
+2025-01-17 17:44:01,965 - INFO - Frame 313 - Aree di movimento: 0
+2025-01-17 17:44:01,987 - INFO - Frame 314 - Aree di movimento: 1
+2025-01-17 17:44:02,008 - INFO - Frame 315 - Aree di movimento: 0
+2025-01-17 17:44:02,029 - INFO - Frame 316 - Aree di movimento: 1
+2025-01-17 17:44:02,050 - INFO - Frame 317 - Aree di movimento: 0
+2025-01-17 17:44:02,071 - INFO - Frame 318 - Aree di movimento: 0
+2025-01-17 17:44:02,092 - INFO - Frame 319 - Aree di movimento: 0
+2025-01-17 17:44:02,113 - INFO - Frame 320 - Aree di movimento: 0
+2025-01-17 17:44:02,134 - INFO - Frame 321 - Aree di movimento: 1
+2025-01-17 17:44:02,155 - INFO - Frame 322 - Aree di movimento: 0
+2025-01-17 17:44:02,176 - INFO - Frame 323 - Aree di movimento: 0
+2025-01-17 17:44:02,198 - INFO - Frame 324 - Aree di movimento: 0
+2025-01-17 17:44:02,219 - INFO - Frame 325 - Aree di movimento: 0
+2025-01-17 17:44:02,240 - INFO - Frame 326 - Aree di movimento: 1
+2025-01-17 17:44:02,261 - INFO - Frame 327 - Aree di movimento: 0
+2025-01-17 17:44:02,282 - INFO - Frame 328 - Aree di movimento: 1
+2025-01-17 17:44:02,303 - INFO - Frame 329 - Aree di movimento: 0
+2025-01-17 17:44:02,323 - INFO - Frame 330 - Aree di movimento: 2
+2025-01-17 17:44:02,344 - INFO - Frame 331 - Aree di movimento: 0
+2025-01-17 17:44:02,365 - INFO - Frame 332 - Aree di movimento: 0
+2025-01-17 17:44:02,386 - INFO - Frame 333 - Aree di movimento: 0
+2025-01-17 17:44:02,407 - INFO - Frame 334 - Aree di movimento: 0
+2025-01-17 17:44:02,428 - INFO - Frame 335 - Aree di movimento: 2
+2025-01-17 17:44:02,448 - INFO - Frame 336 - Aree di movimento: 0
+2025-01-17 17:44:02,469 - INFO - Frame 337 - Aree di movimento: 0
+2025-01-17 17:44:02,490 - INFO - Frame 338 - Aree di movimento: 1
+2025-01-17 17:44:02,511 - INFO - Frame 339 - Aree di movimento: 0
+2025-01-17 17:44:02,533 - INFO - Frame 340 - Aree di movimento: 1
+2025-01-17 17:44:02,552 - INFO - Frame 341 - Aree di movimento: 0
+2025-01-17 17:44:02,573 - INFO - Frame 342 - Aree di movimento: 0
+2025-01-17 17:44:02,594 - INFO - Frame 343 - Aree di movimento: 0
+2025-01-17 17:44:02,615 - INFO - Frame 344 - Aree di movimento: 0
+2025-01-17 17:44:02,635 - INFO - Frame 345 - Aree di movimento: 0
+2025-01-17 17:44:02,656 - INFO - Frame 346 - Aree di movimento: 0
+2025-01-17 17:44:02,677 - INFO - Frame 347 - Aree di movimento: 1
+2025-01-17 17:44:02,698 - INFO - Frame 348 - Aree di movimento: 0
+2025-01-17 17:44:02,719 - INFO - Frame 349 - Aree di movimento: 0
+2025-01-17 17:44:02,740 - INFO - Frame 350 - Aree di movimento: 0
+2025-01-17 17:44:02,761 - INFO - Frame 351 - Aree di movimento: 0
+2025-01-17 17:44:02,782 - INFO - Frame 352 - Aree di movimento: 1
+2025-01-17 17:44:02,804 - INFO - Frame 353 - Aree di movimento: 0
+2025-01-17 17:44:02,825 - INFO - Frame 354 - Aree di movimento: 0
+2025-01-17 17:44:02,846 - INFO - Frame 355 - Aree di movimento: 0
+2025-01-17 17:44:02,866 - INFO - Frame 356 - Aree di movimento: 0
+2025-01-17 17:44:02,887 - INFO - Frame 357 - Aree di movimento: 1
+2025-01-17 17:44:02,909 - INFO - Frame 358 - Aree di movimento: 0
+2025-01-17 17:44:02,930 - INFO - Frame 359 - Aree di movimento: 0
+2025-01-17 17:44:02,951 - INFO - Frame 360 - Aree di movimento: 0
+2025-01-17 17:44:02,972 - INFO - Frame 361 - Aree di movimento: 0
+2025-01-17 17:44:02,994 - INFO - Frame 362 - Aree di movimento: 0
+2025-01-17 17:44:03,014 - INFO - Frame 363 - Aree di movimento: 0
+2025-01-17 17:44:03,035 - INFO - Frame 364 - Aree di movimento: 0
+2025-01-17 17:44:03,056 - INFO - Frame 365 - Aree di movimento: 0
+2025-01-17 17:44:03,077 - INFO - Frame 366 - Aree di movimento: 0
+2025-01-17 17:44:03,098 - INFO - Frame 367 - Aree di movimento: 0
+2025-01-17 17:44:03,119 - INFO - Frame 368 - Aree di movimento: 0
+2025-01-17 17:44:03,140 - INFO - Frame 369 - Aree di movimento: 0
+2025-01-17 17:44:03,161 - INFO - Frame 370 - Aree di movimento: 0
+2025-01-17 17:44:03,182 - INFO - Frame 371 - Aree di movimento: 2
+2025-01-17 17:44:03,203 - INFO - Frame 372 - Aree di movimento: 0
+2025-01-17 17:44:03,225 - INFO - Frame 373 - Aree di movimento: 0
+2025-01-17 17:44:03,246 - INFO - Frame 374 - Aree di movimento: 0
+2025-01-17 17:44:03,266 - INFO - Frame 375 - Aree di movimento: 0
+2025-01-17 17:44:03,287 - INFO - Frame 376 - Aree di movimento: 2
+2025-01-17 17:44:03,309 - INFO - Frame 377 - Aree di movimento: 0
+2025-01-17 17:44:03,330 - INFO - Frame 378 - Aree di movimento: 0
+2025-01-17 17:44:03,351 - INFO - Frame 379 - Aree di movimento: 0
+2025-01-17 17:44:03,372 - INFO - Frame 380 - Aree di movimento: 0
+2025-01-17 17:44:03,393 - INFO - Frame 381 - Aree di movimento: 3
+2025-01-17 17:44:03,414 - INFO - Frame 382 - Aree di movimento: 0
+2025-01-17 17:44:03,446 - INFO - Frame 383 - Aree di movimento: 0
+2025-01-17 17:44:03,466 - INFO - Frame 384 - Aree di movimento: 0
+2025-01-17 17:44:03,486 - INFO - Frame 385 - Aree di movimento: 0
+2025-01-17 17:44:03,507 - INFO - Frame 386 - Aree di movimento: 2
+2025-01-17 17:44:03,527 - INFO - Frame 387 - Aree di movimento: 0
+2025-01-17 17:44:03,548 - INFO - Frame 388 - Aree di movimento: 0
+2025-01-17 17:44:03,568 - INFO - Frame 389 - Aree di movimento: 0
+2025-01-17 17:44:03,589 - INFO - Frame 390 - Aree di movimento: 2
+2025-01-17 17:44:03,610 - INFO - Frame 391 - Aree di movimento: 0
+2025-01-17 17:44:03,630 - INFO - Frame 392 - Aree di movimento: 0
+2025-01-17 17:44:03,651 - INFO - Frame 393 - Aree di movimento: 2
+2025-01-17 17:44:03,672 - INFO - Frame 394 - Aree di movimento: 0
+2025-01-17 17:44:03,694 - INFO - Frame 395 - Aree di movimento: 3
+2025-01-17 17:44:03,714 - INFO - Frame 396 - Aree di movimento: 0
+2025-01-17 17:44:03,735 - INFO - Frame 397 - Aree di movimento: 0
+2025-01-17 17:44:03,756 - INFO - Frame 398 - Aree di movimento: 1
+2025-01-17 17:44:03,777 - INFO - Frame 399 - Aree di movimento: 0
+2025-01-17 17:44:03,798 - INFO - Frame 400 - Aree di movimento: 2
+2025-01-17 17:44:03,820 - INFO - Frame 401 - Aree di movimento: 0
+2025-01-17 17:44:03,841 - INFO - Frame 402 - Aree di movimento: 1
+2025-01-17 17:44:03,862 - INFO - Frame 403 - Aree di movimento: 0
+2025-01-17 17:44:03,882 - INFO - Frame 404 - Aree di movimento: 0
+2025-01-17 17:44:03,903 - INFO - Frame 405 - Aree di movimento: 1
+2025-01-17 17:44:03,925 - INFO - Frame 406 - Aree di movimento: 0
+2025-01-17 17:44:03,946 - INFO - Frame 407 - Aree di movimento: 0
+2025-01-17 17:44:03,967 - INFO - Frame 408 - Aree di movimento: 0
+2025-01-17 17:44:03,987 - INFO - Frame 409 - Aree di movimento: 0
+2025-01-17 17:44:04,007 - INFO - Frame 410 - Aree di movimento: 2
+2025-01-17 17:44:04,029 - INFO - Frame 411 - Aree di movimento: 0
+2025-01-17 17:44:04,049 - INFO - Frame 412 - Aree di movimento: 0
+2025-01-17 17:44:04,070 - INFO - Frame 413 - Aree di movimento: 0
+2025-01-17 17:44:04,091 - INFO - Frame 414 - Aree di movimento: 2
+2025-01-17 17:44:04,112 - INFO - Frame 415 - Aree di movimento: 0
+2025-01-17 17:44:04,133 - INFO - Frame 416 - Aree di movimento: 0
+2025-01-17 17:44:04,154 - INFO - Frame 417 - Aree di movimento: 0
+2025-01-17 17:44:04,175 - INFO - Frame 418 - Aree di movimento: 0
+2025-01-17 17:44:04,196 - INFO - Frame 419 - Aree di movimento: 4
+2025-01-17 17:44:04,217 - INFO - Frame 420 - Aree di movimento: 0
+2025-01-17 17:44:04,238 - INFO - Frame 421 - Aree di movimento: 0
+2025-01-17 17:44:04,259 - INFO - Frame 422 - Aree di movimento: 0
+2025-01-17 17:44:04,281 - INFO - Frame 423 - Aree di movimento: 0
+2025-01-17 17:44:04,301 - INFO - Frame 424 - Aree di movimento: 3
+2025-01-17 17:44:04,322 - INFO - Frame 425 - Aree di movimento: 0
+2025-01-17 17:44:04,344 - INFO - Frame 426 - Aree di movimento: 0
+2025-01-17 17:44:04,365 - INFO - Frame 427 - Aree di movimento: 0
+2025-01-17 17:44:04,386 - INFO - Frame 428 - Aree di movimento: 0
+2025-01-17 17:44:04,407 - INFO - Frame 429 - Aree di movimento: 2
+2025-01-17 17:44:04,428 - INFO - Frame 430 - Aree di movimento: 0
+2025-01-17 17:44:04,449 - INFO - Frame 431 - Aree di movimento: 0
+2025-01-17 17:44:04,469 - INFO - Frame 432 - Aree di movimento: 0
+2025-01-17 17:44:04,490 - INFO - Frame 433 - Aree di movimento: 0
+2025-01-17 17:44:04,511 - INFO - Frame 434 - Aree di movimento: 0
+2025-01-17 17:44:04,532 - INFO - Frame 435 - Aree di movimento: 0
+2025-01-17 17:44:04,553 - INFO - Frame 436 - Aree di movimento: 0
+2025-01-17 17:44:04,574 - INFO - Frame 437 - Aree di movimento: 0
+2025-01-17 17:44:04,595 - INFO - Frame 438 - Aree di movimento: 2
+2025-01-17 17:44:04,616 - INFO - Frame 439 - Aree di movimento: 0
+2025-01-17 17:44:04,637 - INFO - Frame 440 - Aree di movimento: 0
+2025-01-17 17:44:04,658 - INFO - Frame 441 - Aree di movimento: 1
+2025-01-17 17:44:04,679 - INFO - Frame 442 - Aree di movimento: 0
+2025-01-17 17:44:04,699 - INFO - Frame 443 - Aree di movimento: 2
+2025-01-17 17:44:04,720 - INFO - Frame 444 - Aree di movimento: 0
+2025-01-17 17:44:04,742 - INFO - Frame 445 - Aree di movimento: 0
+2025-01-17 17:44:04,763 - INFO - Frame 446 - Aree di movimento: 1
+2025-01-17 17:44:04,784 - INFO - Frame 447 - Aree di movimento: 0
+2025-01-17 17:44:04,805 - INFO - Frame 448 - Aree di movimento: 2
+2025-01-17 17:44:04,826 - INFO - Frame 449 - Aree di movimento: 0
+2025-01-17 17:44:04,847 - INFO - Frame 450 - Aree di movimento: 1
+2025-01-17 17:44:04,868 - INFO - Frame 451 - Aree di movimento: 0
+2025-01-17 17:44:04,889 - INFO - Frame 452 - Aree di movimento: 0
+2025-01-17 17:44:04,910 - INFO - Frame 453 - Aree di movimento: 2
+2025-01-17 17:44:04,931 - INFO - Frame 454 - Aree di movimento: 0
+2025-01-17 17:44:04,952 - INFO - Frame 455 - Aree di movimento: 1
+2025-01-17 17:44:04,973 - INFO - Frame 456 - Aree di movimento: 0
+2025-01-17 17:44:04,994 - INFO - Frame 457 - Aree di movimento: 0
+2025-01-17 17:44:05,015 - INFO - Frame 458 - Aree di movimento: 2
+2025-01-17 17:44:05,036 - INFO - Frame 459 - Aree di movimento: 0
+2025-01-17 17:44:05,057 - INFO - Frame 460 - Aree di movimento: 0
+2025-01-17 17:44:05,078 - INFO - Frame 461 - Aree di movimento: 0
+2025-01-17 17:44:05,098 - INFO - Frame 462 - Aree di movimento: 4
+2025-01-17 17:44:05,120 - INFO - Frame 463 - Aree di movimento: 0
+2025-01-17 17:44:05,141 - INFO - Frame 464 - Aree di movimento: 0
+2025-01-17 17:44:05,162 - INFO - Frame 465 - Aree di movimento: 0
+2025-01-17 17:44:05,183 - INFO - Frame 466 - Aree di movimento: 0
+2025-01-17 17:44:05,204 - INFO - Frame 467 - Aree di movimento: 4
+2025-01-17 17:44:05,225 - INFO - Frame 468 - Aree di movimento: 0
+2025-01-17 17:44:05,246 - INFO - Frame 469 - Aree di movimento: 0
+2025-01-17 17:44:05,267 - INFO - Frame 470 - Aree di movimento: 0
+2025-01-17 17:44:05,288 - INFO - Frame 471 - Aree di movimento: 0
+2025-01-17 17:44:05,309 - INFO - Frame 472 - Aree di movimento: 3
+2025-01-17 17:44:05,330 - INFO - Frame 473 - Aree di movimento: 0
+2025-01-17 17:44:05,351 - INFO - Frame 474 - Aree di movimento: 1
+2025-01-17 17:44:05,372 - INFO - Frame 475 - Aree di movimento: 0
+2025-01-17 17:44:05,393 - INFO - Frame 476 - Aree di movimento: 0
+2025-01-17 17:44:05,414 - INFO - Frame 477 - Aree di movimento: 6
+2025-01-17 17:44:05,436 - INFO - Frame 478 - Aree di movimento: 0
+2025-01-17 17:44:05,457 - INFO - Frame 479 - Aree di movimento: 0
+2025-01-17 17:44:05,478 - INFO - Frame 480 - Aree di movimento: 2
+2025-01-17 17:44:05,499 - INFO - Frame 481 - Aree di movimento: 0
+2025-01-17 17:44:05,520 - INFO - Frame 482 - Aree di movimento: 3
+2025-01-17 17:44:05,541 - INFO - Frame 483 - Aree di movimento: 0
+2025-01-17 17:44:05,562 - INFO - Frame 484 - Aree di movimento: 0
+2025-01-17 17:44:05,583 - INFO - Frame 485 - Aree di movimento: 1
+2025-01-17 17:44:05,603 - INFO - Frame 486 - Aree di movimento: 2
+2025-01-17 17:44:05,624 - INFO - Frame 487 - Aree di movimento: 0
+2025-01-17 17:44:05,645 - INFO - Frame 488 - Aree di movimento: 0
+2025-01-17 17:44:05,666 - INFO - Frame 489 - Aree di movimento: 0
+2025-01-17 17:44:05,687 - INFO - Frame 490 - Aree di movimento: 1
+2025-01-17 17:44:05,709 - INFO - Frame 491 - Aree di movimento: 6
+2025-01-17 17:44:05,730 - INFO - Frame 492 - Aree di movimento: 0
+2025-01-17 17:44:05,750 - INFO - Frame 493 - Aree di movimento: 0
+2025-01-17 17:44:05,771 - INFO - Frame 494 - Aree di movimento: 0
+2025-01-17 17:44:05,791 - INFO - Frame 495 - Aree di movimento: 3
+2025-01-17 17:44:05,812 - INFO - Frame 496 - Aree di movimento: 5
+2025-01-17 17:44:05,833 - INFO - Frame 497 - Aree di movimento: 0
+2025-01-17 17:44:05,854 - INFO - Frame 498 - Aree di movimento: 0
+2025-01-17 17:44:05,875 - INFO - Frame 499 - Aree di movimento: 0
+2025-01-17 17:44:05,896 - INFO - Frame 500 - Aree di movimento: 2
+2025-01-17 17:44:05,917 - INFO - Frame 501 - Aree di movimento: 4
+2025-01-17 17:44:05,939 - INFO - Frame 502 - Aree di movimento: 0
+2025-01-17 17:44:05,960 - INFO - Frame 503 - Aree di movimento: 0
+2025-01-17 17:44:05,981 - INFO - Frame 504 - Aree di movimento: 1
+2025-01-17 17:44:06,002 - INFO - Frame 505 - Aree di movimento: 0
+2025-01-17 17:44:06,023 - INFO - Frame 506 - Aree di movimento: 0
+2025-01-17 17:44:06,044 - INFO - Frame 507 - Aree di movimento: 0
+2025-01-17 17:44:06,065 - INFO - Frame 508 - Aree di movimento: 0
+2025-01-17 17:44:06,085 - INFO - Frame 509 - Aree di movimento: 1
+2025-01-17 17:44:06,106 - INFO - Frame 510 - Aree di movimento: 5
+2025-01-17 17:44:06,127 - INFO - Frame 511 - Aree di movimento: 0
+2025-01-17 17:44:06,148 - INFO - Frame 512 - Aree di movimento: 0
+2025-01-17 17:44:06,169 - INFO - Frame 513 - Aree di movimento: 0
+2025-01-17 17:44:06,190 - INFO - Frame 514 - Aree di movimento: 2
+2025-01-17 17:44:06,212 - INFO - Frame 515 - Aree di movimento: 4
+2025-01-17 17:44:06,233 - INFO - Frame 516 - Aree di movimento: 0
+2025-01-17 17:44:06,254 - INFO - Frame 517 - Aree di movimento: 0
+2025-01-17 17:44:06,275 - INFO - Frame 518 - Aree di movimento: 0
+2025-01-17 17:44:06,296 - INFO - Frame 519 - Aree di movimento: 2
+2025-01-17 17:44:06,317 - INFO - Frame 520 - Aree di movimento: 6
+2025-01-17 17:44:06,338 - INFO - Frame 521 - Aree di movimento: 0
+2025-01-17 17:44:06,360 - INFO - Frame 522 - Aree di movimento: 1
+2025-01-17 17:44:06,395 - INFO - Frame 523 - Aree di movimento: 0
+2025-01-17 17:44:06,415 - INFO - Frame 524 - Aree di movimento: 3
+2025-01-17 17:44:06,435 - INFO - Frame 525 - Aree di movimento: 7
+2025-01-17 17:44:06,456 - INFO - Frame 526 - Aree di movimento: 0
+2025-01-17 17:44:06,476 - INFO - Frame 527 - Aree di movimento: 0
+2025-01-17 17:44:06,497 - INFO - Frame 528 - Aree di movimento: 2
+2025-01-17 17:44:06,518 - INFO - Frame 529 - Aree di movimento: 0
+2025-01-17 17:44:06,539 - INFO - Frame 530 - Aree di movimento: 6
+2025-01-17 17:44:06,560 - INFO - Frame 531 - Aree di movimento: 0
+2025-01-17 17:44:06,581 - INFO - Frame 532 - Aree di movimento: 0
+2025-01-17 17:44:06,601 - INFO - Frame 533 - Aree di movimento: 2
+2025-01-17 17:44:06,622 - INFO - Frame 534 - Aree di movimento: 5
+2025-01-17 17:44:06,643 - INFO - Frame 535 - Aree di movimento: 0
+2025-01-17 17:44:06,664 - INFO - Frame 536 - Aree di movimento: 0
+2025-01-17 17:44:06,685 - INFO - Frame 537 - Aree di movimento: 1
+2025-01-17 17:44:06,706 - INFO - Frame 538 - Aree di movimento: 1
+2025-01-17 17:44:06,726 - INFO - Frame 539 - Aree di movimento: 8
+2025-01-17 17:44:06,747 - INFO - Frame 540 - Aree di movimento: 0
+2025-01-17 17:44:06,768 - INFO - Frame 541 - Aree di movimento: 0
+2025-01-17 17:44:06,789 - INFO - Frame 542 - Aree di movimento: 0
+2025-01-17 17:44:06,810 - INFO - Frame 543 - Aree di movimento: 0
+2025-01-17 17:44:06,832 - INFO - Frame 544 - Aree di movimento: 3
+2025-01-17 17:44:06,853 - INFO - Frame 545 - Aree di movimento: 0
+2025-01-17 17:44:06,874 - INFO - Frame 546 - Aree di movimento: 2
+2025-01-17 17:44:06,895 - INFO - Frame 547 - Aree di movimento: 0
+2025-01-17 17:44:06,915 - INFO - Frame 548 - Aree di movimento: 0
+2025-01-17 17:44:06,936 - INFO - Frame 549 - Aree di movimento: 6
+2025-01-17 17:44:06,957 - INFO - Frame 550 - Aree di movimento: 0
+2025-01-17 17:44:06,979 - INFO - Frame 551 - Aree di movimento: 0
+2025-01-17 17:44:06,999 - INFO - Frame 552 - Aree di movimento: 2
+2025-01-17 17:44:07,020 - INFO - Frame 553 - Aree di movimento: 0
+2025-01-17 17:44:07,042 - INFO - Frame 554 - Aree di movimento: 4
+2025-01-17 17:44:07,063 - INFO - Frame 555 - Aree di movimento: 0
+2025-01-17 17:44:07,083 - INFO - Frame 556 - Aree di movimento: 0
+2025-01-17 17:44:07,104 - INFO - Frame 557 - Aree di movimento: 0
+2025-01-17 17:44:07,126 - INFO - Frame 558 - Aree di movimento: 5
+2025-01-17 17:44:07,147 - INFO - Frame 559 - Aree di movimento: 0
+2025-01-17 17:44:07,168 - INFO - Frame 560 - Aree di movimento: 0
+2025-01-17 17:44:07,190 - INFO - Frame 561 - Aree di movimento: 0
+2025-01-17 17:44:07,211 - INFO - Frame 562 - Aree di movimento: 1
+2025-01-17 17:44:07,232 - INFO - Frame 563 - Aree di movimento: 3
+2025-01-17 17:44:07,252 - INFO - Frame 564 - Aree di movimento: 0
+2025-01-17 17:44:07,274 - INFO - Frame 565 - Aree di movimento: 0
+2025-01-17 17:44:07,295 - INFO - Frame 566 - Aree di movimento: 0
+2025-01-17 17:44:07,315 - INFO - Frame 567 - Aree di movimento: 0
+2025-01-17 17:44:07,336 - INFO - Frame 568 - Aree di movimento: 2
+2025-01-17 17:44:07,357 - INFO - Frame 569 - Aree di movimento: 0
+2025-01-17 17:44:07,378 - INFO - Frame 570 - Aree di movimento: 0
+2025-01-17 17:44:07,398 - INFO - Frame 571 - Aree di movimento: 0
+2025-01-17 17:44:07,419 - INFO - Frame 572 - Aree di movimento: 0
+2025-01-17 17:44:07,440 - INFO - Frame 573 - Aree di movimento: 2
+2025-01-17 17:44:07,461 - INFO - Frame 574 - Aree di movimento: 0
+2025-01-17 17:44:07,482 - INFO - Frame 575 - Aree di movimento: 0
+2025-01-17 17:44:07,502 - INFO - Frame 576 - Aree di movimento: 0
+2025-01-17 17:44:07,523 - INFO - Frame 577 - Aree di movimento: 0
+2025-01-17 17:44:07,544 - INFO - Frame 578 - Aree di movimento: 1
+2025-01-17 17:44:07,565 - INFO - Frame 579 - Aree di movimento: 0
+2025-01-17 17:44:07,586 - INFO - Frame 580 - Aree di movimento: 0
+2025-01-17 17:44:07,607 - INFO - Frame 581 - Aree di movimento: 0
+2025-01-17 17:44:07,628 - INFO - Frame 582 - Aree di movimento: 1
+2025-01-17 17:44:07,649 - INFO - Frame 583 - Aree di movimento: 0
+2025-01-17 17:44:07,670 - INFO - Frame 584 - Aree di movimento: 0
+2025-01-17 17:44:07,691 - INFO - Frame 585 - Aree di movimento: 2
+2025-01-17 17:44:07,712 - INFO - Frame 586 - Aree di movimento: 0
+2025-01-17 17:44:07,733 - INFO - Frame 587 - Aree di movimento: 0
+2025-01-17 17:44:07,754 - INFO - Frame 588 - Aree di movimento: 0
+2025-01-17 17:44:07,776 - INFO - Frame 589 - Aree di movimento: 0
+2025-01-17 17:44:07,797 - INFO - Frame 590 - Aree di movimento: 0
+2025-01-17 17:44:07,818 - INFO - Frame 591 - Aree di movimento: 0
+2025-01-17 17:44:07,839 - INFO - Frame 592 - Aree di movimento: 0
+2025-01-17 17:44:07,860 - INFO - Frame 593 - Aree di movimento: 0
+2025-01-17 17:44:07,880 - INFO - Frame 594 - Aree di movimento: 0
+2025-01-17 17:44:07,901 - INFO - Frame 595 - Aree di movimento: 0
+2025-01-17 17:44:07,922 - INFO - Frame 596 - Aree di movimento: 0
+2025-01-17 17:44:07,943 - INFO - Frame 597 - Aree di movimento: 0
+2025-01-17 17:44:07,964 - INFO - Frame 598 - Aree di movimento: 0
+2025-01-17 17:44:07,985 - INFO - Frame 599 - Aree di movimento: 0
+2025-01-17 17:44:08,006 - INFO - Frame 600 - Aree di movimento: 0
+2025-01-17 17:44:08,027 - INFO - Frame 601 - Aree di movimento: 0
+2025-01-17 17:44:08,048 - INFO - Frame 602 - Aree di movimento: 0
+2025-01-17 17:44:08,070 - INFO - Frame 603 - Aree di movimento: 0
+2025-01-17 17:44:08,091 - INFO - Frame 604 - Aree di movimento: 0
+2025-01-17 17:44:08,112 - INFO - Frame 605 - Aree di movimento: 0
+2025-01-17 17:44:08,132 - INFO - Frame 606 - Aree di movimento: 0
+2025-01-17 17:44:08,153 - INFO - Frame 607 - Aree di movimento: 0
+2025-01-17 17:44:08,175 - INFO - Frame 608 - Aree di movimento: 0
+2025-01-17 17:44:08,196 - INFO - Frame 609 - Aree di movimento: 0
+2025-01-17 17:44:08,217 - INFO - Frame 610 - Aree di movimento: 0
+2025-01-17 17:44:08,238 - INFO - Frame 611 - Aree di movimento: 0
+2025-01-17 17:44:08,260 - INFO - Frame 612 - Aree di movimento: 0
+2025-01-17 17:44:08,281 - INFO - Frame 613 - Aree di movimento: 0
+2025-01-17 17:44:08,302 - INFO - Frame 614 - Aree di movimento: 0
+2025-01-17 17:44:08,323 - INFO - Frame 615 - Aree di movimento: 0
+2025-01-17 17:44:08,344 - INFO - Frame 616 - Aree di movimento: 0
+2025-01-17 17:44:08,365 - INFO - Frame 617 - Aree di movimento: 0
+2025-01-17 17:44:08,386 - INFO - Frame 618 - Aree di movimento: 1
+2025-01-17 17:44:08,407 - INFO - Frame 619 - Aree di movimento: 0
+2025-01-17 17:44:08,428 - INFO - Frame 620 - Aree di movimento: 0
+2025-01-17 17:44:08,449 - INFO - Frame 621 - Aree di movimento: 0
+2025-01-17 17:44:08,471 - INFO - Frame 622 - Aree di movimento: 0
+2025-01-17 17:44:08,492 - INFO - Frame 623 - Aree di movimento: 1
+2025-01-17 17:44:08,514 - INFO - Frame 624 - Aree di movimento: 0
+2025-01-17 17:44:08,534 - INFO - Frame 625 - Aree di movimento: 0
+2025-01-17 17:44:08,554 - INFO - Frame 626 - Aree di movimento: 0
+2025-01-17 17:44:08,574 - INFO - Frame 627 - Aree di movimento: 0
+2025-01-17 17:44:08,595 - INFO - Frame 628 - Aree di movimento: 2
+2025-01-17 17:44:08,616 - INFO - Frame 629 - Aree di movimento: 0
+2025-01-17 17:44:08,637 - INFO - Frame 630 - Aree di movimento: 0
+2025-01-17 17:44:08,658 - INFO - Frame 631 - Aree di movimento: 0
+2025-01-17 17:44:08,679 - INFO - Frame 632 - Aree di movimento: 0
+2025-01-17 17:44:08,700 - INFO - Frame 633 - Aree di movimento: 0
+2025-01-17 17:44:08,720 - INFO - Frame 634 - Aree di movimento: 0
+2025-01-17 17:44:08,741 - INFO - Frame 635 - Aree di movimento: 0
+2025-01-17 17:44:08,762 - INFO - Frame 636 - Aree di movimento: 0
+2025-01-17 17:44:08,783 - INFO - Frame 637 - Aree di movimento: 0
+2025-01-17 17:44:08,804 - INFO - Frame 638 - Aree di movimento: 0
+2025-01-17 17:44:08,825 - INFO - Frame 639 - Aree di movimento: 0
+2025-01-17 17:44:08,846 - INFO - Frame 640 - Aree di movimento: 0
+2025-01-17 17:44:08,866 - INFO - Frame 641 - Aree di movimento: 0
+2025-01-17 17:44:08,887 - INFO - Frame 642 - Aree di movimento: 0
+2025-01-17 17:44:08,909 - INFO - Frame 643 - Aree di movimento: 0
+2025-01-17 17:44:08,930 - INFO - Frame 644 - Aree di movimento: 0
+2025-01-17 17:44:08,951 - INFO - Frame 645 - Aree di movimento: 1
+2025-01-17 17:44:08,972 - INFO - Frame 646 - Aree di movimento: 0
+2025-01-17 17:44:08,993 - INFO - Frame 647 - Aree di movimento: 0
+2025-01-17 17:44:09,014 - INFO - Frame 648 - Aree di movimento: 0
+2025-01-17 17:44:09,035 - INFO - Frame 649 - Aree di movimento: 0
+2025-01-17 17:44:09,057 - INFO - Frame 650 - Aree di movimento: 0
+2025-01-17 17:44:09,078 - INFO - Frame 651 - Aree di movimento: 0
+2025-01-17 17:44:09,098 - INFO - Frame 652 - Aree di movimento: 0
+2025-01-17 17:44:09,119 - INFO - Frame 653 - Aree di movimento: 0
+2025-01-17 17:44:09,140 - INFO - Frame 654 - Aree di movimento: 1
+2025-01-17 17:44:09,161 - INFO - Frame 655 - Aree di movimento: 0
+2025-01-17 17:44:09,181 - INFO - Frame 656 - Aree di movimento: 0
+2025-01-17 17:44:09,202 - INFO - Frame 657 - Aree di movimento: 0
+2025-01-17 17:44:09,223 - INFO - Frame 658 - Aree di movimento: 0
+2025-01-17 17:44:09,245 - INFO - Frame 659 - Aree di movimento: 1
+2025-01-17 17:44:09,280 - INFO - Frame 660 - Aree di movimento: 0
+2025-01-17 17:44:09,300 - INFO - Frame 661 - Aree di movimento: 0
+2025-01-17 17:44:09,321 - INFO - Frame 662 - Aree di movimento: 0
+2025-01-17 17:44:09,341 - INFO - Frame 663 - Aree di movimento: 0
+2025-01-17 17:44:09,361 - INFO - Frame 664 - Aree di movimento: 1
+2025-01-17 17:44:09,382 - INFO - Frame 665 - Aree di movimento: 0
+2025-01-17 17:44:09,402 - INFO - Frame 666 - Aree di movimento: 0
+2025-01-17 17:44:09,423 - INFO - Frame 667 - Aree di movimento: 0
+2025-01-17 17:44:09,444 - INFO - Frame 668 - Aree di movimento: 0
+2025-01-17 17:44:09,464 - INFO - Frame 669 - Aree di movimento: 0
+2025-01-17 17:44:09,484 - INFO - Frame 670 - Aree di movimento: 0
+2025-01-17 17:44:09,505 - INFO - Frame 671 - Aree di movimento: 1
+2025-01-17 17:44:09,526 - INFO - Frame 672 - Aree di movimento: 0
+2025-01-17 17:44:09,547 - INFO - Frame 673 - Aree di movimento: 0
+2025-01-17 17:44:09,568 - INFO - Frame 674 - Aree di movimento: 0
+2025-01-17 17:44:09,590 - INFO - Frame 675 - Aree di movimento: 0
+2025-01-17 17:44:09,611 - INFO - Frame 676 - Aree di movimento: 1
+2025-01-17 17:44:09,631 - INFO - Frame 677 - Aree di movimento: 0
+2025-01-17 17:44:09,651 - INFO - Frame 678 - Aree di movimento: 0
+2025-01-17 17:44:09,672 - INFO - Frame 679 - Aree di movimento: 0
+2025-01-17 17:44:09,693 - INFO - Frame 680 - Aree di movimento: 0
+2025-01-17 17:44:09,714 - INFO - Frame 681 - Aree di movimento: 1
+2025-01-17 17:44:09,735 - INFO - Frame 682 - Aree di movimento: 0
+2025-01-17 17:44:09,756 - INFO - Frame 683 - Aree di movimento: 1
+2025-01-17 17:44:09,777 - INFO - Frame 684 - Aree di movimento: 0
+2025-01-17 17:44:09,798 - INFO - Frame 685 - Aree di movimento: 0
+2025-01-17 17:44:09,820 - INFO - Frame 686 - Aree di movimento: 1
+2025-01-17 17:44:09,841 - INFO - Frame 687 - Aree di movimento: 0
+2025-01-17 17:44:09,862 - INFO - Frame 688 - Aree di movimento: 2
+2025-01-17 17:44:09,883 - INFO - Frame 689 - Aree di movimento: 0
+2025-01-17 17:44:09,903 - INFO - Frame 690 - Aree di movimento: 1
+2025-01-17 17:44:09,924 - INFO - Frame 691 - Aree di movimento: 0
+2025-01-17 17:44:09,944 - INFO - Frame 692 - Aree di movimento: 0
+2025-01-17 17:44:09,966 - INFO - Frame 693 - Aree di movimento: 2
+2025-01-17 17:44:09,987 - INFO - Frame 694 - Aree di movimento: 0
+2025-01-17 17:44:10,008 - INFO - Frame 695 - Aree di movimento: 0
+2025-01-17 17:44:10,029 - INFO - Frame 696 - Aree di movimento: 0
+2025-01-17 17:44:10,050 - INFO - Frame 697 - Aree di movimento: 0
+2025-01-17 17:44:10,071 - INFO - Frame 698 - Aree di movimento: 2
+2025-01-17 17:44:10,091 - INFO - Frame 699 - Aree di movimento: 0
+2025-01-17 17:44:10,112 - INFO - Frame 700 - Aree di movimento: 0
+2025-01-17 17:44:10,136 - INFO - Frame 701 - Aree di movimento: 0
+2025-01-17 17:44:10,156 - INFO - Frame 702 - Aree di movimento: 3
+2025-01-17 17:44:10,177 - INFO - Frame 703 - Aree di movimento: 0
+2025-01-17 17:44:10,198 - INFO - Frame 704 - Aree di movimento: 0
+2025-01-17 17:44:10,221 - INFO - Frame 705 - Aree di movimento: 1
+2025-01-17 17:44:10,242 - INFO - Frame 706 - Aree di movimento: 0
+2025-01-17 17:44:10,263 - INFO - Frame 707 - Aree di movimento: 2
+2025-01-17 17:44:10,285 - INFO - Frame 708 - Aree di movimento: 0
+2025-01-17 17:44:10,306 - INFO - Frame 709 - Aree di movimento: 0
+2025-01-17 17:44:10,327 - INFO - Frame 710 - Aree di movimento: 0
+2025-01-17 17:44:10,348 - INFO - Frame 711 - Aree di movimento: 0
+2025-01-17 17:44:10,369 - INFO - Frame 712 - Aree di movimento: 2
+2025-01-17 17:44:10,390 - INFO - Frame 713 - Aree di movimento: 0
+2025-01-17 17:44:10,411 - INFO - Frame 714 - Aree di movimento: 0
+2025-01-17 17:44:10,432 - INFO - Frame 715 - Aree di movimento: 0
+2025-01-17 17:44:10,453 - INFO - Frame 716 - Aree di movimento: 0
+2025-01-17 17:44:10,475 - INFO - Frame 717 - Aree di movimento: 1
+2025-01-17 17:44:10,495 - INFO - Frame 718 - Aree di movimento: 0
+2025-01-17 17:44:10,521 - INFO - Frame 719 - Aree di movimento: 0
+2025-01-17 17:44:10,542 - INFO - Frame 720 - Aree di movimento: 0
+2025-01-17 17:44:10,562 - INFO - Frame 721 - Aree di movimento: 0
+2025-01-17 17:44:10,587 - INFO - Frame 722 - Aree di movimento: 0
+2025-01-17 17:44:10,608 - INFO - Frame 723 - Aree di movimento: 0
+2025-01-17 17:44:10,629 - INFO - Frame 724 - Aree di movimento: 0
+2025-01-17 17:44:10,654 - INFO - Frame 725 - Aree di movimento: 0
+2025-01-17 17:44:10,675 - INFO - Frame 726 - Aree di movimento: 5
+2025-01-17 17:44:10,696 - INFO - Frame 727 - Aree di movimento: 0
+2025-01-17 17:44:10,720 - INFO - Frame 728 - Aree di movimento: 0
+2025-01-17 17:44:10,741 - INFO - Frame 729 - Aree di movimento: 1
+2025-01-17 17:44:10,762 - INFO - Frame 730 - Aree di movimento: 0
+2025-01-17 17:44:10,787 - INFO - Frame 731 - Aree di movimento: 2
+2025-01-17 17:44:10,808 - INFO - Frame 732 - Aree di movimento: 0
+2025-01-17 17:44:10,828 - INFO - Frame 733 - Aree di movimento: 0
+2025-01-17 17:44:10,849 - INFO - Frame 734 - Aree di movimento: 0
+2025-01-17 17:44:10,870 - INFO - Frame 735 - Aree di movimento: 0
+2025-01-17 17:44:10,891 - INFO - Frame 736 - Aree di movimento: 2
+2025-01-17 17:44:10,912 - INFO - Frame 737 - Aree di movimento: 0
+2025-01-17 17:44:10,932 - INFO - Frame 738 - Aree di movimento: 1
+2025-01-17 17:44:10,953 - INFO - Frame 739 - Aree di movimento: 0
+2025-01-17 17:44:10,974 - INFO - Frame 740 - Aree di movimento: 0
+2025-01-17 17:44:10,995 - INFO - Frame 741 - Aree di movimento: 4
+2025-01-17 17:44:11,016 - INFO - Frame 742 - Aree di movimento: 0
+2025-01-17 17:44:11,037 - INFO - Frame 743 - Aree di movimento: 0
+2025-01-17 17:44:11,058 - INFO - Frame 744 - Aree di movimento: 0
+2025-01-17 17:44:11,079 - INFO - Frame 745 - Aree di movimento: 0
+2025-01-17 17:44:11,103 - INFO - Frame 746 - Aree di movimento: 1
+2025-01-17 17:44:11,124 - INFO - Frame 747 - Aree di movimento: 1
+2025-01-17 17:44:11,145 - INFO - Frame 748 - Aree di movimento: 0
+2025-01-17 17:44:11,169 - INFO - Frame 749 - Aree di movimento: 0
+2025-01-17 17:44:11,190 - INFO - Frame 750 - Aree di movimento: 3
+2025-01-17 17:44:11,211 - INFO - Frame 751 - Aree di movimento: 0
+2025-01-17 17:44:11,231 - INFO - Frame 752 - Aree di movimento: 0
+2025-01-17 17:44:11,253 - INFO - Frame 753 - Aree di movimento: 0
+2025-01-17 17:44:11,274 - INFO - Frame 754 - Aree di movimento: 0
+2025-01-17 17:44:11,295 - INFO - Frame 755 - Aree di movimento: 4
+2025-01-17 17:44:11,316 - INFO - Frame 756 - Aree di movimento: 0
+2025-01-17 17:44:11,337 - INFO - Frame 757 - Aree di movimento: 0
+2025-01-17 17:44:11,358 - INFO - Frame 758 - Aree di movimento: 1
+2025-01-17 17:44:11,379 - INFO - Frame 759 - Aree di movimento: 0
+2025-01-17 17:44:11,403 - INFO - Frame 760 - Aree di movimento: 2
+2025-01-17 17:44:11,424 - INFO - Frame 761 - Aree di movimento: 0
+2025-01-17 17:44:11,445 - INFO - Frame 762 - Aree di movimento: 1
+2025-01-17 17:44:11,471 - INFO - Frame 763 - Aree di movimento: 0
+2025-01-17 17:44:11,491 - INFO - Frame 764 - Aree di movimento: 0
+2025-01-17 17:44:11,512 - INFO - Frame 765 - Aree di movimento: 1
+2025-01-17 17:44:11,537 - INFO - Frame 766 - Aree di movimento: 0
+2025-01-17 17:44:11,558 - INFO - Frame 767 - Aree di movimento: 1
+2025-01-17 17:44:11,578 - INFO - Frame 768 - Aree di movimento: 0
+2025-01-17 17:44:11,599 - INFO - Frame 769 - Aree di movimento: 0
+2025-01-17 17:44:11,623 - INFO - Frame 770 - Aree di movimento: 0
+2025-01-17 17:44:11,643 - INFO - Frame 771 - Aree di movimento: 0
+2025-01-17 17:44:11,663 - INFO - Frame 772 - Aree di movimento: 1
+2025-01-17 17:44:11,684 - INFO - Frame 773 - Aree di movimento: 0
+2025-01-17 17:44:11,705 - INFO - Frame 774 - Aree di movimento: 0
+2025-01-17 17:44:11,726 - INFO - Frame 775 - Aree di movimento: 0
+2025-01-17 17:44:11,747 - INFO - Frame 776 - Aree di movimento: 0
+2025-01-17 17:44:11,768 - INFO - Frame 777 - Aree di movimento: 0
+2025-01-17 17:44:11,789 - INFO - Frame 778 - Aree di movimento: 8
+2025-01-17 17:44:11,810 - INFO - Frame 779 - Aree di movimento: 2
+2025-01-17 17:44:11,831 - INFO - Frame 780 - Aree di movimento: 0
+2025-01-17 17:44:11,852 - INFO - Frame 781 - Aree di movimento: 0
+2025-01-17 17:44:11,873 - INFO - Frame 782 - Aree di movimento: 0
+2025-01-17 17:44:11,894 - INFO - Frame 783 - Aree di movimento: 7
+2025-01-17 17:44:11,915 - INFO - Frame 784 - Aree di movimento: 1
+2025-01-17 17:44:11,936 - INFO - Frame 785 - Aree di movimento: 0
+2025-01-17 17:44:11,957 - INFO - Frame 786 - Aree di movimento: 0
+2025-01-17 17:44:11,978 - INFO - Frame 787 - Aree di movimento: 0
+2025-01-17 17:44:11,999 - INFO - Frame 788 - Aree di movimento: 7
+2025-01-17 17:44:12,021 - INFO - Frame 789 - Aree di movimento: 1
+2025-01-17 17:44:12,045 - INFO - Frame 790 - Aree di movimento: 0
+2025-01-17 17:44:12,065 - INFO - Frame 791 - Aree di movimento: 0
+2025-01-17 17:44:12,086 - INFO - Frame 792 - Aree di movimento: 6
+2025-01-17 17:44:12,106 - INFO - Frame 793 - Aree di movimento: 0
+2025-01-17 17:44:12,127 - INFO - Frame 794 - Aree di movimento: 0
+2025-01-17 17:44:12,147 - INFO - Frame 795 - Aree di movimento: 0
+2025-01-17 17:44:12,168 - INFO - Frame 796 - Aree di movimento: 0
+2025-01-17 17:44:12,188 - INFO - Frame 797 - Aree di movimento: 7
+2025-01-17 17:44:12,209 - INFO - Frame 798 - Aree di movimento: 0
+2025-01-17 17:44:12,229 - INFO - Frame 799 - Aree di movimento: 0
+2025-01-17 17:44:12,250 - INFO - Frame 800 - Aree di movimento: 0
+2025-01-17 17:44:12,293 - INFO - Frame 801 - Aree di movimento: 0
+2025-01-17 17:44:12,314 - INFO - Frame 802 - Aree di movimento: 7
+2025-01-17 17:44:12,334 - INFO - Frame 803 - Aree di movimento: 0
+2025-01-17 17:44:12,355 - INFO - Frame 804 - Aree di movimento: 0
+2025-01-17 17:44:12,376 - INFO - Frame 805 - Aree di movimento: 0
+2025-01-17 17:44:12,396 - INFO - Frame 806 - Aree di movimento: 0
+2025-01-17 17:44:12,417 - INFO - Frame 807 - Aree di movimento: 8
+2025-01-17 17:44:12,438 - INFO - Frame 808 - Aree di movimento: 0
+2025-01-17 17:44:12,459 - INFO - Frame 809 - Aree di movimento: 0
+2025-01-17 17:44:12,480 - INFO - Frame 810 - Aree di movimento: 0
+2025-01-17 17:44:12,501 - INFO - Frame 811 - Aree di movimento: 0
+2025-01-17 17:44:12,522 - INFO - Frame 812 - Aree di movimento: 6
+2025-01-17 17:44:12,543 - INFO - Frame 813 - Aree di movimento: 0
+2025-01-17 17:44:12,564 - INFO - Frame 814 - Aree di movimento: 0
+2025-01-17 17:44:12,585 - INFO - Frame 815 - Aree di movimento: 0
+2025-01-17 17:44:12,605 - INFO - Frame 816 - Aree di movimento: 6
+2025-01-17 17:44:12,627 - INFO - Frame 817 - Aree di movimento: 0
+2025-01-17 17:44:12,649 - INFO - Frame 818 - Aree di movimento: 0
+2025-01-17 17:44:12,670 - INFO - Frame 819 - Aree di movimento: 0
+2025-01-17 17:44:12,691 - INFO - Frame 820 - Aree di movimento: 1
+2025-01-17 17:44:12,713 - INFO - Frame 821 - Aree di movimento: 6
+2025-01-17 17:44:12,734 - INFO - Frame 822 - Aree di movimento: 0
+2025-01-17 17:44:12,756 - INFO - Frame 823 - Aree di movimento: 0
+2025-01-17 17:44:12,777 - INFO - Frame 824 - Aree di movimento: 0
+2025-01-17 17:44:12,798 - INFO - Frame 825 - Aree di movimento: 1
+2025-01-17 17:44:12,819 - INFO - Frame 826 - Aree di movimento: 6
+2025-01-17 17:44:12,844 - INFO - Frame 827 - Aree di movimento: 2
+2025-01-17 17:44:12,865 - INFO - Frame 828 - Aree di movimento: 0
+2025-01-17 17:44:12,886 - INFO - Frame 829 - Aree di movimento: 0
+2025-01-17 17:44:12,907 - INFO - Frame 830 - Aree di movimento: 1
+2025-01-17 17:44:12,928 - INFO - Frame 831 - Aree di movimento: 8
+2025-01-17 17:44:12,949 - INFO - Frame 832 - Aree di movimento: 0
+2025-01-17 17:44:12,972 - INFO - Frame 833 - Aree di movimento: 0
+2025-01-17 17:44:12,993 - INFO - Frame 834 - Aree di movimento: 1
+2025-01-17 17:44:13,014 - INFO - Frame 835 - Aree di movimento: 0
+2025-01-17 17:44:13,036 - INFO - Frame 836 - Aree di movimento: 7
+2025-01-17 17:44:13,057 - INFO - Frame 837 - Aree di movimento: 1
+2025-01-17 17:44:13,078 - INFO - Frame 838 - Aree di movimento: 0
+2025-01-17 17:44:13,099 - INFO - Frame 839 - Aree di movimento: 1
+2025-01-17 17:44:13,120 - INFO - Frame 840 - Aree di movimento: 6
+2025-01-17 17:44:13,141 - INFO - Frame 841 - Aree di movimento: 0
+2025-01-17 17:44:13,162 - INFO - Frame 842 - Aree di movimento: 0
+2025-01-17 17:44:13,181 - INFO - Frame 843 - Aree di movimento: 0
+2025-01-17 17:44:13,201 - INFO - Frame 844 - Aree di movimento: 0
+2025-01-17 17:44:13,223 - INFO - Frame 845 - Aree di movimento: 10
+2025-01-17 17:44:13,244 - INFO - Frame 846 - Aree di movimento: 1
+2025-01-17 17:44:13,265 - INFO - Frame 847 - Aree di movimento: 0
+2025-01-17 17:44:13,286 - INFO - Frame 848 - Aree di movimento: 0
+2025-01-17 17:44:13,308 - INFO - Frame 849 - Aree di movimento: 0
+2025-01-17 17:44:13,329 - INFO - Frame 850 - Aree di movimento: 9
+2025-01-17 17:44:13,350 - INFO - Frame 851 - Aree di movimento: 1
+2025-01-17 17:44:13,371 - INFO - Frame 852 - Aree di movimento: 0
+2025-01-17 17:44:13,392 - INFO - Frame 853 - Aree di movimento: 0
+2025-01-17 17:44:13,414 - INFO - Frame 854 - Aree di movimento: 0
+2025-01-17 17:44:13,437 - INFO - Frame 855 - Aree di movimento: 10
+2025-01-17 17:44:13,459 - INFO - Frame 856 - Aree di movimento: 2
+2025-01-17 17:44:13,480 - INFO - Frame 857 - Aree di movimento: 0
+2025-01-17 17:44:13,504 - INFO - Frame 858 - Aree di movimento: 0
+2025-01-17 17:44:13,524 - INFO - Frame 859 - Aree di movimento: 0
+2025-01-17 17:44:13,546 - INFO - Frame 860 - Aree di movimento: 6
+2025-01-17 17:44:13,570 - INFO - Frame 861 - Aree di movimento: 3
+2025-01-17 17:44:13,590 - INFO - Frame 862 - Aree di movimento: 0
+2025-01-17 17:44:13,611 - INFO - Frame 863 - Aree di movimento: 0
+2025-01-17 17:44:13,631 - INFO - Frame 864 - Aree di movimento: 7
+2025-01-17 17:44:13,655 - INFO - Frame 865 - Aree di movimento: 0
+2025-01-17 17:44:13,676 - INFO - Frame 866 - Aree di movimento: 1
+2025-01-17 17:44:13,696 - INFO - Frame 867 - Aree di movimento: 0
+2025-01-17 17:44:13,717 - INFO - Frame 868 - Aree di movimento: 0
+2025-01-17 17:44:13,738 - INFO - Frame 869 - Aree di movimento: 7
+2025-01-17 17:44:13,759 - INFO - Frame 870 - Aree di movimento: 1
+2025-01-17 17:44:13,780 - INFO - Frame 871 - Aree di movimento: 0
+2025-01-17 17:44:13,800 - INFO - Frame 872 - Aree di movimento: 0
+2025-01-17 17:44:13,821 - INFO - Frame 873 - Aree di movimento: 2
+2025-01-17 17:44:13,843 - INFO - Frame 874 - Aree di movimento: 7
+2025-01-17 17:44:13,864 - INFO - Frame 875 - Aree di movimento: 2
+2025-01-17 17:44:13,885 - INFO - Frame 876 - Aree di movimento: 0
+2025-01-17 17:44:13,908 - INFO - Frame 877 - Aree di movimento: 0
+2025-01-17 17:44:13,935 - INFO - Frame 878 - Aree di movimento: 0
+2025-01-17 17:44:13,956 - INFO - Frame 879 - Aree di movimento: 8
+2025-01-17 17:44:13,977 - INFO - Frame 880 - Aree di movimento: 3
+2025-01-17 17:44:13,997 - INFO - Frame 881 - Aree di movimento: 0
+2025-01-17 17:44:14,021 - INFO - Frame 882 - Aree di movimento: 2
+2025-01-17 17:44:14,042 - INFO - Frame 883 - Aree di movimento: 0
+2025-01-17 17:44:14,063 - INFO - Frame 884 - Aree di movimento: 7
+2025-01-17 17:44:14,086 - INFO - Frame 885 - Aree di movimento: 1
+2025-01-17 17:44:14,106 - INFO - Frame 886 - Aree di movimento: 0
+2025-01-17 17:44:14,128 - INFO - Frame 887 - Aree di movimento: 0
+2025-01-17 17:44:14,155 - INFO - Frame 888 - Aree di movimento: 7
+2025-01-17 17:44:14,177 - INFO - Frame 889 - Aree di movimento: 0
+2025-01-17 17:44:14,198 - INFO - Frame 890 - Aree di movimento: 2
+2025-01-17 17:44:14,219 - INFO - Frame 891 - Aree di movimento: 1
+2025-01-17 17:44:14,241 - INFO - Frame 892 - Aree di movimento: 1
+2025-01-17 17:44:14,263 - INFO - Frame 893 - Aree di movimento: 7
+2025-01-17 17:44:14,285 - INFO - Frame 894 - Aree di movimento: 2
+2025-01-17 17:44:14,305 - INFO - Frame 895 - Aree di movimento: 0
+2025-01-17 17:44:14,326 - INFO - Frame 896 - Aree di movimento: 0
+2025-01-17 17:44:14,347 - INFO - Frame 897 - Aree di movimento: 0
+2025-01-17 17:44:14,368 - INFO - Frame 898 - Aree di movimento: 7
+2025-01-17 17:44:14,387 - INFO - Frame 899 - Aree di movimento: 2
+2025-01-17 17:44:14,408 - INFO - Frame 900 - Aree di movimento: 0
+2025-01-17 17:44:14,429 - INFO - Frame 901 - Aree di movimento: 0
+2025-01-17 17:44:14,459 - INFO - Frame 902 - Aree di movimento: 0
+2025-01-17 17:44:14,480 - INFO - Frame 903 - Aree di movimento: 8
+2025-01-17 17:44:14,500 - INFO - Frame 904 - Aree di movimento: 1
+2025-01-17 17:44:14,521 - INFO - Frame 905 - Aree di movimento: 0
+2025-01-17 17:44:14,541 - INFO - Frame 906 - Aree di movimento: 2
+2025-01-17 17:44:14,562 - INFO - Frame 907 - Aree di movimento: 0
+2025-01-17 17:44:14,582 - INFO - Frame 908 - Aree di movimento: 9
+2025-01-17 17:44:14,603 - INFO - Frame 909 - Aree di movimento: 1
+2025-01-17 17:44:14,623 - INFO - Frame 910 - Aree di movimento: 0
+2025-01-17 17:44:14,644 - INFO - Frame 911 - Aree di movimento: 0
+2025-01-17 17:44:14,665 - INFO - Frame 912 - Aree di movimento: 10
+2025-01-17 17:44:14,685 - INFO - Frame 913 - Aree di movimento: 0
+2025-01-17 17:44:14,706 - INFO - Frame 914 - Aree di movimento: 1
+2025-01-17 17:44:14,727 - INFO - Frame 915 - Aree di movimento: 0
+2025-01-17 17:44:14,748 - INFO - Frame 916 - Aree di movimento: 1
+2025-01-17 17:44:14,769 - INFO - Frame 917 - Aree di movimento: 8
+2025-01-17 17:44:14,789 - INFO - Frame 918 - Aree di movimento: 0
+2025-01-17 17:44:14,810 - INFO - Frame 919 - Aree di movimento: 0
+2025-01-17 17:44:14,830 - INFO - Frame 920 - Aree di movimento: 0
+2025-01-17 17:44:14,850 - INFO - Frame 921 - Aree di movimento: 1
+2025-01-17 17:44:14,871 - INFO - Frame 922 - Aree di movimento: 7
+2025-01-17 17:44:14,891 - INFO - Frame 923 - Aree di movimento: 1
+2025-01-17 17:44:14,913 - INFO - Frame 924 - Aree di movimento: 0
+2025-01-17 17:49:32,894 - INFO - Logging configurato. Log salvati in: ../Dataset/output/motion_smoothing.log
+2025-01-17 17:49:32,894 - INFO - === Inizio Optical Flow con Buffer Temporale ===
+2025-01-17 17:49:32,895 - INFO - Video input: ../Dataset/input/Stealing008_x264.mp4
+2025-01-17 17:49:32,895 - INFO - Finestra temporale: N=5, soglia %=0.6
+2025-01-17 17:49:32,922 - INFO - FPS: 30.0 | Dimensioni: 320x240
+2025-01-17 17:49:32,947 - INFO - Frame 1 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:32,988 - INFO - Frame 2 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,010 - INFO - Frame 3 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,031 - INFO - Frame 4 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,053 - INFO - Frame 5 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,073 - INFO - Frame 6 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,093 - INFO - Frame 7 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,115 - INFO - Frame 8 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,135 - INFO - Frame 9 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,156 - INFO - Frame 10 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,176 - INFO - Frame 11 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,198 - INFO - Frame 12 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,219 - INFO - Frame 13 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,240 - INFO - Frame 14 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,263 - INFO - Frame 15 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,283 - INFO - Frame 16 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,303 - INFO - Frame 17 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,324 - INFO - Frame 18 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,346 - INFO - Frame 19 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,366 - INFO - Frame 20 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,387 - INFO - Frame 21 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,407 - INFO - Frame 22 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,428 - INFO - Frame 23 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,449 - INFO - Frame 24 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,469 - INFO - Frame 25 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,490 - INFO - Frame 26 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,511 - INFO - Frame 27 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,532 - INFO - Frame 28 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,553 - INFO - Frame 29 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,574 - INFO - Frame 30 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,594 - INFO - Frame 31 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,615 - INFO - Frame 32 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,636 - INFO - Frame 33 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,657 - INFO - Frame 34 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,679 - INFO - Frame 35 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,700 - INFO - Frame 36 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,721 - INFO - Frame 37 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,742 - INFO - Frame 38 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,763 - INFO - Frame 39 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,784 - INFO - Frame 40 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,804 - INFO - Frame 41 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,825 - INFO - Frame 42 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,846 - INFO - Frame 43 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,868 - INFO - Frame 44 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,889 - INFO - Frame 45 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,910 - INFO - Frame 46 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,931 - INFO - Frame 47 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,952 - INFO - Frame 48 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,973 - INFO - Frame 49 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:33,995 - INFO - Frame 50 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,016 - INFO - Frame 51 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,037 - INFO - Frame 52 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,059 - INFO - Frame 53 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,080 - INFO - Frame 54 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,101 - INFO - Frame 55 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,122 - INFO - Frame 56 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,146 - INFO - Frame 57 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,167 - INFO - Frame 58 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,188 - INFO - Frame 59 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,211 - INFO - Frame 60 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,232 - INFO - Frame 61 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,253 - INFO - Frame 62 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,273 - INFO - Frame 63 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,295 - INFO - Frame 64 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,316 - INFO - Frame 65 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,337 - INFO - Frame 66 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,358 - INFO - Frame 67 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,379 - INFO - Frame 68 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,399 - INFO - Frame 69 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,421 - INFO - Frame 70 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,442 - INFO - Frame 71 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,463 - INFO - Frame 72 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,484 - INFO - Frame 73 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,506 - INFO - Frame 74 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,528 - INFO - Frame 75 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,548 - INFO - Frame 76 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,569 - INFO - Frame 77 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,590 - INFO - Frame 78 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,612 - INFO - Frame 79 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,633 - INFO - Frame 80 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,654 - INFO - Frame 81 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,675 - INFO - Frame 82 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,695 - INFO - Frame 83 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,716 - INFO - Frame 84 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,737 - INFO - Frame 85 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,758 - INFO - Frame 86 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,778 - INFO - Frame 87 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,799 - INFO - Frame 88 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,820 - INFO - Frame 89 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,841 - INFO - Frame 90 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,864 - INFO - Frame 91 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,885 - INFO - Frame 92 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,907 - INFO - Frame 93 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,929 - INFO - Frame 94 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,950 - INFO - Frame 95 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,971 - INFO - Frame 96 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:34,991 - INFO - Frame 97 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,014 - INFO - Frame 98 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,035 - INFO - Frame 99 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,056 - INFO - Frame 100 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,077 - INFO - Frame 101 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,098 - INFO - Frame 102 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,119 - INFO - Frame 103 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,144 - INFO - Frame 104 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,854 - INFO - Frame 105 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,881 - INFO - Frame 106 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,905 - INFO - Frame 107 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,929 - INFO - Frame 108 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,952 - INFO - Frame 109 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,975 - INFO - Frame 110 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:35,996 - INFO - Frame 111 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,019 - INFO - Frame 112 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,040 - INFO - Frame 113 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,062 - INFO - Frame 114 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,084 - INFO - Frame 115 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,105 - INFO - Frame 116 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,127 - INFO - Frame 117 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,148 - INFO - Frame 118 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,170 - INFO - Frame 119 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,190 - INFO - Frame 120 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,211 - INFO - Frame 121 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,233 - INFO - Frame 122 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,254 - INFO - Frame 123 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,276 - INFO - Frame 124 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,297 - INFO - Frame 125 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,318 - INFO - Frame 126 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,340 - INFO - Frame 127 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,361 - INFO - Frame 128 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,382 - INFO - Frame 129 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,403 - INFO - Frame 130 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,425 - INFO - Frame 131 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,446 - INFO - Frame 132 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,468 - INFO - Frame 133 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,489 - INFO - Frame 134 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,510 - INFO - Frame 135 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,531 - INFO - Frame 136 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,553 - INFO - Frame 137 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,574 - INFO - Frame 138 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,595 - INFO - Frame 139 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,616 - INFO - Frame 140 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,637 - INFO - Frame 141 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,659 - INFO - Frame 142 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,680 - INFO - Frame 143 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,701 - INFO - Frame 144 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,723 - INFO - Frame 145 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,746 - INFO - Frame 146 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,767 - INFO - Frame 147 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,789 - INFO - Frame 148 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,810 - INFO - Frame 149 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,831 - INFO - Frame 150 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,852 - INFO - Frame 151 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,874 - INFO - Frame 152 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,895 - INFO - Frame 153 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,916 - INFO - Frame 154 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,937 - INFO - Frame 155 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,958 - INFO - Frame 156 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,978 - INFO - Frame 157 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:36,998 - INFO - Frame 158 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,019 - INFO - Frame 159 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,040 - INFO - Frame 160 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,061 - INFO - Frame 161 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,081 - INFO - Frame 162 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:37,104 - INFO - Frame 163 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,126 - INFO - Frame 164 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,147 - INFO - Frame 165 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,167 - INFO - Frame 166 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,188 - INFO - Frame 167 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,211 - INFO - Frame 168 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,232 - INFO - Frame 169 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,253 - INFO - Frame 170 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,274 - INFO - Frame 171 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,297 - INFO - Frame 172 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,318 - INFO - Frame 173 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,339 - INFO - Frame 174 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,361 - INFO - Frame 175 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,382 - INFO - Frame 176 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,403 - INFO - Frame 177 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,423 - INFO - Frame 178 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,445 - INFO - Frame 179 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,466 - INFO - Frame 180 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,487 - INFO - Frame 181 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,508 - INFO - Frame 182 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,529 - INFO - Frame 183 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,550 - INFO - Frame 184 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,571 - INFO - Frame 185 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,592 - INFO - Frame 186 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,615 - INFO - Frame 187 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,636 - INFO - Frame 188 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,658 - INFO - Frame 189 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,679 - INFO - Frame 190 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,700 - INFO - Frame 191 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,721 - INFO - Frame 192 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,742 - INFO - Frame 193 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,764 - INFO - Frame 194 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,785 - INFO - Frame 195 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,806 - INFO - Frame 196 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,827 - INFO - Frame 197 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,848 - INFO - Frame 198 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,869 - INFO - Frame 199 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,890 - INFO - Frame 200 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,911 - INFO - Frame 201 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,932 - INFO - Frame 202 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,953 - INFO - Frame 203 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,973 - INFO - Frame 204 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:37,994 - INFO - Frame 205 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,015 - INFO - Frame 206 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,036 - INFO - Frame 207 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,056 - INFO - Frame 208 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,078 - INFO - Frame 209 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,099 - INFO - Frame 210 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,120 - INFO - Frame 211 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,141 - INFO - Frame 212 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,162 - INFO - Frame 213 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,183 - INFO - Frame 214 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,204 - INFO - Frame 215 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,224 - INFO - Frame 216 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,244 - INFO - Frame 217 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,264 - INFO - Frame 218 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,286 - INFO - Frame 219 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,306 - INFO - Frame 220 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,327 - INFO - Frame 221 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,348 - INFO - Frame 222 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,369 - INFO - Frame 223 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,390 - INFO - Frame 224 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,411 - INFO - Frame 225 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,432 - INFO - Frame 226 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,453 - INFO - Frame 227 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,474 - INFO - Frame 228 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,495 - INFO - Frame 229 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,516 - INFO - Frame 230 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,537 - INFO - Frame 231 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,558 - INFO - Frame 232 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,578 - INFO - Frame 233 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,599 - INFO - Frame 234 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,620 - INFO - Frame 235 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,641 - INFO - Frame 236 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,661 - INFO - Frame 237 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,682 - INFO - Frame 238 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,704 - INFO - Frame 239 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,725 - INFO - Frame 240 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,746 - INFO - Frame 241 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,767 - INFO - Frame 242 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,788 - INFO - Frame 243 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,809 - INFO - Frame 244 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,829 - INFO - Frame 245 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,850 - INFO - Frame 246 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,871 - INFO - Frame 247 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,893 - INFO - Frame 248 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,914 - INFO - Frame 249 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,935 - INFO - Frame 250 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,956 - INFO - Frame 251 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,977 - INFO - Frame 252 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:38,997 - INFO - Frame 253 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,018 - INFO - Frame 254 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,039 - INFO - Frame 255 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,060 - INFO - Frame 256 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,093 - INFO - Frame 257 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,116 - INFO - Frame 258 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,137 - INFO - Frame 259 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,157 - INFO - Frame 260 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,178 - INFO - Frame 261 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,199 - INFO - Frame 262 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,220 - INFO - Frame 263 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,240 - INFO - Frame 264 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,261 - INFO - Frame 265 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,282 - INFO - Frame 266 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,303 - INFO - Frame 267 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,322 - INFO - Frame 268 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,343 - INFO - Frame 269 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,364 - INFO - Frame 270 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,385 - INFO - Frame 271 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,406 - INFO - Frame 272 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,427 - INFO - Frame 273 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,448 - INFO - Frame 274 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,469 - INFO - Frame 275 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,490 - INFO - Frame 276 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,511 - INFO - Frame 277 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,532 - INFO - Frame 278 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,553 - INFO - Frame 279 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,574 - INFO - Frame 280 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,595 - INFO - Frame 281 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,616 - INFO - Frame 282 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,637 - INFO - Frame 283 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,658 - INFO - Frame 284 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,679 - INFO - Frame 285 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,700 - INFO - Frame 286 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,721 - INFO - Frame 287 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,741 - INFO - Frame 288 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,762 - INFO - Frame 289 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,783 - INFO - Frame 290 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,804 - INFO - Frame 291 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,824 - INFO - Frame 292 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,845 - INFO - Frame 293 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,866 - INFO - Frame 294 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,887 - INFO - Frame 295 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,907 - INFO - Frame 296 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,927 - INFO - Frame 297 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,949 - INFO - Frame 298 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,970 - INFO - Frame 299 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:39,990 - INFO - Frame 300 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,011 - INFO - Frame 301 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,032 - INFO - Frame 302 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,053 - INFO - Frame 303 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,073 - INFO - Frame 304 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,093 - INFO - Frame 305 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,114 - INFO - Frame 306 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,136 - INFO - Frame 307 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,156 - INFO - Frame 308 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,177 - INFO - Frame 309 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,199 - INFO - Frame 310 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,220 - INFO - Frame 311 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,241 - INFO - Frame 312 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,262 - INFO - Frame 313 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,283 - INFO - Frame 314 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,304 - INFO - Frame 315 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,324 - INFO - Frame 316 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,345 - INFO - Frame 317 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,366 - INFO - Frame 318 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,387 - INFO - Frame 319 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,408 - INFO - Frame 320 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,428 - INFO - Frame 321 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,449 - INFO - Frame 322 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,471 - INFO - Frame 323 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,491 - INFO - Frame 324 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,512 - INFO - Frame 325 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,533 - INFO - Frame 326 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,554 - INFO - Frame 327 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,575 - INFO - Frame 328 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,596 - INFO - Frame 329 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,617 - INFO - Frame 330 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,638 - INFO - Frame 331 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,659 - INFO - Frame 332 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,680 - INFO - Frame 333 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,701 - INFO - Frame 334 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,722 - INFO - Frame 335 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,743 - INFO - Frame 336 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,764 - INFO - Frame 337 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,785 - INFO - Frame 338 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,807 - INFO - Frame 339 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,827 - INFO - Frame 340 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,848 - INFO - Frame 341 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,869 - INFO - Frame 342 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,890 - INFO - Frame 343 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,912 - INFO - Frame 344 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,932 - INFO - Frame 345 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,953 - INFO - Frame 346 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,974 - INFO - Frame 347 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:40,995 - INFO - Frame 348 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,017 - INFO - Frame 349 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,038 - INFO - Frame 350 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,059 - INFO - Frame 351 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,080 - INFO - Frame 352 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,101 - INFO - Frame 353 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,122 - INFO - Frame 354 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,143 - INFO - Frame 355 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,164 - INFO - Frame 356 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,186 - INFO - Frame 357 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,208 - INFO - Frame 358 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,230 - INFO - Frame 359 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,253 - INFO - Frame 360 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,274 - INFO - Frame 361 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,295 - INFO - Frame 362 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,316 - INFO - Frame 363 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,338 - INFO - Frame 364 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,359 - INFO - Frame 365 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,380 - INFO - Frame 366 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,401 - INFO - Frame 367 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,423 - INFO - Frame 368 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,444 - INFO - Frame 369 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,465 - INFO - Frame 370 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,486 - INFO - Frame 371 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,508 - INFO - Frame 372 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,529 - INFO - Frame 373 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,550 - INFO - Frame 374 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,571 - INFO - Frame 375 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,591 - INFO - Frame 376 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,612 - INFO - Frame 377 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,633 - INFO - Frame 378 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,654 - INFO - Frame 379 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,674 - INFO - Frame 380 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,695 - INFO - Frame 381 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,716 - INFO - Frame 382 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,738 - INFO - Frame 383 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,759 - INFO - Frame 384 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,780 - INFO - Frame 385 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,801 - INFO - Frame 386 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,822 - INFO - Frame 387 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,842 - INFO - Frame 388 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,863 - INFO - Frame 389 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,884 - INFO - Frame 390 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,905 - INFO - Frame 391 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,926 - INFO - Frame 392 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,946 - INFO - Frame 393 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,967 - INFO - Frame 394 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:41,988 - INFO - Frame 395 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,008 - INFO - Frame 396 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,029 - INFO - Frame 397 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,050 - INFO - Frame 398 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,071 - INFO - Frame 399 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,092 - INFO - Frame 400 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,114 - INFO - Frame 401 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,135 - INFO - Frame 402 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,178 - INFO - Frame 403 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,199 - INFO - Frame 404 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,220 - INFO - Frame 405 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,241 - INFO - Frame 406 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,261 - INFO - Frame 407 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,283 - INFO - Frame 408 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,303 - INFO - Frame 409 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,324 - INFO - Frame 410 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,344 - INFO - Frame 411 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,365 - INFO - Frame 412 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,386 - INFO - Frame 413 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,407 - INFO - Frame 414 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,427 - INFO - Frame 415 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,448 - INFO - Frame 416 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,470 - INFO - Frame 417 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,490 - INFO - Frame 418 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,511 - INFO - Frame 419 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,531 - INFO - Frame 420 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,552 - INFO - Frame 421 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,574 - INFO - Frame 422 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,593 - INFO - Frame 423 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,613 - INFO - Frame 424 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,634 - INFO - Frame 425 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,655 - INFO - Frame 426 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,676 - INFO - Frame 427 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,696 - INFO - Frame 428 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,717 - INFO - Frame 429 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,737 - INFO - Frame 430 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,757 - INFO - Frame 431 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,778 - INFO - Frame 432 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,799 - INFO - Frame 433 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,820 - INFO - Frame 434 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,840 - INFO - Frame 435 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,860 - INFO - Frame 436 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,881 - INFO - Frame 437 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,902 - INFO - Frame 438 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,922 - INFO - Frame 439 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,944 - INFO - Frame 440 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,964 - INFO - Frame 441 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:42,986 - INFO - Frame 442 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,007 - INFO - Frame 443 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,028 - INFO - Frame 444 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,049 - INFO - Frame 445 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,070 - INFO - Frame 446 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,090 - INFO - Frame 447 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,111 - INFO - Frame 448 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,132 - INFO - Frame 449 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,153 - INFO - Frame 450 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,174 - INFO - Frame 451 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,194 - INFO - Frame 452 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,214 - INFO - Frame 453 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,236 - INFO - Frame 454 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,257 - INFO - Frame 455 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,278 - INFO - Frame 456 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,298 - INFO - Frame 457 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,320 - INFO - Frame 458 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,340 - INFO - Frame 459 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,361 - INFO - Frame 460 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,381 - INFO - Frame 461 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,403 - INFO - Frame 462 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,424 - INFO - Frame 463 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,444 - INFO - Frame 464 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,465 - INFO - Frame 465 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,487 - INFO - Frame 466 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,509 - INFO - Frame 467 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,529 - INFO - Frame 468 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,550 - INFO - Frame 469 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,572 - INFO - Frame 470 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,593 - INFO - Frame 471 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,613 - INFO - Frame 472 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,633 - INFO - Frame 473 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,654 - INFO - Frame 474 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,675 - INFO - Frame 475 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,695 - INFO - Frame 476 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,716 - INFO - Frame 477 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,737 - INFO - Frame 478 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,758 - INFO - Frame 479 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,778 - INFO - Frame 480 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,799 - INFO - Frame 481 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,820 - INFO - Frame 482 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,840 - INFO - Frame 483 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,860 - INFO - Frame 484 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,881 - INFO - Frame 485 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,902 - INFO - Frame 486 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,923 - INFO - Frame 487 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,944 - INFO - Frame 488 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,965 - INFO - Frame 489 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:43,985 - INFO - Frame 490 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,006 - INFO - Frame 491 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,027 - INFO - Frame 492 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,048 - INFO - Frame 493 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,069 - INFO - Frame 494 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,090 - INFO - Frame 495 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,110 - INFO - Frame 496 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,131 - INFO - Frame 497 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,152 - INFO - Frame 498 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,173 - INFO - Frame 499 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,194 - INFO - Frame 500 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,215 - INFO - Frame 501 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,236 - INFO - Frame 502 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,257 - INFO - Frame 503 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,277 - INFO - Frame 504 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,298 - INFO - Frame 505 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,320 - INFO - Frame 506 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,341 - INFO - Frame 507 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,361 - INFO - Frame 508 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,382 - INFO - Frame 509 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,403 - INFO - Frame 510 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,423 - INFO - Frame 511 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,444 - INFO - Frame 512 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,465 - INFO - Frame 513 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,486 - INFO - Frame 514 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,507 - INFO - Frame 515 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,527 - INFO - Frame 516 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,548 - INFO - Frame 517 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,570 - INFO - Frame 518 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,590 - INFO - Frame 519 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,611 - INFO - Frame 520 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,631 - INFO - Frame 521 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,652 - INFO - Frame 522 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,673 - INFO - Frame 523 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,693 - INFO - Frame 524 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,714 - INFO - Frame 525 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,735 - INFO - Frame 526 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,756 - INFO - Frame 527 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,777 - INFO - Frame 528 - 3 aree di movimento (smoothed)
+2025-01-17 17:49:44,798 - INFO - Frame 529 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,819 - INFO - Frame 530 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,841 - INFO - Frame 531 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,861 - INFO - Frame 532 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,882 - INFO - Frame 533 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,903 - INFO - Frame 534 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:44,924 - INFO - Frame 535 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,944 - INFO - Frame 536 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,966 - INFO - Frame 537 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:44,986 - INFO - Frame 538 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,007 - INFO - Frame 539 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,027 - INFO - Frame 540 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,048 - INFO - Frame 541 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,069 - INFO - Frame 542 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,089 - INFO - Frame 543 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,109 - INFO - Frame 544 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,129 - INFO - Frame 545 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,150 - INFO - Frame 546 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,171 - INFO - Frame 547 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,192 - INFO - Frame 548 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,212 - INFO - Frame 549 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,234 - INFO - Frame 550 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,254 - INFO - Frame 551 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,276 - INFO - Frame 552 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,297 - INFO - Frame 553 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,318 - INFO - Frame 554 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,339 - INFO - Frame 555 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,359 - INFO - Frame 556 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,380 - INFO - Frame 557 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,401 - INFO - Frame 558 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,421 - INFO - Frame 559 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,440 - INFO - Frame 560 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,460 - INFO - Frame 561 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,480 - INFO - Frame 562 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,500 - INFO - Frame 563 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,521 - INFO - Frame 564 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,542 - INFO - Frame 565 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,572 - INFO - Frame 566 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,592 - INFO - Frame 567 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,613 - INFO - Frame 568 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,633 - INFO - Frame 569 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,653 - INFO - Frame 570 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,673 - INFO - Frame 571 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,694 - INFO - Frame 572 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,715 - INFO - Frame 573 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,736 - INFO - Frame 574 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,757 - INFO - Frame 575 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,778 - INFO - Frame 576 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,798 - INFO - Frame 577 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,819 - INFO - Frame 578 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,841 - INFO - Frame 579 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,862 - INFO - Frame 580 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,883 - INFO - Frame 581 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,904 - INFO - Frame 582 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,925 - INFO - Frame 583 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,946 - INFO - Frame 584 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,967 - INFO - Frame 585 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:45,988 - INFO - Frame 586 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,011 - INFO - Frame 587 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,032 - INFO - Frame 588 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,053 - INFO - Frame 589 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,074 - INFO - Frame 590 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,096 - INFO - Frame 591 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,117 - INFO - Frame 592 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,138 - INFO - Frame 593 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,162 - INFO - Frame 594 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,183 - INFO - Frame 595 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,203 - INFO - Frame 596 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,224 - INFO - Frame 597 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,245 - INFO - Frame 598 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,266 - INFO - Frame 599 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,287 - INFO - Frame 600 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,307 - INFO - Frame 601 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,329 - INFO - Frame 602 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,350 - INFO - Frame 603 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,371 - INFO - Frame 604 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,392 - INFO - Frame 605 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,413 - INFO - Frame 606 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,435 - INFO - Frame 607 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,456 - INFO - Frame 608 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,479 - INFO - Frame 609 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,500 - INFO - Frame 610 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,521 - INFO - Frame 611 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,545 - INFO - Frame 612 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,566 - INFO - Frame 613 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,587 - INFO - Frame 614 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,608 - INFO - Frame 615 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,630 - INFO - Frame 616 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,651 - INFO - Frame 617 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,672 - INFO - Frame 618 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,693 - INFO - Frame 619 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,714 - INFO - Frame 620 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,735 - INFO - Frame 621 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,757 - INFO - Frame 622 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,778 - INFO - Frame 623 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,799 - INFO - Frame 624 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,820 - INFO - Frame 625 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,841 - INFO - Frame 626 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,862 - INFO - Frame 627 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,883 - INFO - Frame 628 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,904 - INFO - Frame 629 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,924 - INFO - Frame 630 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,945 - INFO - Frame 631 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,966 - INFO - Frame 632 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:46,987 - INFO - Frame 633 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,008 - INFO - Frame 634 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,029 - INFO - Frame 635 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,050 - INFO - Frame 636 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,071 - INFO - Frame 637 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,098 - INFO - Frame 638 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,119 - INFO - Frame 639 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,140 - INFO - Frame 640 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,161 - INFO - Frame 641 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,182 - INFO - Frame 642 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,203 - INFO - Frame 643 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,225 - INFO - Frame 644 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,246 - INFO - Frame 645 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,268 - INFO - Frame 646 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,289 - INFO - Frame 647 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,309 - INFO - Frame 648 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,330 - INFO - Frame 649 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,352 - INFO - Frame 650 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,373 - INFO - Frame 651 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,394 - INFO - Frame 652 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,415 - INFO - Frame 653 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,436 - INFO - Frame 654 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,457 - INFO - Frame 655 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,478 - INFO - Frame 656 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,499 - INFO - Frame 657 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,532 - INFO - Frame 658 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,556 - INFO - Frame 659 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,578 - INFO - Frame 660 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,598 - INFO - Frame 661 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,619 - INFO - Frame 662 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,639 - INFO - Frame 663 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,661 - INFO - Frame 664 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,682 - INFO - Frame 665 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,703 - INFO - Frame 666 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,723 - INFO - Frame 667 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,744 - INFO - Frame 668 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,765 - INFO - Frame 669 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,787 - INFO - Frame 670 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,808 - INFO - Frame 671 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,829 - INFO - Frame 672 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,849 - INFO - Frame 673 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,870 - INFO - Frame 674 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,891 - INFO - Frame 675 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,912 - INFO - Frame 676 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,933 - INFO - Frame 677 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,955 - INFO - Frame 678 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,976 - INFO - Frame 679 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:47,997 - INFO - Frame 680 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,018 - INFO - Frame 681 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,039 - INFO - Frame 682 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,060 - INFO - Frame 683 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,080 - INFO - Frame 684 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,102 - INFO - Frame 685 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,124 - INFO - Frame 686 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,145 - INFO - Frame 687 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,167 - INFO - Frame 688 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,188 - INFO - Frame 689 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,211 - INFO - Frame 690 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,232 - INFO - Frame 691 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,254 - INFO - Frame 692 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,275 - INFO - Frame 693 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,298 - INFO - Frame 694 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,319 - INFO - Frame 695 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,340 - INFO - Frame 696 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,362 - INFO - Frame 697 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,383 - INFO - Frame 698 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,404 - INFO - Frame 699 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,428 - INFO - Frame 700 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,449 - INFO - Frame 701 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,469 - INFO - Frame 702 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,490 - INFO - Frame 703 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,511 - INFO - Frame 704 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,533 - INFO - Frame 705 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,554 - INFO - Frame 706 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,584 - INFO - Frame 707 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,605 - INFO - Frame 708 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,629 - INFO - Frame 709 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,651 - INFO - Frame 710 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,671 - INFO - Frame 711 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,695 - INFO - Frame 712 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,716 - INFO - Frame 713 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,737 - INFO - Frame 714 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,758 - INFO - Frame 715 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,779 - INFO - Frame 716 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,800 - INFO - Frame 717 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,821 - INFO - Frame 718 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,845 - INFO - Frame 719 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,866 - INFO - Frame 720 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,887 - INFO - Frame 721 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,912 - INFO - Frame 722 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,933 - INFO - Frame 723 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,953 - INFO - Frame 724 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,974 - INFO - Frame 725 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:48,996 - INFO - Frame 726 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,017 - INFO - Frame 727 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,039 - INFO - Frame 728 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,064 - INFO - Frame 729 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,085 - INFO - Frame 730 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,106 - INFO - Frame 731 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,128 - INFO - Frame 732 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,149 - INFO - Frame 733 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,170 - INFO - Frame 734 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,191 - INFO - Frame 735 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,213 - INFO - Frame 736 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,234 - INFO - Frame 737 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,254 - INFO - Frame 738 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,275 - INFO - Frame 739 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,296 - INFO - Frame 740 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,322 - INFO - Frame 741 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,342 - INFO - Frame 742 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,364 - INFO - Frame 743 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,384 - INFO - Frame 744 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,405 - INFO - Frame 745 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,430 - INFO - Frame 746 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,451 - INFO - Frame 747 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,471 - INFO - Frame 748 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,497 - INFO - Frame 749 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,518 - INFO - Frame 750 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,538 - INFO - Frame 751 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,562 - INFO - Frame 752 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,582 - INFO - Frame 753 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,603 - INFO - Frame 754 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,624 - INFO - Frame 755 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,645 - INFO - Frame 756 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,666 - INFO - Frame 757 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,688 - INFO - Frame 758 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,709 - INFO - Frame 759 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,730 - INFO - Frame 760 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,752 - INFO - Frame 761 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,773 - INFO - Frame 762 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,794 - INFO - Frame 763 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,815 - INFO - Frame 764 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,837 - INFO - Frame 765 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,858 - INFO - Frame 766 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,879 - INFO - Frame 767 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,901 - INFO - Frame 768 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,922 - INFO - Frame 769 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,944 - INFO - Frame 770 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,965 - INFO - Frame 771 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:49,987 - INFO - Frame 772 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,008 - INFO - Frame 773 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,032 - INFO - Frame 774 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,053 - INFO - Frame 775 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,074 - INFO - Frame 776 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,096 - INFO - Frame 777 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,116 - INFO - Frame 778 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,137 - INFO - Frame 779 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,161 - INFO - Frame 780 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,182 - INFO - Frame 781 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,203 - INFO - Frame 782 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,222 - INFO - Frame 783 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,243 - INFO - Frame 784 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,264 - INFO - Frame 785 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,285 - INFO - Frame 786 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,306 - INFO - Frame 787 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,327 - INFO - Frame 788 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,349 - INFO - Frame 789 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,370 - INFO - Frame 790 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,391 - INFO - Frame 791 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,412 - INFO - Frame 792 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,434 - INFO - Frame 793 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,455 - INFO - Frame 794 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,477 - INFO - Frame 795 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,498 - INFO - Frame 796 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,520 - INFO - Frame 797 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,546 - INFO - Frame 798 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,567 - INFO - Frame 799 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,588 - INFO - Frame 800 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,609 - INFO - Frame 801 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,630 - INFO - Frame 802 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,652 - INFO - Frame 803 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,673 - INFO - Frame 804 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,694 - INFO - Frame 805 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,716 - INFO - Frame 806 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,738 - INFO - Frame 807 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,760 - INFO - Frame 808 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,781 - INFO - Frame 809 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,801 - INFO - Frame 810 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,822 - INFO - Frame 811 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,848 - INFO - Frame 812 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,870 - INFO - Frame 813 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,891 - INFO - Frame 814 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,912 - INFO - Frame 815 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,935 - INFO - Frame 816 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,956 - INFO - Frame 817 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:50,977 - INFO - Frame 818 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,020 - INFO - Frame 819 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,041 - INFO - Frame 820 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,062 - INFO - Frame 821 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,082 - INFO - Frame 822 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,103 - INFO - Frame 823 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,124 - INFO - Frame 824 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,145 - INFO - Frame 825 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,166 - INFO - Frame 826 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,187 - INFO - Frame 827 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,208 - INFO - Frame 828 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,229 - INFO - Frame 829 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,250 - INFO - Frame 830 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,272 - INFO - Frame 831 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,293 - INFO - Frame 832 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,314 - INFO - Frame 833 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,335 - INFO - Frame 834 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,356 - INFO - Frame 835 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,377 - INFO - Frame 836 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,398 - INFO - Frame 837 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,420 - INFO - Frame 838 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,441 - INFO - Frame 839 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,462 - INFO - Frame 840 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:51,483 - INFO - Frame 841 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,505 - INFO - Frame 842 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,527 - INFO - Frame 843 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,548 - INFO - Frame 844 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,570 - INFO - Frame 845 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,591 - INFO - Frame 846 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,612 - INFO - Frame 847 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,633 - INFO - Frame 848 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,655 - INFO - Frame 849 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,676 - INFO - Frame 850 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,697 - INFO - Frame 851 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,718 - INFO - Frame 852 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,739 - INFO - Frame 853 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,761 - INFO - Frame 854 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,782 - INFO - Frame 855 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,804 - INFO - Frame 856 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,824 - INFO - Frame 857 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,845 - INFO - Frame 858 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,866 - INFO - Frame 859 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,887 - INFO - Frame 860 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,909 - INFO - Frame 861 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,930 - INFO - Frame 862 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,952 - INFO - Frame 863 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:51,972 - INFO - Frame 864 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:51,994 - INFO - Frame 865 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,015 - INFO - Frame 866 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,037 - INFO - Frame 867 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,059 - INFO - Frame 868 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,081 - INFO - Frame 869 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,103 - INFO - Frame 870 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,124 - INFO - Frame 871 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,146 - INFO - Frame 872 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,167 - INFO - Frame 873 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,188 - INFO - Frame 874 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,210 - INFO - Frame 875 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,231 - INFO - Frame 876 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,252 - INFO - Frame 877 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,274 - INFO - Frame 878 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,295 - INFO - Frame 879 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,317 - INFO - Frame 880 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,339 - INFO - Frame 881 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,361 - INFO - Frame 882 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,381 - INFO - Frame 883 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,403 - INFO - Frame 884 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,424 - INFO - Frame 885 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,445 - INFO - Frame 886 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,466 - INFO - Frame 887 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,487 - INFO - Frame 888 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:52,509 - INFO - Frame 889 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,530 - INFO - Frame 890 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,551 - INFO - Frame 891 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,572 - INFO - Frame 892 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,593 - INFO - Frame 893 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,615 - INFO - Frame 894 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:52,644 - INFO - Frame 895 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,667 - INFO - Frame 896 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,687 - INFO - Frame 897 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,708 - INFO - Frame 898 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,728 - INFO - Frame 899 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,749 - INFO - Frame 900 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,770 - INFO - Frame 901 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,790 - INFO - Frame 902 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,811 - INFO - Frame 903 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,832 - INFO - Frame 904 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,853 - INFO - Frame 905 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,874 - INFO - Frame 906 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,896 - INFO - Frame 907 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,917 - INFO - Frame 908 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,939 - INFO - Frame 909 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,960 - INFO - Frame 910 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:52,981 - INFO - Frame 911 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,003 - INFO - Frame 912 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,023 - INFO - Frame 913 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,045 - INFO - Frame 914 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,066 - INFO - Frame 915 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,087 - INFO - Frame 916 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,109 - INFO - Frame 917 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,130 - INFO - Frame 918 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,151 - INFO - Frame 919 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,173 - INFO - Frame 920 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,194 - INFO - Frame 921 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,216 - INFO - Frame 922 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,238 - INFO - Frame 923 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,259 - INFO - Frame 924 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,280 - INFO - Frame 925 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,302 - INFO - Frame 926 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,323 - INFO - Frame 927 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,345 - INFO - Frame 928 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,367 - INFO - Frame 929 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,388 - INFO - Frame 930 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,409 - INFO - Frame 931 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,431 - INFO - Frame 932 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,452 - INFO - Frame 933 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,474 - INFO - Frame 934 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,495 - INFO - Frame 935 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,516 - INFO - Frame 936 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,538 - INFO - Frame 937 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,559 - INFO - Frame 938 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,580 - INFO - Frame 939 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,602 - INFO - Frame 940 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,623 - INFO - Frame 941 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,644 - INFO - Frame 942 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:53,665 - INFO - Frame 943 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,687 - INFO - Frame 944 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,708 - INFO - Frame 945 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,730 - INFO - Frame 946 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,750 - INFO - Frame 947 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,772 - INFO - Frame 948 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,793 - INFO - Frame 949 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,814 - INFO - Frame 950 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,835 - INFO - Frame 951 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,857 - INFO - Frame 952 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,879 - INFO - Frame 953 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,900 - INFO - Frame 954 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,921 - INFO - Frame 955 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,942 - INFO - Frame 956 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,964 - INFO - Frame 957 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:53,985 - INFO - Frame 958 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,006 - INFO - Frame 959 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,027 - INFO - Frame 960 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,048 - INFO - Frame 961 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,070 - INFO - Frame 962 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,090 - INFO - Frame 963 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,111 - INFO - Frame 964 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,137 - INFO - Frame 965 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,161 - INFO - Frame 966 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,181 - INFO - Frame 967 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,202 - INFO - Frame 968 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,222 - INFO - Frame 969 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,243 - INFO - Frame 970 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,264 - INFO - Frame 971 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,285 - INFO - Frame 972 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,306 - INFO - Frame 973 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,326 - INFO - Frame 974 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,348 - INFO - Frame 975 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,369 - INFO - Frame 976 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,390 - INFO - Frame 977 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,410 - INFO - Frame 978 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,431 - INFO - Frame 979 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,453 - INFO - Frame 980 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,474 - INFO - Frame 981 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,495 - INFO - Frame 982 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,517 - INFO - Frame 983 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,538 - INFO - Frame 984 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,560 - INFO - Frame 985 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,581 - INFO - Frame 986 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,603 - INFO - Frame 987 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,624 - INFO - Frame 988 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,645 - INFO - Frame 989 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,666 - INFO - Frame 990 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,688 - INFO - Frame 991 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,709 - INFO - Frame 992 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,731 - INFO - Frame 993 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,752 - INFO - Frame 994 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,774 - INFO - Frame 995 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,795 - INFO - Frame 996 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,817 - INFO - Frame 997 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,838 - INFO - Frame 998 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,859 - INFO - Frame 999 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,881 - INFO - Frame 1000 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,902 - INFO - Frame 1001 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,926 - INFO - Frame 1002 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,947 - INFO - Frame 1003 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,969 - INFO - Frame 1004 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:54,990 - INFO - Frame 1005 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,011 - INFO - Frame 1006 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,033 - INFO - Frame 1007 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,055 - INFO - Frame 1008 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,076 - INFO - Frame 1009 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,097 - INFO - Frame 1010 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,119 - INFO - Frame 1011 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,141 - INFO - Frame 1012 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,162 - INFO - Frame 1013 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,184 - INFO - Frame 1014 - 2 aree di movimento (smoothed)
+2025-01-17 17:49:55,205 - INFO - Frame 1015 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,227 - INFO - Frame 1016 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,249 - INFO - Frame 1017 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,270 - INFO - Frame 1018 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,292 - INFO - Frame 1019 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,313 - INFO - Frame 1020 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,335 - INFO - Frame 1021 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,356 - INFO - Frame 1022 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,378 - INFO - Frame 1023 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,400 - INFO - Frame 1024 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,421 - INFO - Frame 1025 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,442 - INFO - Frame 1026 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,464 - INFO - Frame 1027 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,485 - INFO - Frame 1028 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,507 - INFO - Frame 1029 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,528 - INFO - Frame 1030 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,549 - INFO - Frame 1031 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,571 - INFO - Frame 1032 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,591 - INFO - Frame 1033 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,613 - INFO - Frame 1034 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,634 - INFO - Frame 1035 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,655 - INFO - Frame 1036 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,685 - INFO - Frame 1037 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,706 - INFO - Frame 1038 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:55,726 - INFO - Frame 1039 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,746 - INFO - Frame 1040 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,767 - INFO - Frame 1041 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,788 - INFO - Frame 1042 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,809 - INFO - Frame 1043 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,830 - INFO - Frame 1044 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,851 - INFO - Frame 1045 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,872 - INFO - Frame 1046 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,893 - INFO - Frame 1047 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,914 - INFO - Frame 1048 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,936 - INFO - Frame 1049 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,957 - INFO - Frame 1050 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:55,978 - INFO - Frame 1051 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,000 - INFO - Frame 1052 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,021 - INFO - Frame 1053 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,042 - INFO - Frame 1054 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,064 - INFO - Frame 1055 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,085 - INFO - Frame 1056 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,106 - INFO - Frame 1057 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,128 - INFO - Frame 1058 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,150 - INFO - Frame 1059 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,172 - INFO - Frame 1060 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,194 - INFO - Frame 1061 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,216 - INFO - Frame 1062 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,237 - INFO - Frame 1063 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,258 - INFO - Frame 1064 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,279 - INFO - Frame 1065 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,301 - INFO - Frame 1066 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,323 - INFO - Frame 1067 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,343 - INFO - Frame 1068 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,364 - INFO - Frame 1069 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,386 - INFO - Frame 1070 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,407 - INFO - Frame 1071 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,428 - INFO - Frame 1072 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,450 - INFO - Frame 1073 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,471 - INFO - Frame 1074 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,492 - INFO - Frame 1075 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,514 - INFO - Frame 1076 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,536 - INFO - Frame 1077 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,558 - INFO - Frame 1078 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,579 - INFO - Frame 1079 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,601 - INFO - Frame 1080 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:56,623 - INFO - Frame 1081 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,645 - INFO - Frame 1082 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,667 - INFO - Frame 1083 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,688 - INFO - Frame 1084 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,710 - INFO - Frame 1085 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,731 - INFO - Frame 1086 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,753 - INFO - Frame 1087 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,774 - INFO - Frame 1088 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,796 - INFO - Frame 1089 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,818 - INFO - Frame 1090 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,839 - INFO - Frame 1091 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,860 - INFO - Frame 1092 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,881 - INFO - Frame 1093 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,903 - INFO - Frame 1094 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,924 - INFO - Frame 1095 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,945 - INFO - Frame 1096 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,967 - INFO - Frame 1097 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:56,989 - INFO - Frame 1098 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,010 - INFO - Frame 1099 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,031 - INFO - Frame 1100 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,052 - INFO - Frame 1101 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,073 - INFO - Frame 1102 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,095 - INFO - Frame 1103 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,117 - INFO - Frame 1104 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,138 - INFO - Frame 1105 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,159 - INFO - Frame 1106 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,180 - INFO - Frame 1107 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,211 - INFO - Frame 1108 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,231 - INFO - Frame 1109 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,252 - INFO - Frame 1110 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,273 - INFO - Frame 1111 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,293 - INFO - Frame 1112 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,313 - INFO - Frame 1113 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,334 - INFO - Frame 1114 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,356 - INFO - Frame 1115 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,376 - INFO - Frame 1116 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,398 - INFO - Frame 1117 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,419 - INFO - Frame 1118 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,440 - INFO - Frame 1119 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,461 - INFO - Frame 1120 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,482 - INFO - Frame 1121 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,503 - INFO - Frame 1122 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,524 - INFO - Frame 1123 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,545 - INFO - Frame 1124 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,567 - INFO - Frame 1125 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,589 - INFO - Frame 1126 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,610 - INFO - Frame 1127 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,631 - INFO - Frame 1128 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,653 - INFO - Frame 1129 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,674 - INFO - Frame 1130 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,695 - INFO - Frame 1131 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,716 - INFO - Frame 1132 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,738 - INFO - Frame 1133 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,759 - INFO - Frame 1134 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,781 - INFO - Frame 1135 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,803 - INFO - Frame 1136 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,824 - INFO - Frame 1137 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,846 - INFO - Frame 1138 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,868 - INFO - Frame 1139 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,888 - INFO - Frame 1140 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,909 - INFO - Frame 1141 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,931 - INFO - Frame 1142 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,952 - INFO - Frame 1143 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,973 - INFO - Frame 1144 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:57,995 - INFO - Frame 1145 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,016 - INFO - Frame 1146 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,038 - INFO - Frame 1147 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,059 - INFO - Frame 1148 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,080 - INFO - Frame 1149 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,102 - INFO - Frame 1150 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,122 - INFO - Frame 1151 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,143 - INFO - Frame 1152 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,165 - INFO - Frame 1153 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,186 - INFO - Frame 1154 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,208 - INFO - Frame 1155 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,229 - INFO - Frame 1156 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,251 - INFO - Frame 1157 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,272 - INFO - Frame 1158 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:58,294 - INFO - Frame 1159 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,315 - INFO - Frame 1160 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,337 - INFO - Frame 1161 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,359 - INFO - Frame 1162 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,380 - INFO - Frame 1163 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,402 - INFO - Frame 1164 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,422 - INFO - Frame 1165 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,443 - INFO - Frame 1166 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,464 - INFO - Frame 1167 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,485 - INFO - Frame 1168 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,505 - INFO - Frame 1169 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,526 - INFO - Frame 1170 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,548 - INFO - Frame 1171 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,569 - INFO - Frame 1172 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,590 - INFO - Frame 1173 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,616 - INFO - Frame 1174 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,637 - INFO - Frame 1175 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,658 - INFO - Frame 1176 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:58,679 - INFO - Frame 1177 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,700 - INFO - Frame 1178 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,721 - INFO - Frame 1179 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,741 - INFO - Frame 1180 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,762 - INFO - Frame 1181 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,783 - INFO - Frame 1182 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:58,804 - INFO - Frame 1183 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,825 - INFO - Frame 1184 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,846 - INFO - Frame 1185 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,868 - INFO - Frame 1186 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,889 - INFO - Frame 1187 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,910 - INFO - Frame 1188 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,931 - INFO - Frame 1189 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,953 - INFO - Frame 1190 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,975 - INFO - Frame 1191 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:58,996 - INFO - Frame 1192 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,016 - INFO - Frame 1193 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,037 - INFO - Frame 1194 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,058 - INFO - Frame 1195 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,079 - INFO - Frame 1196 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,100 - INFO - Frame 1197 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,121 - INFO - Frame 1198 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,141 - INFO - Frame 1199 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,161 - INFO - Frame 1200 - 1 aree di movimento (smoothed)
+2025-01-17 17:49:59,181 - INFO - Frame 1201 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,202 - INFO - Frame 1202 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,222 - INFO - Frame 1203 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,243 - INFO - Frame 1204 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,265 - INFO - Frame 1205 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,286 - INFO - Frame 1206 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,308 - INFO - Frame 1207 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,330 - INFO - Frame 1208 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,352 - INFO - Frame 1209 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,373 - INFO - Frame 1210 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,394 - INFO - Frame 1211 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,416 - INFO - Frame 1212 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,438 - INFO - Frame 1213 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,459 - INFO - Frame 1214 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,480 - INFO - Frame 1215 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,502 - INFO - Frame 1216 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,522 - INFO - Frame 1217 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,544 - INFO - Frame 1218 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,565 - INFO - Frame 1219 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,587 - INFO - Frame 1220 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,608 - INFO - Frame 1221 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,629 - INFO - Frame 1222 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,650 - INFO - Frame 1223 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,672 - INFO - Frame 1224 - 2 aree di movimento (smoothed)
+2025-01-17 17:49:59,693 - INFO - Frame 1225 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,715 - INFO - Frame 1226 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,737 - INFO - Frame 1227 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,758 - INFO - Frame 1228 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,779 - INFO - Frame 1229 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,802 - INFO - Frame 1230 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,822 - INFO - Frame 1231 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,844 - INFO - Frame 1232 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,866 - INFO - Frame 1233 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,894 - INFO - Frame 1234 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,914 - INFO - Frame 1235 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,935 - INFO - Frame 1236 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,955 - INFO - Frame 1237 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,975 - INFO - Frame 1238 - 0 aree di movimento (smoothed)
+2025-01-17 17:49:59,996 - INFO - Frame 1239 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,018 - INFO - Frame 1240 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,039 - INFO - Frame 1241 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,060 - INFO - Frame 1242 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,081 - INFO - Frame 1243 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,103 - INFO - Frame 1244 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,124 - INFO - Frame 1245 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,145 - INFO - Frame 1246 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,166 - INFO - Frame 1247 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,187 - INFO - Frame 1248 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,208 - INFO - Frame 1249 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,229 - INFO - Frame 1250 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,249 - INFO - Frame 1251 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,272 - INFO - Frame 1252 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,294 - INFO - Frame 1253 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,315 - INFO - Frame 1254 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,337 - INFO - Frame 1255 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,357 - INFO - Frame 1256 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,378 - INFO - Frame 1257 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,400 - INFO - Frame 1258 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,421 - INFO - Frame 1259 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,441 - INFO - Frame 1260 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,463 - INFO - Frame 1261 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,484 - INFO - Frame 1262 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,506 - INFO - Frame 1263 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,527 - INFO - Frame 1264 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,549 - INFO - Frame 1265 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,570 - INFO - Frame 1266 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,592 - INFO - Frame 1267 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,614 - INFO - Frame 1268 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,635 - INFO - Frame 1269 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,657 - INFO - Frame 1270 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,678 - INFO - Frame 1271 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,699 - INFO - Frame 1272 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,720 - INFO - Frame 1273 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,741 - INFO - Frame 1274 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,762 - INFO - Frame 1275 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,784 - INFO - Frame 1276 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,805 - INFO - Frame 1277 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,826 - INFO - Frame 1278 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,848 - INFO - Frame 1279 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,869 - INFO - Frame 1280 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,891 - INFO - Frame 1281 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,912 - INFO - Frame 1282 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,934 - INFO - Frame 1283 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,956 - INFO - Frame 1284 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,978 - INFO - Frame 1285 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:00,998 - INFO - Frame 1286 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,020 - INFO - Frame 1287 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,041 - INFO - Frame 1288 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,062 - INFO - Frame 1289 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,084 - INFO - Frame 1290 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,105 - INFO - Frame 1291 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,127 - INFO - Frame 1292 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,148 - INFO - Frame 1293 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,169 - INFO - Frame 1294 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,190 - INFO - Frame 1295 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,211 - INFO - Frame 1296 - 2 aree di movimento (smoothed)
+2025-01-17 17:50:01,232 - INFO - Frame 1297 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,256 - INFO - Frame 1298 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,276 - INFO - Frame 1299 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,296 - INFO - Frame 1300 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,317 - INFO - Frame 1301 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,338 - INFO - Frame 1302 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,358 - INFO - Frame 1303 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,379 - INFO - Frame 1304 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,399 - INFO - Frame 1305 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,420 - INFO - Frame 1306 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,441 - INFO - Frame 1307 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,462 - INFO - Frame 1308 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,483 - INFO - Frame 1309 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,505 - INFO - Frame 1310 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,526 - INFO - Frame 1311 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,547 - INFO - Frame 1312 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,568 - INFO - Frame 1313 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,588 - INFO - Frame 1314 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,609 - INFO - Frame 1315 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,629 - INFO - Frame 1316 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,651 - INFO - Frame 1317 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,672 - INFO - Frame 1318 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,693 - INFO - Frame 1319 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,714 - INFO - Frame 1320 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,736 - INFO - Frame 1321 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,757 - INFO - Frame 1322 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,778 - INFO - Frame 1323 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,800 - INFO - Frame 1324 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,821 - INFO - Frame 1325 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,842 - INFO - Frame 1326 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,863 - INFO - Frame 1327 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,885 - INFO - Frame 1328 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,906 - INFO - Frame 1329 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,927 - INFO - Frame 1330 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,949 - INFO - Frame 1331 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,970 - INFO - Frame 1332 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:01,994 - INFO - Frame 1333 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,023 - INFO - Frame 1334 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,048 - INFO - Frame 1335 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,069 - INFO - Frame 1336 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,089 - INFO - Frame 1337 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,111 - INFO - Frame 1338 - 1 aree di movimento (smoothed)
+2025-01-17 17:50:02,135 - INFO - Frame 1339 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,156 - INFO - Frame 1340 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,177 - INFO - Frame 1341 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,198 - INFO - Frame 1342 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,219 - INFO - Frame 1343 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,239 - INFO - Frame 1344 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,259 - INFO - Frame 1345 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,280 - INFO - Frame 1346 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,310 - INFO - Frame 1347 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,331 - INFO - Frame 1348 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,352 - INFO - Frame 1349 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,372 - INFO - Frame 1350 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,392 - INFO - Frame 1351 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,413 - INFO - Frame 1352 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,433 - INFO - Frame 1353 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,454 - INFO - Frame 1354 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,475 - INFO - Frame 1355 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,495 - INFO - Frame 1356 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,516 - INFO - Frame 1357 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,538 - INFO - Frame 1358 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,559 - INFO - Frame 1359 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,580 - INFO - Frame 1360 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,601 - INFO - Frame 1361 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,622 - INFO - Frame 1362 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,643 - INFO - Frame 1363 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,664 - INFO - Frame 1364 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,685 - INFO - Frame 1365 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,706 - INFO - Frame 1366 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,727 - INFO - Frame 1367 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,749 - INFO - Frame 1368 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,770 - INFO - Frame 1369 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,792 - INFO - Frame 1370 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,813 - INFO - Frame 1371 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,834 - INFO - Frame 1372 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,854 - INFO - Frame 1373 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,875 - INFO - Frame 1374 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,896 - INFO - Frame 1375 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,917 - INFO - Frame 1376 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,937 - INFO - Frame 1377 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,958 - INFO - Frame 1378 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:02,979 - INFO - Frame 1379 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,000 - INFO - Frame 1380 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,021 - INFO - Frame 1381 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,041 - INFO - Frame 1382 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,062 - INFO - Frame 1383 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,084 - INFO - Frame 1384 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,106 - INFO - Frame 1385 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,127 - INFO - Frame 1386 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,148 - INFO - Frame 1387 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,169 - INFO - Frame 1388 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,190 - INFO - Frame 1389 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,211 - INFO - Frame 1390 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,233 - INFO - Frame 1391 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,254 - INFO - Frame 1392 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,275 - INFO - Frame 1393 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,298 - INFO - Frame 1394 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,320 - INFO - Frame 1395 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,341 - INFO - Frame 1396 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,362 - INFO - Frame 1397 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,384 - INFO - Frame 1398 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,405 - INFO - Frame 1399 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,426 - INFO - Frame 1400 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,446 - INFO - Frame 1401 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,473 - INFO - Frame 1402 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,504 - INFO - Frame 1403 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,524 - INFO - Frame 1404 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,545 - INFO - Frame 1405 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,566 - INFO - Frame 1406 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,586 - INFO - Frame 1407 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,607 - INFO - Frame 1408 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,628 - INFO - Frame 1409 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,649 - INFO - Frame 1410 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,670 - INFO - Frame 1411 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,691 - INFO - Frame 1412 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,714 - INFO - Frame 1413 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,735 - INFO - Frame 1414 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,756 - INFO - Frame 1415 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,777 - INFO - Frame 1416 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,798 - INFO - Frame 1417 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,819 - INFO - Frame 1418 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,840 - INFO - Frame 1419 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,861 - INFO - Frame 1420 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,882 - INFO - Frame 1421 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,903 - INFO - Frame 1422 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,924 - INFO - Frame 1423 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,946 - INFO - Frame 1424 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,968 - INFO - Frame 1425 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:03,989 - INFO - Frame 1426 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,010 - INFO - Frame 1427 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,031 - INFO - Frame 1428 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,052 - INFO - Frame 1429 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,073 - INFO - Frame 1430 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,095 - INFO - Frame 1431 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,116 - INFO - Frame 1432 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,137 - INFO - Frame 1433 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,159 - INFO - Frame 1434 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,180 - INFO - Frame 1435 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,202 - INFO - Frame 1436 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,223 - INFO - Frame 1437 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,244 - INFO - Frame 1438 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,265 - INFO - Frame 1439 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,286 - INFO - Frame 1440 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,307 - INFO - Frame 1441 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,329 - INFO - Frame 1442 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,350 - INFO - Frame 1443 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,371 - INFO - Frame 1444 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,393 - INFO - Frame 1445 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,414 - INFO - Frame 1446 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,436 - INFO - Frame 1447 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,457 - INFO - Frame 1448 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,478 - INFO - Frame 1449 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,500 - INFO - Frame 1450 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,521 - INFO - Frame 1451 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,541 - INFO - Frame 1452 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,563 - INFO - Frame 1453 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,584 - INFO - Frame 1454 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,606 - INFO - Frame 1455 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,627 - INFO - Frame 1456 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,649 - INFO - Frame 1457 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,685 - INFO - Frame 1458 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,705 - INFO - Frame 1459 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,726 - INFO - Frame 1460 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,747 - INFO - Frame 1461 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,767 - INFO - Frame 1462 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,788 - INFO - Frame 1463 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,809 - INFO - Frame 1464 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,830 - INFO - Frame 1465 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,851 - INFO - Frame 1466 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,871 - INFO - Frame 1467 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,892 - INFO - Frame 1468 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,914 - INFO - Frame 1469 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,935 - INFO - Frame 1470 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,956 - INFO - Frame 1471 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,977 - INFO - Frame 1472 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:04,999 - INFO - Frame 1473 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,020 - INFO - Frame 1474 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,041 - INFO - Frame 1475 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,062 - INFO - Frame 1476 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,084 - INFO - Frame 1477 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,105 - INFO - Frame 1478 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,127 - INFO - Frame 1479 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,148 - INFO - Frame 1480 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,170 - INFO - Frame 1481 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,191 - INFO - Frame 1482 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,212 - INFO - Frame 1483 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,234 - INFO - Frame 1484 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,255 - INFO - Frame 1485 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,277 - INFO - Frame 1486 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,298 - INFO - Frame 1487 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,320 - INFO - Frame 1488 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,341 - INFO - Frame 1489 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,363 - INFO - Frame 1490 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,384 - INFO - Frame 1491 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,404 - INFO - Frame 1492 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,425 - INFO - Frame 1493 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,447 - INFO - Frame 1494 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,468 - INFO - Frame 1495 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,489 - INFO - Frame 1496 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,510 - INFO - Frame 1497 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,532 - INFO - Frame 1498 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,553 - INFO - Frame 1499 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,573 - INFO - Frame 1500 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,594 - INFO - Frame 1501 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,615 - INFO - Frame 1502 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,637 - INFO - Frame 1503 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,658 - INFO - Frame 1504 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,679 - INFO - Frame 1505 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,701 - INFO - Frame 1506 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,722 - INFO - Frame 1507 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,743 - INFO - Frame 1508 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,764 - INFO - Frame 1509 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,785 - INFO - Frame 1510 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,807 - INFO - Frame 1511 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,828 - INFO - Frame 1512 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,848 - INFO - Frame 1513 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,873 - INFO - Frame 1514 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,894 - INFO - Frame 1515 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,914 - INFO - Frame 1516 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,934 - INFO - Frame 1517 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,955 - INFO - Frame 1518 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:05,985 - INFO - Frame 1519 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,007 - INFO - Frame 1520 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,029 - INFO - Frame 1521 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,050 - INFO - Frame 1522 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,072 - INFO - Frame 1523 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,093 - INFO - Frame 1524 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,114 - INFO - Frame 1525 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,135 - INFO - Frame 1526 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,155 - INFO - Frame 1527 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,175 - INFO - Frame 1528 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,197 - INFO - Frame 1529 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,218 - INFO - Frame 1530 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,240 - INFO - Frame 1531 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,260 - INFO - Frame 1532 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,282 - INFO - Frame 1533 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,303 - INFO - Frame 1534 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,325 - INFO - Frame 1535 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,347 - INFO - Frame 1536 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,368 - INFO - Frame 1537 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,389 - INFO - Frame 1538 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,411 - INFO - Frame 1539 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,432 - INFO - Frame 1540 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,453 - INFO - Frame 1541 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,473 - INFO - Frame 1542 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,494 - INFO - Frame 1543 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,516 - INFO - Frame 1544 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,537 - INFO - Frame 1545 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,558 - INFO - Frame 1546 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,578 - INFO - Frame 1547 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,599 - INFO - Frame 1548 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,620 - INFO - Frame 1549 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,640 - INFO - Frame 1550 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,661 - INFO - Frame 1551 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,683 - INFO - Frame 1552 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,704 - INFO - Frame 1553 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,725 - INFO - Frame 1554 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,746 - INFO - Frame 1555 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,767 - INFO - Frame 1556 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,788 - INFO - Frame 1557 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,810 - INFO - Frame 1558 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,831 - INFO - Frame 1559 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,852 - INFO - Frame 1560 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,873 - INFO - Frame 1561 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,895 - INFO - Frame 1562 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,916 - INFO - Frame 1563 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,937 - INFO - Frame 1564 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,958 - INFO - Frame 1565 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:06,980 - INFO - Frame 1566 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,002 - INFO - Frame 1567 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,023 - INFO - Frame 1568 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,044 - INFO - Frame 1569 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,064 - INFO - Frame 1570 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,088 - INFO - Frame 1571 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,109 - INFO - Frame 1572 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,129 - INFO - Frame 1573 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,150 - INFO - Frame 1574 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,170 - INFO - Frame 1575 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,189 - INFO - Frame 1576 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,213 - INFO - Frame 1577 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,234 - INFO - Frame 1578 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,254 - INFO - Frame 1579 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,278 - INFO - Frame 1580 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,299 - INFO - Frame 1581 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,320 - INFO - Frame 1582 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,341 - INFO - Frame 1583 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,364 - INFO - Frame 1584 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,385 - INFO - Frame 1585 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,406 - INFO - Frame 1586 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,429 - INFO - Frame 1587 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,450 - INFO - Frame 1588 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,470 - INFO - Frame 1589 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,496 - INFO - Frame 1590 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,517 - INFO - Frame 1591 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,538 - INFO - Frame 1592 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,563 - INFO - Frame 1593 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,584 - INFO - Frame 1594 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,605 - INFO - Frame 1595 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,631 - INFO - Frame 1596 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,652 - INFO - Frame 1597 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,673 - INFO - Frame 1598 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,695 - INFO - Frame 1599 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,716 - INFO - Frame 1600 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,737 - INFO - Frame 1601 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,762 - INFO - Frame 1602 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,783 - INFO - Frame 1603 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,804 - INFO - Frame 1604 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,829 - INFO - Frame 1605 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,850 - INFO - Frame 1606 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,870 - INFO - Frame 1607 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,896 - INFO - Frame 1608 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,916 - INFO - Frame 1609 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,938 - INFO - Frame 1610 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,959 - INFO - Frame 1611 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:07,980 - INFO - Frame 1612 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,001 - INFO - Frame 1613 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,022 - INFO - Frame 1614 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,043 - INFO - Frame 1615 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,064 - INFO - Frame 1616 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,085 - INFO - Frame 1617 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,106 - INFO - Frame 1618 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,127 - INFO - Frame 1619 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,149 - INFO - Frame 1620 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,170 - INFO - Frame 1621 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,202 - INFO - Frame 1622 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,223 - INFO - Frame 1623 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,244 - INFO - Frame 1624 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,277 - INFO - Frame 1625 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,298 - INFO - Frame 1626 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,319 - INFO - Frame 1627 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,339 - INFO - Frame 1628 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,359 - INFO - Frame 1629 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,380 - INFO - Frame 1630 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,400 - INFO - Frame 1631 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,421 - INFO - Frame 1632 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,442 - INFO - Frame 1633 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,464 - INFO - Frame 1634 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,485 - INFO - Frame 1635 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,505 - INFO - Frame 1636 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,526 - INFO - Frame 1637 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,548 - INFO - Frame 1638 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,569 - INFO - Frame 1639 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,590 - INFO - Frame 1640 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,611 - INFO - Frame 1641 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,632 - INFO - Frame 1642 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,653 - INFO - Frame 1643 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,674 - INFO - Frame 1644 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,696 - INFO - Frame 1645 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,717 - INFO - Frame 1646 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,738 - INFO - Frame 1647 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,759 - INFO - Frame 1648 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,781 - INFO - Frame 1649 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,802 - INFO - Frame 1650 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,822 - INFO - Frame 1651 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,843 - INFO - Frame 1652 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,864 - INFO - Frame 1653 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,886 - INFO - Frame 1654 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,908 - INFO - Frame 1655 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,929 - INFO - Frame 1656 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,950 - INFO - Frame 1657 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,972 - INFO - Frame 1658 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:08,993 - INFO - Frame 1659 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,014 - INFO - Frame 1660 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,035 - INFO - Frame 1661 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,057 - INFO - Frame 1662 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,078 - INFO - Frame 1663 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,099 - INFO - Frame 1664 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,121 - INFO - Frame 1665 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,142 - INFO - Frame 1666 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,164 - INFO - Frame 1667 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,185 - INFO - Frame 1668 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,206 - INFO - Frame 1669 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,228 - INFO - Frame 1670 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,249 - INFO - Frame 1671 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,271 - INFO - Frame 1672 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,292 - INFO - Frame 1673 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,313 - INFO - Frame 1674 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,343 - INFO - Frame 1675 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,365 - INFO - Frame 1676 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,386 - INFO - Frame 1677 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,406 - INFO - Frame 1678 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,427 - INFO - Frame 1679 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,448 - INFO - Frame 1680 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,469 - INFO - Frame 1681 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,490 - INFO - Frame 1682 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,512 - INFO - Frame 1683 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,533 - INFO - Frame 1684 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,554 - INFO - Frame 1685 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,576 - INFO - Frame 1686 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,597 - INFO - Frame 1687 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,618 - INFO - Frame 1688 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,639 - INFO - Frame 1689 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,661 - INFO - Frame 1690 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,682 - INFO - Frame 1691 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,703 - INFO - Frame 1692 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,725 - INFO - Frame 1693 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,747 - INFO - Frame 1694 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,767 - INFO - Frame 1695 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,788 - INFO - Frame 1696 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,811 - INFO - Frame 1697 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,836 - INFO - Frame 1698 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,862 - INFO - Frame 1699 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,884 - INFO - Frame 1700 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,905 - INFO - Frame 1701 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,927 - INFO - Frame 1702 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,949 - INFO - Frame 1703 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,970 - INFO - Frame 1704 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:09,991 - INFO - Frame 1705 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,013 - INFO - Frame 1706 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,034 - INFO - Frame 1707 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,056 - INFO - Frame 1708 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,076 - INFO - Frame 1709 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,098 - INFO - Frame 1710 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,131 - INFO - Frame 1711 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,152 - INFO - Frame 1712 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,172 - INFO - Frame 1713 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,193 - INFO - Frame 1714 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,214 - INFO - Frame 1715 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,235 - INFO - Frame 1716 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,255 - INFO - Frame 1717 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,275 - INFO - Frame 1718 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,296 - INFO - Frame 1719 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,317 - INFO - Frame 1720 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,337 - INFO - Frame 1721 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,357 - INFO - Frame 1722 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,379 - INFO - Frame 1723 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,399 - INFO - Frame 1724 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,420 - INFO - Frame 1725 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,441 - INFO - Frame 1726 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,462 - INFO - Frame 1727 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,483 - INFO - Frame 1728 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,504 - INFO - Frame 1729 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,524 - INFO - Frame 1730 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,545 - INFO - Frame 1731 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,566 - INFO - Frame 1732 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,586 - INFO - Frame 1733 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,607 - INFO - Frame 1734 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,628 - INFO - Frame 1735 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,648 - INFO - Frame 1736 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,669 - INFO - Frame 1737 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,691 - INFO - Frame 1738 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,712 - INFO - Frame 1739 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,732 - INFO - Frame 1740 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,754 - INFO - Frame 1741 - 0 aree di movimento (smoothed)
+2025-01-17 17:50:10,775 - INFO - Frame 1742 - 0 aree di movimento (smoothed)
