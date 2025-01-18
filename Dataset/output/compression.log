@@ -1,15 +1,44 @@
-2025-01-18 10:31:50,319 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
-2025-01-18 10:31:50,365 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
-2025-01-18 10:32:20,063 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
-2025-01-18 10:32:20,087 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
-2025-01-18 10:32:35,358 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
-2025-01-18 10:32:35,382 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
-2025-01-18 10:32:55,224 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
-2025-01-18 10:32:55,248 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
-2025-01-18 10:33:09,695 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
-2025-01-18 10:33:09,719 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
-2025-01-18 10:35:29,458 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
-2025-01-18 10:35:29,501 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
-2025-01-18 10:35:58,843 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
-2025-01-18 10:35:58,867 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
-2025-01-18 10:41:43,811 - INFO - Elaborazione completata. Video compresso salvato in: ../Dataset/output/COMPRESSION_test2.mp4
+2025-01-18 11:21:12,110 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
+2025-01-18 11:21:12,152 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
+2025-01-18 11:22:09,192 - INFO - Video con aree statiche nere salvato in: ../Dataset/output/COMPRESSION_black_static.mp4
+2025-01-18 11:22:09,194 - INFO - Compressione HEVC avviata per: ../Dataset/output/COMPRESSION_black_static.mp4
+2025-01-18 11:22:17,232 - INFO - Compressione completata. Video salvato in: ../Dataset/output/COMPRESSION_black_static_hevc.mp4
+2025-01-18 11:28:05,569 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
+2025-01-18 11:28:05,641 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
+2025-01-18 11:29:03,237 - INFO - Video con aree statiche nere salvato in: ../Dataset/output/COMPRESSION_black_static.mp4
+2025-01-18 11:29:03,239 - INFO - Compressione HEVC avviata per: ../Dataset/output/COMPRESSION_black_static.mp4
+2025-01-18 11:29:03,922 - ERROR - Errore durante la compressione con ffmpeg: Command '['ffmpeg', '-i', '../Dataset/output/COMPRESSION_black_static.mp4', '-c:v', 'libx265', '-crf', '55', '-preset', 'ultrafast', '-y', '../Dataset/output/COMPRESSION_black_static_hevc.mp4']' returned non-zero exit status 183.
+2025-01-18 11:35:37,924 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
+2025-01-18 11:35:37,970 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
+2025-01-18 11:36:35,790 - INFO - Video con aree statiche nere salvato in: ../Dataset/output/COMPRESSION_black_static.mp4
+2025-01-18 11:36:35,792 - INFO - Compressione HEVC avviata per: ../Dataset/output/COMPRESSION_black_static.mp4
+2025-01-18 11:36:42,390 - INFO - Compressione completata. Video salvato in: ../Dataset/output/COMPRESSION_black_static_hevc.mp4
+2025-01-18 11:40:00,137 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
+2025-01-18 11:40:00,183 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
+2025-01-18 11:40:56,781 - INFO - Video con aree statiche nere salvato in: ../Dataset/output/COMPRESSION_black_static.mp4
+2025-01-18 11:40:56,784 - INFO - Compressione HEVC avviata per: ../Dataset/output/COMPRESSION_black_static.mp4
+2025-01-18 11:41:05,049 - INFO - Compressione completata. Video salvato in: ../Dataset/output/COMPRESSION_black_static_hevc.mp4
+2025-01-18 11:42:53,446 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
+2025-01-18 11:42:53,476 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
+2025-01-18 11:43:49,838 - INFO - Video con aree statiche nere salvato in: ../Dataset/output/COMPRESSION_black_static.mp4
+2025-01-18 11:43:49,839 - INFO - Compressione HEVC e ottimizzazione avviata per: ../Dataset/output/COMPRESSION_black_static.mp4
+2025-01-18 11:44:33,084 - INFO - Compressione completata. Video ottimizzato salvato in: ../Dataset/output/COMPRESSION_black_static_hevc_trimmed.mp4
+2025-01-18 11:46:10,750 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
+2025-01-18 11:46:10,784 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
+2025-01-18 11:59:40,206 - INFO - Video con aree statiche quantizzate salvato in: ../Dataset/output/COMPRESSION_quantized_static.mp4
+2025-01-18 11:59:40,208 - INFO - Compressione HEVC e ottimizzazione avviata per: ../Dataset/output/COMPRESSION_quantized_static.mp4
+2025-01-18 12:00:30,110 - INFO - Compressione completata. Video ottimizzato salvato in: ../Dataset/output/COMPRESSION_quantized_static_hevc_trimmed.mp4
+2025-01-18 12:12:52,752 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
+2025-01-18 12:12:52,798 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
+2025-01-18 12:16:37,874 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
+2025-01-18 12:16:37,942 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
+2025-01-18 12:30:20,757 - INFO - Video con aree statiche quantizzate salvato in: ../Dataset/output/COMPRESSION_quantized_static.mp4
+2025-01-18 12:30:20,766 - INFO - Compressione HEVC e ottimizzazione avviata per: ../Dataset/output/COMPRESSION_quantized_static.mp4
+2025-01-18 12:30:39,460 - INFO - Compressione completata. Video ottimizzato salvato in: ../Dataset/output/COMPRESSION_quantized_static_hevc_trimmed.mp4
+2025-01-18 16:09:11,027 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
+2025-01-18 16:09:11,086 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
+2025-01-18 16:12:38,115 - INFO - Video con aree statiche quantizzate salvato in: ../Dataset/output/COMPRESSION_quantized_static.mp4
+2025-01-18 16:12:38,124 - INFO - Compressione HEVC e ottimizzazione avviata per: ../Dataset/output/COMPRESSION_quantized_static.mp4
+2025-01-18 16:12:56,633 - INFO - Compressione completata. Video ottimizzato salvato in: ../Dataset/output/COMPRESSION_quantized_static_hevc_trimmed.mp4
+2025-01-18 16:26:19,263 - INFO - Logging configurato. Log salvati in: ../Dataset/output/compression.log
+2025-01-18 16:26:19,307 - INFO - FPS: 60.05879882402352 | Dimensioni: 1920x1080
