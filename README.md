@@ -23,14 +23,14 @@ This project implements a dynamic video compression system designed specifically
 
 ## Usage
 1. Place input videos (`.mp4` format) in the `input` directory.
-2. Run the script to process all videos in the input folder:
+2. Run the script to process the video:
    ```bash
    python main.py
    ```
 3. Optimized videos will be saved in the `output` directory.
 
 ## Repository Structure
-```
+```plaintext
 .
 ├── input/                  # Directory for input videos
 ├── output/                 # Directory for compressed videos
@@ -48,3 +48,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## Acknowledgments
 Special thanks to the Signal Image and Video course for foundational concepts and guidance.
+
