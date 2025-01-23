@@ -1,123 +1,110 @@
-# Dynamic Video Compression with Motion Detection
+# Dynamic Video Compression with Motion-Based Processing
 
-Questo repository contiene uno script Python che esegue due passaggi fondamentali per la **compressione dinamica di video** in base al movimento:
+This project implements a motion-based video compression system using Python, OpenCV, and a graphical user interface (GUI) powered by PySimpleGUI. The system identifies areas of motion in a video and applies different levels of compression to static and dynamic regions, resulting in efficient storage without significant quality loss in areas of interest.
 
-1. **Calcolo del flusso ottico** e generazione di:
-   - **`overlay.mp4`**: copia del video originale.
-   - **`mask.mp4`**: maschera binaria (rettangolarizzata) che evidenzia le aree di movimento.
-2. **Compressione finale** con DCT (Discrete Cosine Transform) **basata sul movimento**:
-   - Le zone con movimento rimangono a **colori** e subiscono poca compressione.
-   - Le zone **senza movimento** vengono compresse in modo più aggressivo e convertite in **bianco e nero**.
+## Features
+- **Motion Detection:** Uses optical flow to detect areas of motion in videos.
+- **Dynamic Compression:** Compresses static areas more aggressively while preserving quality in regions with motion.
+- **Graphical User Interface (GUI):** Users can select input videos and output directories through a simple and intuitive GUI.
+- **Real-Time Logging:** Displays processing logs in real-time within the GUI.
+- **Batch Processing Support:** Processes multiple videos in the `Dataset/input/` folder when run in batch mode.
 
----
+## Installation
 
-## Requisiti
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-repo/dynamic-video-compression.git
+   cd dynamic-video-compression
+   ```
 
-- **Python 3.x**  
-  Consigliato l’uso di un ambiente virtuale (ad es. con `venv` o `conda`).
-- **OpenCV**  
-  Per installarlo:
-  ```bash
-  pip install opencv-python
-  ```
+2. **Install Dependencies**
+   Ensure you have Python 3.x installed. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
----
+   The main dependencies include:
+   - `opencv-python`
+   - `numpy`
+   - `PySimpleGUI`
 
-## Struttura del progetto
+## Usage
+
+### Graphical User Interface (GUI)
+The GUI allows users to process videos interactively.
+
+1. Run the `windows.py` script:
+   ```bash
+   python windows.py
+   ```
+
+2. Select the input video file and output directory using the file and folder browser.
+
+3. Click the **"Avvia"** button to start the processing.
+
+4. Observe the logs in the GUI to monitor the progress. Once completed, the results will be saved in the selected output directory.
+
+### Batch Processing (Command Line)
+To process all `.mp4` files in the `Dataset/input/` folder and save results in `Dataset/output/`:
+
+1. Place the videos to be processed in the `Dataset/input/` directory.
+2. Run the `motion_compression.py` script:
+   ```bash
+   python motion_compression.py
+   ```
+3. Processed videos will be saved in `Dataset/output/` with subdirectories for each input file.
+
+## Output Files
+For each input video, the following files are generated:
+- **`overlay.mp4`**: A copy of the video with motion regions highlighted.
+- **`mask.mp4`**: A binary mask video showing the detected motion areas.
+- **`compressed.mp4`**: The final compressed video with motion-aware adjustments.
+
+## Code Structure
 
 ```
 .
-├── main.py                # File principale con la pipeline
-├── ../Dataset/input/      # Cartella di input con i file video .mp4
-├── ../Dataset/output/     # Cartella di output generata dallo script
-└── ...
+├── motion_compression.py   # Main processing script
+├── windows.py              # GUI for user interaction
+├── Dataset/
+│   ├── input/              # Folder for input videos
+│   ├── output/             # Folder for output results
+├── requirements.txt        # Required Python dependencies
+└── README.md               # Project documentation
 ```
 
----
+## Key Functions
 
-## Come funziona
+### `motion_compression.py`
+- **`setup_logging(output_dir)`**: Configures logging for real-time feedback.
+- **`temporal_smoothing_flow(video_path, output_dir, ...)`**: Detects motion using optical flow and generates mask and overlay videos.
+- **`compress_with_motion(input_video, mask_video, output_dir)`**: Compresses static and dynamic regions differently.
+- **`process_single_video(video_path, output_dir)`**: Combines all processing steps for a single video.
 
-1. **Esecuzione del flusso ottico** (`temporal_smoothing_flow`):
-   - Analizza frame per frame per calcolare il **flusso ottico** Farneback su tutto il frame (risoluzione piena).
-   - Accumula le aree di movimento in una **coda circolare** di dimensione `window_size`.
-   - Applica soglie e morfologia per ottenere una **maschera finale** per ogni frame.
-   - Genera due file:
-     - **`overlay.mp4`** (copia del video originale).
-     - **`mask.mp4`** (video in scala di grigi con le aree di movimento rettangolarizzate).
+### `windows.py`
+- Implements the GUI for video selection and output management.
+- Displays logs in real-time within the application.
 
-2. **Compressione basata sul movimento** (`compress_with_motion`):
-   - Legge `overlay.mp4` e la `mask.mp4`.
-   - Applica la **DCT** (Discrete Cosine Transform) solo sulle zone **statiche** (dove la maschera è nera).
-   - Converte tali zone in **bianco e nero**.
-   - Crea un file **`compressed.mp4`** con la suddivisione tra zone di movimento (a colori) e zone statiche (in B/N).
+## Example Workflow
 
----
-
-## Come usare lo script
-
-1. **Organizza la cartella**:
-   - Metti i tuoi file `.mp4` da processare in `../Dataset/input/`.
-   - Assicurati che `../Dataset/output/` esista o venga creata dallo script.
-
-2. **Esegui lo script**:
+1. Start the GUI:
    ```bash
-   python main.py
+   python windows.py
    ```
-   Dove `main.py` è il nome effettivo del file contenente il codice definitivo.
 
-3. **Verifica i risultati**:
-   - Nella cartella `../Dataset/output/`, verrà creata una sottocartella per ogni video di input.
-   - Ognuna conterrà:
-     - `processing.log` con i log dell’elaborazione.
-     - `<nome_video>_overlay.mp4`  
-     - `<nome_video>_mask.mp4`  
-     - `compressed.mp4`  
+2. Select a video file and an output directory.
 
----
+3. Click **"Avvia"** to begin processing. Logs will display the progress.
 
-## Parametri principali
+4. Check the output directory for the resulting videos (`overlay.mp4`, `mask.mp4`, `compressed.mp4`).
 
-- **`flow_threshold`** (default: 0.5)  
-  Soglia di magnitudine del flusso ottico per considerare un pixel in movimento.
-- **`alpha_fraction`** (default: 0.2)  
-  Percentuale minima di frame “movimentati” all’interno della finestra `window_size` per confermare il movimento.
-- **`window_size`** (default: 30)  
-  Numero di frame di “storico” da considerare per lo smoothing temporale.
-- **`morph_kernel`** (default: 2)  
-  Dimensione del kernel per le operazioni morfologiche di apertura/chiusura.
-- **`QTY_aggressive`** (nel codice di compressione, default: 100)  
-  Valore di quantizzazione per la DCT. Più alto = maggiore compressione nelle zone statiche.
+5. For batch processing, place videos in `Dataset/input/` and run:
+   ```bash
+   python motion_compression.py
+   ```
 
----
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Esempi di utilizzo
-
-- **Impostare un livello di sensibilità maggiore (rileva movimenti più lievi)**:
-  ```python
-  temporal_smoothing_flow(..., flow_threshold=0.2)
-  ```
-- **Ridurre la finestra temporale** (meno smoothing, più reattività):
-  ```python
-  temporal_smoothing_flow(..., window_size=15)
-  ```
-- **Aumentare la compressione**:
-  ```python
-  # Nel compress_with_motion
-  QTY_aggressive = np.full((8, 8), 120, dtype=np.float32)
-  ```
-
----
-
-## Note aggiuntive
-
-- L’algoritmo funziona meglio su video di medie o alte risoluzioni, ma potrebbe rallentare se i video sono molto lunghi o a risoluzione molto alta.
-- Se i log non vengono stampati a schermo, assicurati di aver configurato correttamente i permessi di scrittura su `processing.log`.
-- Modifica i parametri (es. `pyr_scale`, `winsize`, ecc.) di `cv2.calcOpticalFlowFarneback` in base alle tue esigenze di **performance** o **accuratezza**.
-
----
-
-## Licenza
-
-Questo progetto è rilasciato sotto la licenza [MIT](LICENSE) (o altra licenza a tua scelta), permettendo l’uso libero e la modifica del codice.
-
-**Enjoy!**
+## Contributions
+Feel free to submit issues or pull requests to improve the project. Feedback is welcome!
