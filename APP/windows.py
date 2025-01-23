@@ -1,98 +1,144 @@
-import PySimpleGUI as sg
+import sys
 import os
 import logging
 import threading
+from PyQt5.QtWidgets import (
+    QApplication,
+    QMainWindow,
+    QVBoxLayout,
+    QHBoxLayout,
+    QLabel,
+    QLineEdit,
+    QPushButton,
+    QFileDialog,
+    QTextEdit,
+    QWidget,
+    QMessageBox,
+)
+from PyQt5.QtCore import pyqtSignal, QObject
 from motion_compression import process_single_video
 
-class GuiLogger(logging.Handler):
-    """
-    Un handler di logging che inoltra ogni messaggio di log a PySimpleGUI,
-    permettendo di visualizzare i log nella finestra.
-    """
-    def __init__(self, window, key):
-        super().__init__()
-        self.window = window
-        self.key = key
+class LogHandler(logging.Handler, QObject):
+    log_signal = pyqtSignal(str)
+
+    def __init__(self):
+        logging.Handler.__init__(self)
+        QObject.__init__(self)
 
     def emit(self, record):
         log_message = self.format(record)
-        # Inoltra il messaggio di log alla GUI come evento "-LOG_EVENT-"
-        self.window.write_event_value(self.key, log_message)
+        self.log_signal.emit(log_message)
 
-def setup_logging(window, key):
-    """
-    Configura il logger principale di Python perché invii i messaggi
-    anche alla finestra PySimpleGUI, tramite GuiLogger.
-    """
-    logger = logging.getLogger()
-    logger.setLevel(logging.INFO)
-    handler = GuiLogger(window, key)
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-    handler.setFormatter(formatter)
-    logger.addHandler(handler)
+class VideoProcessingApp(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Elaborazione Video")
+        self.setGeometry(100, 100, 800, 600)
 
-def process_in_thread(file_path, output_dir, window):
-    """
-    Funzione eseguita nel thread: chiama la funzione di elaborazione
-    e poi notifica la GUI al termine.
-    """
-    try:
-        process_single_video(file_path, output_dir)
-    finally:
-        # Al termine dell'elaborazione, invia un segnale alla GUI
-        window.write_event_value("-PROCESS_DONE-", "Elaborazione completata!")
+        self.init_ui()
 
-# Layout dell'interfaccia
-layout = [
-    [sg.Text("Seleziona un file video da elaborare:")],
-    [sg.Input(key="-FILE-", enable_events=True, visible=True), 
-     sg.FileBrowse(file_types=(("Video Files", "*.mp4"),))],
-    [sg.Text("Seleziona la cartella di output:")],
-    [sg.Input(key="-OUTPUT-", enable_events=True, visible=True), sg.FolderBrowse()],
-    [sg.Multiline(size=(60, 20), key="-LOG-", disabled=True, autoscroll=True)],
-    [sg.Button("Avvia"), sg.Button("Esci")]
-]
+        # Set up logging
+        self.log_handler = LogHandler()
+        self.log_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+        self.log_handler.log_signal.connect(self.append_log)
+        logging.getLogger().setLevel(logging.INFO)
+        logging.getLogger().addHandler(self.log_handler)
 
-# Crea la finestra
-window = sg.Window("Elaborazione Video", layout, finalize=True)
+    def init_ui(self):
+        # Layout principale
+        main_layout = QVBoxLayout()
 
-# Collega il logger alla GUI
-setup_logging(window, "-LOG_EVENT-")
+        # Selezione file video
+        file_layout = QHBoxLayout()
+        file_label = QLabel("Seleziona un file video da elaborare:")
+        self.file_input = QLineEdit()
+        self.file_input.setReadOnly(True)
+        file_button = QPushButton("Sfoglia")
+        file_button.clicked.connect(self.browse_file)
+        file_layout.addWidget(file_label)
+        file_layout.addWidget(self.file_input)
+        file_layout.addWidget(file_button)
+        main_layout.addLayout(file_layout)
 
-while True:
-    event, values = window.read()
-    
-    if event in (sg.WINDOW_CLOSED, "Esci"):
-        break
+        # Selezione cartella output
+        output_layout = QHBoxLayout()
+        output_label = QLabel("Seleziona la cartella di output:")
+        self.output_input = QLineEdit()
+        self.output_input.setReadOnly(True)
+        output_button = QPushButton("Sfoglia")
+        output_button.clicked.connect(self.browse_output)
+        output_layout.addWidget(output_label)
+        output_layout.addWidget(self.output_input)
+        output_layout.addWidget(output_button)
+        main_layout.addLayout(output_layout)
 
-    if event == "Avvia":
-        file_path = values["-FILE-"]
-        output_dir = values["-OUTPUT-"]
+        # Log area
+        self.log_area = QTextEdit()
+        self.log_area.setReadOnly(True)
+        main_layout.addWidget(self.log_area)
+
+        # Pulsanti
+        button_layout = QHBoxLayout()
+        self.start_button = QPushButton("Avvia")
+        self.start_button.clicked.connect(self.start_processing)
+        self.exit_button = QPushButton("Esci")
+        self.exit_button.clicked.connect(self.close)
+        button_layout.addWidget(self.start_button)
+        button_layout.addWidget(self.exit_button)
+        main_layout.addLayout(button_layout)
+
+        # Widget principale
+        container = QWidget()
+        container.setLayout(main_layout)
+        self.setCentralWidget(container)
+
+    def browse_file(self):
+        file_path, _ = QFileDialog.getOpenFileName(self, "Seleziona un file video", "", "Video Files (*.mp4)")
+        if file_path:
+            self.file_input.setText(file_path)
+
+    def browse_output(self):
+        output_dir = QFileDialog.getExistingDirectory(self, "Seleziona una cartella di output")
+        if output_dir:
+            self.output_input.setText(output_dir)
+
+    def start_processing(self):
+        file_path = self.file_input.text()
+        output_dir = self.output_input.text()
 
         if not file_path or not os.path.exists(file_path):
-            sg.popup_error("Seleziona un file video valido!")
-        elif not output_dir or not os.path.exists(output_dir):
-            sg.popup_error("Seleziona una cartella di output valida!")
-        else:
-            # Stampa un messaggio nell'area di log anziché aprire un popup
-            window["-LOG-"].print("Elaborazione avviata... attendere il completamento.\n")
-            
-            # Avvia l'elaborazione in un thread per non bloccare la GUI
-            threading.Thread(
-                target=process_in_thread,
-                args=(file_path, output_dir, window),
-                daemon=True
-            ).start()
+            QMessageBox.critical(self, "Errore", "Seleziona un file video valido!")
+            return
+        if not output_dir or not os.path.exists(output_dir):
+            QMessageBox.critical(self, "Errore", "Seleziona una cartella di output valida!")
+            return
 
-    # Questo evento riceve i messaggi di log e li mostra nella Multiline
-    elif event == "-LOG_EVENT-":
-        log_message = values["-LOG_EVENT-"]
-        window["-LOG-"].print(log_message)
-    
-    # Evento che segnala la fine dell'elaborazione
-    elif event == "-PROCESS_DONE-":
-        window["-LOG-"].print(values["-PROCESS_DONE-"])
-        # Puoi anche mostrare un popup se vuoi evidenziare che è finita
-        # sg.popup("Elaborazione completata!")
+        self.log_area.append("Elaborazione avviata... attendere il completamento.\n")
 
-window.close()
+        # Avvia l'elaborazione in un thread separato
+        threading.Thread(
+            target=self.process_video,
+            args=(file_path, output_dir),
+            daemon=True
+        ).start()
+
+    def process_video(self, file_path, output_dir):
+        try:
+            process_single_video(file_path, output_dir)
+            self.log_area.append("Elaborazione completata!")
+        except Exception as e:
+            logging.error(f"Errore durante l'elaborazione: {e}")
+        finally:
+            logging.info("Processo completato.")
+
+    def append_log(self, message):
+        self.log_area.append(message)
+
+def main():
+    app = QApplication(sys.argv)
+    window = VideoProcessingApp()
+    window.show()
+    sys.exit(app.exec_())
+
+if __name__ == "__main__":
+    main()
