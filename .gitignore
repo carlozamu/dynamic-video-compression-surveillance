@@ -1,2 +1,4 @@
 /Dataset/
 myenv/
+__pycache__/
+*.pyc
