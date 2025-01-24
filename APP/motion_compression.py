@@ -43,6 +43,8 @@ def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fr
         return
 
     prev_gray = cv2.cvtColor(first_frame, cv2.COLOR_BGR2GRAY)
+    prev_gray_resized = cv2.resize(prev_gray, (width // 2, height // 2))  # Ridimensionamento
+
     mask_queue = deque(maxlen=window_size)
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (morph_kernel, morph_kernel))
 
@@ -56,9 +58,24 @@ def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fr
             frame_count += 1
 
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            flow = cv2.calcOpticalFlowFarneback(prev_gray, gray, None, 0.3, 2, 9, 2, 5, 1.1, 0)
+            gray_resized = cv2.resize(gray, (width // 2, height // 2))  # Ridimensionamento
+
+            # valori precedenti: prev_gray_resized, gray_resized, None, 0.3, 2, 9, 2, 5, 1.1, 0 
+            flow = cv2.calcOpticalFlowFarneback(
+                prev_gray_resized, gray_resized, None,
+                pyr_scale=0.2,
+                levels=1,
+                winsize=5,
+                iterations=1,
+                poly_n=5,
+                poly_sigma=1.1,
+                flags=0
+            )
+
             mag, ang = cv2.cartToPolar(flow[..., 0], flow[..., 1], angleInDegrees=False)
-            mask_current = (mag > flow_threshold).astype(np.uint8) * 255
+            mask_current_resized = (mag > flow_threshold).astype(np.uint8) * 255
+
+            mask_current = cv2.resize(mask_current_resized, (width, height))  # Ripristino dimensioni originali
 
             mask_queue.append(mask_current)
             cumulative_mask = np.sum(np.array(mask_queue), axis=0)
@@ -75,7 +92,7 @@ def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fr
 
             out_overlay.write(frame)
             out_mask.write(mask_rect)
-            prev_gray = gray.copy()
+            prev_gray_resized = gray_resized.copy()
     finally:
         cap.release()
         out_overlay.release()
