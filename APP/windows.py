@@ -37,12 +37,28 @@ class VideoProcessingApp(QMainWindow):
 
         self.init_ui()
 
-        # Set up logging
+        # Crea il tuo handler personalizzato
         self.log_handler = LogHandler()
         self.log_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
         self.log_handler.log_signal.connect(self.append_log)
-        logging.getLogger().setLevel(logging.INFO)
-        logging.getLogger().addHandler(self.log_handler)
+
+        # Configura il logger di root
+        root_logger = logging.getLogger()
+        # Imposta il livello di log: DEBUG per mostrare tutto (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+        root_logger.setLevel(logging.DEBUG)
+
+        # (Opzionale) Per continuare a vedere i log anche in console/terminale
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(logging.DEBUG)
+        console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+        # Rimuovi eventuali handler di default per evitare duplicati
+        for handler in root_logger.handlers[:]:
+            root_logger.removeHandler(handler)
+
+        # Aggiungi i nuovi handler al root logger
+        root_logger.addHandler(console_handler)
+        root_logger.addHandler(self.log_handler)
 
     def init_ui(self):
         # Layout principale
@@ -72,7 +88,7 @@ class VideoProcessingApp(QMainWindow):
         output_layout.addWidget(output_button)
         main_layout.addLayout(output_layout)
 
-        # Log area
+        # Area di testo per i log
         self.log_area = QTextEdit()
         self.log_area.setReadOnly(True)
         main_layout.addWidget(self.log_area)
@@ -114,6 +130,7 @@ class VideoProcessingApp(QMainWindow):
             return
 
         self.log_area.append("Elaborazione avviata... attendere il completamento.\n")
+        logging.info("Iniziato il thread di elaborazione del video.")
 
         # Avvia l'elaborazione in un thread separato
         threading.Thread(
@@ -124,10 +141,11 @@ class VideoProcessingApp(QMainWindow):
 
     def process_video(self, file_path, output_dir):
         try:
+            logging.debug(f"Chiamata a process_single_video con file: {file_path}, cartella di output: {output_dir}")
             process_single_video(file_path, output_dir)
             self.log_area.append("Elaborazione completata!")
         except Exception as e:
-            logging.error(f"Errore durante l'elaborazione: {e}")
+            logging.error(f"Errore durante l'elaborazione: {e}", exc_info=True)
         finally:
             logging.info("Processo completato.")
 

@@ -6,21 +6,20 @@ import time
 from collections import deque
 
 def setup_logging(output_dir):
+    """
+    Aggiunge un FileHandler al logger esistente, senza rimuovere
+    quelli già configurati dalla tua applicazione PyQt.
+    """
     log_file = os.path.join(output_dir, "processing.log")
-    
-    # Rimuovi tutti i vecchi handler, se esistono
+    file_handler = logging.FileHandler(log_file, mode='w', delay=False)
+    file_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+    file_handler.setLevel(logging.DEBUG)  # o INFO, come preferisci
+
+    # Prende il root logger (già configurato in PyQt con QtHandler + StreamHandler)
     root_logger = logging.getLogger()
-    while root_logger.hasHandlers():
-        root_logger.removeHandler(root_logger.handlers[0])
-    
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s - %(levelname)s - %(message)s",
-        handlers=[
-            logging.FileHandler(log_file, mode='w', delay=False),
-            logging.StreamHandler()
-        ]
-    )
+    root_logger.setLevel(logging.DEBUG)  # assicurati che non filtri i messaggi di debug
+    root_logger.addHandler(file_handler)
+
     logging.info(f"Logging configurato. File di log salvato in: {log_file}")
 
 def temporal_smoothing_flow(
