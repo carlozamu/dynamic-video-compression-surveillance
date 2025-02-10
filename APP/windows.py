@@ -16,7 +16,7 @@ from PyQt5.QtWidgets import (
     QMessageBox,
 )
 from PyQt5.QtCore import pyqtSignal, QObject, QMetaObject, Qt, Q_ARG
-from motion_compression import process_single_video
+from motion_compression_opt import process_single_video
 
 class LogHandler(logging.Handler, QObject):
     log_signal = pyqtSignal(str)
