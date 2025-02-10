@@ -32,13 +32,17 @@ def generate_bounding_box(mask):
 
 def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fraction=0.2, 
                             window_size=10, morph_kernel=2, save_name="overlay.mp4", 
-                            mask_save_name="mask.mp4"):
+                            mask_save_name="mask.mp4",
+                            progress_callback_motion=None):
     """
     Reads a video, computes optical flow between consecutive frames, 
     and uses a temporal smoothing approach to detect motion. A bounding box mask
     is generated for areas exceeding the flow threshold, and this mask is smoothed 
     over a certain number of frames. 'overlay.mp4' stores the original frames, 
     and 'mask.mp4' stores the bounding box mask frames.
+
+    If progress_callback_motion is provided, it will be called with a single float argument 
+    in [0,1] representing the fraction of frames processed.
 
     Args:
         video_path (str): Path to the input video.
@@ -50,9 +54,15 @@ def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fr
         morph_kernel (int): Size of the morphological kernel for opening/closing operations.
         save_name (str): Name of the file where original frames (overlay) will be saved.
         mask_save_name (str): Name of the file where the bounding box mask will be saved.
+        progress_callback_motion (callable): Optional function for updating progress.
     """
     start_time = time.time()
     cap = cv2.VideoCapture(video_path)
+    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    if total_frames <= 0:
+        # Se non possiamo determinare i frame totali, assumiamo 1 per evitare divisioni per zero
+        total_frames = 1
+
     fps = cap.get(cv2.CAP_PROP_FPS)
     width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
@@ -105,10 +115,17 @@ def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fr
         prev_gray = gray.copy()
         frame_count += 1
 
+        # Aggiorniamo la progress bar solo ogni 10 frame, per non aggiungere overhead
+        if progress_callback_motion and frame_count % 10 == 0:
+            progress_fraction = min(frame_count / total_frames, 1.0)
+            progress_callback_motion(progress_fraction)
+
     cap.release()
     out_overlay.release()
     out_mask.release()
-    logging.info(f"Motion detection completed in {time.time() - start_time:.2f} seconds. Frames: {frame_count}")
+
+    total_time = time.time() - start_time
+    logging.info(f"Motion detection completed in {total_time:.2f} seconds. Frames processed: {frame_count}")
 
 def process_frame(args):
     """
@@ -148,14 +165,23 @@ def process_frame(args):
     frame_compressed = cv2.merge([y_channel, cr_channel, cb_channel])
     return cv2.cvtColor(frame_compressed, cv2.COLOR_YCrCb2BGR)
 
-def compress_with_motion(input_video, mask_video, output_dir):
+def compress_with_motion(input_video, mask_video, output_dir, progress_callback_compression=None):
     """
     Reads the 'overlay' video (original frames) and the 'mask' video 
     (bounding box mask). Processes frames in batches, applying a more 
     aggressive block-based DCT compression to regions without motion.
+
+    If progress_callback_compression is provided, it will be called with
+    a float argument in [0,1] representing the fraction of frames processed.
     """
+    start_time = time.time()
+
     cap_input = cv2.VideoCapture(input_video)
     cap_mask = cv2.VideoCapture(mask_video)
+
+    total_frames_input = int(cap_input.get(cv2.CAP_PROP_FRAME_COUNT))
+    if total_frames_input <= 0:
+        total_frames_input = 1
 
     fps = cap_input.get(cv2.CAP_PROP_FPS)
     width = int(cap_input.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -166,8 +192,9 @@ def compress_with_motion(input_video, mask_video, output_dir):
     out = cv2.VideoWriter(output_video, fourcc, fps, (width, height))
 
     QTY_aggressive = np.full((8, 8), 100, dtype=np.float32)
-    batch_size = 200
+    batch_size = 400 #increase or decrease this parameter according to hw capabilities
     frames = []
+    processed_frames_count = 0
 
     while True:
         ret_in, frame_in = cap_input.read()
@@ -175,10 +202,16 @@ def compress_with_motion(input_video, mask_video, output_dir):
         if not (ret_in and ret_mask):
             break
         frames.append((frame_in, frame_mask, QTY_aggressive))
+        processed_frames_count += 1
 
         if len(frames) == batch_size:
             process_and_write_batch(frames, out)
             frames.clear()
+
+        # Aggiorniamo ogni 10 frame
+        if progress_callback_compression and processed_frames_count % 10 == 0:
+            fraction = min(processed_frames_count / total_frames_input, 1.0)
+            progress_callback_compression(fraction)
 
     if frames:
         process_and_write_batch(frames, out)
@@ -186,6 +219,9 @@ def compress_with_motion(input_video, mask_video, output_dir):
     cap_input.release()
     cap_mask.release()
     out.release()
+
+    total_time = time.time() - start_time
+    logging.info(f"Compression completed in {total_time:.2f} seconds.")
 
 def process_and_write_batch(frames, out):
     """
@@ -200,31 +236,48 @@ def process_and_write_batch(frames, out):
     for frame in results:
         out.write(frame)
 
-def process_single_video(video_path, output_dir):
+def process_single_video(video_path, output_dir,
+                         progress_callback_motion=None,
+                         progress_callback_compression=None):
     """
     Combines the motion detection (with bounding boxes) and the subsequent 
     compression steps for a single video. Creates a specific output directory 
     for the video, sets up logging, performs motion detection, and then applies compression.
 
-    Args:
-        video_path (str): Path to the input video file.
-        output_dir (str): Path to the main output directory.
+    If progress_callback_motion or progress_callback_compression are provided,
+    they will be called with a float in [0,1] to indicate progress in each phase.
     """
     video_name = os.path.splitext(os.path.basename(video_path))[0]
     video_output_dir = os.path.join(output_dir, video_name)
     os.makedirs(video_output_dir, exist_ok=True)
 
     setup_logging(video_output_dir)
-    logging.info(f"=== Starting processing of the video '{video_name}' ===")
+    logging.info(f"=== Processing for video '{video_name}' started ===")
 
-    temporal_smoothing_flow(video_path, video_output_dir)
+    # STEP 1: Motion Detection
+    logging.info("Step 1/2: Starting motion detection...")
+    start_md = time.time()
+    temporal_smoothing_flow(
+        video_path, 
+        video_output_dir,
+        progress_callback_motion=progress_callback_motion
+    )
+    md_time = time.time() - start_md
+    logging.info(f"Step 1/2: Motion detection completed (elapsed: {md_time:.2f} s).")
+
+    # STEP 2: Compression
+    logging.info("Step 2/2: Starting compression...")
+    start_comp = time.time()
     compress_with_motion(
         os.path.join(video_output_dir, "overlay.mp4"),
         os.path.join(video_output_dir, "mask.mp4"),
-        video_output_dir
+        video_output_dir,
+        progress_callback_compression=progress_callback_compression
     )
+    comp_time = time.time() - start_comp
+    logging.info(f"Step 2/2: Compression completed (elapsed: {comp_time:.2f} s).")
 
-    logging.info(f"=== Processing of '{video_name}' completed. ===")
+    logging.info(f"=== Processing of '{video_name}' completed successfully. ===")
 
 if __name__ == "__main__":
     process_single_video("./Dataset/input/video.mp4", "./Dataset/output/")
