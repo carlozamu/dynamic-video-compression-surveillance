@@ -6,7 +6,13 @@ import threading
 import tkinter as tk
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
+
+# Import delle due funzioni "alto livello":
+#  - Optical Flow
 from motion_compression_opt import process_single_video_of
+
+#  - Frame Difference
+from frame_differencing import process_single_video_fd
 
 class TkinterLogHandler(logging.Handler):
     """
@@ -69,10 +75,21 @@ class VideoProcessingApp(ctk.CTk):
         self.btn_browse_output = ctk.CTkButton(self.main_frame, text="Browse", command=self.browse_output)
         self.btn_browse_output.grid(row=1, column=2, padx=5, pady=5, sticky="w")
 
-        # Row 2: Log area
+        # Row 2: Detection method (Optical Flow vs Frame Difference)
+        self.label_method = ctk.CTkLabel(self.main_frame, text="Select Motion Detection Method:")
+        self.label_method.grid(row=2, column=0, padx=5, pady=5, sticky="w")
+
+        # Variabile per memorizzare il metodo scelto
+        self.method_var = ctk.StringVar(value="Optical Flow")
+        self.method_menu = ctk.CTkOptionMenu(self.main_frame,
+                                            variable=self.method_var,
+                                            values=["Optical Flow", "Frame Difference"])
+        self.method_menu.grid(row=2, column=1, padx=5, pady=5, sticky="we")
+
+        # Row 3: Log area
         self.log_text = tk.Text(self.main_frame, wrap="word", state="disabled", height=15)
-        self.log_text.grid(row=2, column=0, columnspan=3, padx=5, pady=10, sticky="nsew")
-        self.main_frame.grid_rowconfigure(2, weight=1)
+        self.log_text.grid(row=3, column=0, columnspan=3, padx=5, pady=10, sticky="nsew")
+        self.main_frame.grid_rowconfigure(3, weight=1)
 
         # Pre-creiamo i widget delle barre di progresso ma NON li gridiamo ancora
         self.label_progress_motion = ctk.CTkLabel(self.main_frame, text="Motion Detection Progress:")
@@ -83,12 +100,12 @@ class VideoProcessingApp(ctk.CTk):
         self.progress_bar_comp = ctk.CTkProgressBar(self.main_frame)
         self.progress_bar_comp.set(0)
 
-        # Row 5: Control buttons (Start, Exit)
+        # Row 6: Control buttons (Start, Exit)
         self.btn_start = ctk.CTkButton(self.main_frame, text="Start", command=self.start_processing)
-        self.btn_start.grid(row=5, column=1, padx=5, pady=5, sticky="e")
+        self.btn_start.grid(row=6, column=1, padx=5, pady=5, sticky="e")
 
         self.btn_exit = ctk.CTkButton(self.main_frame, text="Exit", command=self.on_exit)
-        self.btn_exit.grid(row=5, column=2, padx=5, pady=5, sticky="e")
+        self.btn_exit.grid(row=6, column=2, padx=5, pady=5, sticky="e")
 
     def configure_logging(self):
         self.log_handler = TkinterLogHandler(self.log_text)
@@ -132,13 +149,13 @@ class VideoProcessingApp(ctk.CTk):
         self.progress_bar_comp.set(0)
 
         # Mostriamo le barre di avanzamento
-        # - label_progress_motion in row=3, col=0
-        # - progress_bar_motion in row=3, col=1 con columnspan=2 e sticky="we"
-        self.label_progress_motion.grid(row=3, column=0, padx=5, pady=5, sticky="w")
-        self.progress_bar_motion.grid(row=3, column=1, columnspan=2, padx=5, pady=5, sticky="we")
+        # - label_progress_motion in row=4, col=0
+        # - progress_bar_motion in row=4, col=1 con columnspan=2 e sticky="we"
+        self.label_progress_motion.grid(row=4, column=0, padx=5, pady=5, sticky="w")
+        self.progress_bar_motion.grid(row=4, column=1, columnspan=2, padx=5, pady=5, sticky="we")
 
-        self.label_progress_comp.grid(row=4, column=0, padx=5, pady=5, sticky="w")
-        self.progress_bar_comp.grid(row=4, column=1, columnspan=2, padx=5, pady=5, sticky="we")
+        self.label_progress_comp.grid(row=5, column=0, padx=5, pady=5, sticky="w")
+        self.progress_bar_comp.grid(row=5, column=1, columnspan=2, padx=5, pady=5, sticky="we")
 
         self.append_log("Processing started... please wait.\n")
         logging.info("User initiated video processing.")
@@ -157,16 +174,31 @@ class VideoProcessingApp(ctk.CTk):
     def process_video_thread(self, file_path, output_dir):
         """
         Funzione chiamata in un thread separato,
-        che effettua la chiamata a process_single_video 
+        che decide quale funzione di processing chiamare
+        (Optical Flow vs Frame Difference),
         e aggiorna le barre di avanzamento.
         """
         try:
-            process_single_video_of(
-                video_path=file_path,
-                output_dir=output_dir,
-                progress_callback_motion=self.update_progress_motion,
-                progress_callback_compression=self.update_progress_compression
-            )
+            chosen_method = self.method_var.get()
+
+            if chosen_method == "Optical Flow":
+                # Richiama la tecnica del flusso ottico
+                process_single_video_of(
+                    video_path=file_path,
+                    output_dir=output_dir,
+                    progress_callback_motion=self.update_progress_motion,
+                    progress_callback_compression=self.update_progress_compression
+                )
+
+            else:
+                # Richiama la tecnica a differenze di frame
+                process_single_video_fd(
+                    video_path=file_path,
+                    output_dir=output_dir,
+                    progress_callback_motion=self.update_progress_motion,
+                    progress_callback_compression=self.update_progress_compression
+                )
+
             self.append_log("Processing completed!\n")
 
             # Calcolo del tempo totale
