@@ -236,7 +236,7 @@ def process_and_write_batch(frames, out):
     for frame in results:
         out.write(frame)
 
-def process_single_video(video_path, output_dir,
+def process_single_video_of(video_path, output_dir,
                          progress_callback_motion=None,
                          progress_callback_compression=None):
     """
@@ -280,4 +280,4 @@ def process_single_video(video_path, output_dir,
     logging.info(f"=== Processing of '{video_name}' completed successfully. ===")
 
 if __name__ == "__main__":
-    process_single_video("./Dataset/input/video.mp4", "./Dataset/output/")
+    process_single_video_of("./Dataset/input/video.mp4", "./Dataset/output/")
