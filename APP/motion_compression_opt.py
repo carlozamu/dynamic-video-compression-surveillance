@@ -6,16 +6,23 @@ import time
 from multiprocessing import Pool, cpu_count
 
 def setup_logging(output_dir):
+    """
+    Sets up logging so that logs are both printed to the console
+    and saved to a file named 'processing.log' in the specified directory.
+    """
     log_file = os.path.join(output_dir, "processing.log")
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s - %(levelname)s - %(message)s",
         handlers=[logging.FileHandler(log_file, mode='w'), logging.StreamHandler()]
     )
-    logging.info(f"Logging configurato. File di log salvato in: {log_file}")
+    logging.info(f"Logging configured. Log file saved in: {log_file}")
 
-# Funzione per generare bounding box attorno agli oggetti in movimento
 def generate_bounding_box(mask):
+    """
+    Finds the contours of the white areas in the mask (representing motion).
+    For each contour, it draws a filled rectangle (bounding box) on a blank mask of the same size.
+    """
     contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     mask_rect = np.zeros_like(mask)
     for cnt in contours:
@@ -23,11 +30,27 @@ def generate_bounding_box(mask):
         cv2.rectangle(mask_rect, (x, y), (x + w, y + h), 255, -1)
     return mask_rect
 
-# Motion Detection con bounding box rettangolari
 def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fraction=0.2, 
                             window_size=10, morph_kernel=2, save_name="overlay.mp4", 
                             mask_save_name="mask.mp4"):
+    """
+    Reads a video, computes optical flow between consecutive frames, 
+    and uses a temporal smoothing approach to detect motion. A bounding box mask
+    is generated for areas exceeding the flow threshold, and this mask is smoothed 
+    over a certain number of frames. 'overlay.mp4' stores the original frames, 
+    and 'mask.mp4' stores the bounding box mask frames.
 
+    Args:
+        video_path (str): Path to the input video.
+        output_dir (str): Directory where output videos will be saved.
+        flow_threshold (float): Threshold for motion magnitude.
+        alpha_fraction (float): Fraction of frames in the queue that must have motion 
+                                for a pixel to be considered moving.
+        window_size (int): Number of frames used for temporal smoothing.
+        morph_kernel (int): Size of the morphological kernel for opening/closing operations.
+        save_name (str): Name of the file where original frames (overlay) will be saved.
+        mask_save_name (str): Name of the file where the bounding box mask will be saved.
+    """
     start_time = time.time()
     cap = cv2.VideoCapture(video_path)
     fps = cap.get(cv2.CAP_PROP_FPS)
@@ -43,7 +66,7 @@ def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fr
 
     ret, first_frame = cap.read()
     if not ret:
-        logging.error("Errore: impossibile leggere il primo frame.")
+        logging.error("Error: Unable to read the first frame.")
         return
 
     prev_gray = cv2.cvtColor(first_frame, cv2.COLOR_BGR2GRAY)
@@ -71,22 +94,36 @@ def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fr
 
         cumulative_mask = np.sum(mask_queue, axis=0)
         mask_smoothed = (cumulative_mask >= (alpha_fraction * len(mask_queue) * 255)).astype(np.uint8) * 255
+
         mask_smoothed = cv2.morphologyEx(mask_smoothed, cv2.MORPH_CLOSE, kernel)
         mask_smoothed = cv2.morphologyEx(mask_smoothed, cv2.MORPH_OPEN, kernel)
 
         mask_rect = generate_bounding_box(mask_smoothed)
         out_overlay.write(frame)
         out_mask.write(mask_rect)
+
         prev_gray = gray.copy()
         frame_count += 1
 
     cap.release()
     out_overlay.release()
     out_mask.release()
-    logging.info(f"Motion detection completata in {time.time() - start_time:.2f} secondi. Frames: {frame_count}")
+    logging.info(f"Motion detection completed in {time.time() - start_time:.2f} seconds. Frames: {frame_count}")
 
-# Funzione per elaborare un frame
 def process_frame(args):
+    """
+    Takes a frame from the original video and its corresponding mask frame.
+    If the mask indicates no motion (mask area = 0), it applies a simplified 
+    block-based DCT compression to that region to aggressively reduce detail. 
+    It also sets the chrominance channels (Cr, Cb) to a neutral value (128) 
+    in motionless blocks.
+    
+    Args:
+        args (tuple): Contains (frame_in, frame_mask, QTY_aggressive).
+    Returns:
+        The processed BGR frame after applying block-level DCT compression 
+        in static regions.
+    """
     frame_in, frame_mask, QTY_aggressive = args
 
     if len(frame_mask.shape) == 3:
@@ -111,8 +148,12 @@ def process_frame(args):
     frame_compressed = cv2.merge([y_channel, cr_channel, cb_channel])
     return cv2.cvtColor(frame_compressed, cv2.COLOR_YCrCb2BGR)
 
-# Compressione con gestione a batch
 def compress_with_motion(input_video, mask_video, output_dir):
+    """
+    Reads the 'overlay' video (original frames) and the 'mask' video 
+    (bounding box mask). Processes frames in batches, applying a more 
+    aggressive block-based DCT compression to regions without motion.
+    """
     cap_input = cv2.VideoCapture(input_video)
     cap_mask = cv2.VideoCapture(mask_video)
 
@@ -147,6 +188,10 @@ def compress_with_motion(input_video, mask_video, output_dir):
     out.release()
 
 def process_and_write_batch(frames, out):
+    """
+    Uses a multiprocessing Pool to process each frame in parallel 
+    and then writes the processed frames to the output video.
+    """
     pool = Pool(processes=cpu_count())
     results = pool.map(process_frame, frames)
     pool.close()
@@ -156,12 +201,21 @@ def process_and_write_batch(frames, out):
         out.write(frame)
 
 def process_single_video(video_path, output_dir):
+    """
+    Combines the motion detection (with bounding boxes) and the subsequent 
+    compression steps for a single video. Creates a specific output directory 
+    for the video, sets up logging, performs motion detection, and then applies compression.
+
+    Args:
+        video_path (str): Path to the input video file.
+        output_dir (str): Path to the main output directory.
+    """
     video_name = os.path.splitext(os.path.basename(video_path))[0]
     video_output_dir = os.path.join(output_dir, video_name)
     os.makedirs(video_output_dir, exist_ok=True)
 
     setup_logging(video_output_dir)
-    logging.info(f"=== Inizio elaborazione del video '{video_name}' ===")
+    logging.info(f"=== Starting processing of the video '{video_name}' ===")
 
     temporal_smoothing_flow(video_path, video_output_dir)
     compress_with_motion(
@@ -170,7 +224,7 @@ def process_single_video(video_path, output_dir):
         video_output_dir
     )
 
-    logging.info(f"=== Elaborazione '{video_name}' completata. ===")
+    logging.info(f"=== Processing of '{video_name}' completed. ===")
 
 if __name__ == "__main__":
     process_single_video("./Dataset/input/video.mp4", "./Dataset/output/")
