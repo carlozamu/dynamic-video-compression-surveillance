@@ -19,6 +19,10 @@ from PyQt5.QtCore import pyqtSignal, QObject, QMetaObject, Qt, Q_ARG
 from motion_compression_opt import process_single_video
 
 class LogHandler(logging.Handler, QObject):
+    """
+    Custom logging handler that emits logs through a Qt signal
+    so they can be displayed in the GUI.
+    """
     log_signal = pyqtSignal(str)
 
     def __init__(self):
@@ -26,13 +30,24 @@ class LogHandler(logging.Handler, QObject):
         QObject.__init__(self)
 
     def emit(self, record):
+        """
+        When a log record is emitted, convert it to text and
+        send it through the signal.
+        """
         log_message = self.format(record)
         self.log_signal.emit(log_message)
 
 class VideoProcessingApp(QMainWindow):
+    """
+    Main window of the application. It contains:
+      - A file selector for the input video.
+      - A directory selector for the output folder.
+      - A text area for logs.
+      - Buttons to start and exit the processing.
+    """
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Elaborazione Video")
+        self.setWindowTitle("Video Processing")
         self.setGeometry(100, 100, 800, 600)
 
         self.init_ui()
@@ -53,13 +68,17 @@ class VideoProcessingApp(QMainWindow):
             root_logger.addHandler(self.log_handler)
 
     def init_ui(self):
+        """
+        Builds the layout and widgets of the main window. 
+        Includes text fields, buttons, and the log display area.
+        """
         main_layout = QVBoxLayout()
 
         file_layout = QHBoxLayout()
-        file_label = QLabel("Seleziona un file video da elaborare:")
+        file_label = QLabel("Select a video file to process:")
         self.file_input = QLineEdit()
         self.file_input.setReadOnly(True)
-        file_button = QPushButton("Sfoglia")
+        file_button = QPushButton("Browse")
         file_button.clicked.connect(self.browse_file)
         file_layout.addWidget(file_label)
         file_layout.addWidget(self.file_input)
@@ -67,10 +86,10 @@ class VideoProcessingApp(QMainWindow):
         main_layout.addLayout(file_layout)
 
         output_layout = QHBoxLayout()
-        output_label = QLabel("Seleziona la cartella di output:")
+        output_label = QLabel("Select the output folder:")
         self.output_input = QLineEdit()
         self.output_input.setReadOnly(True)
-        output_button = QPushButton("Sfoglia")
+        output_button = QPushButton("Browse")
         output_button.clicked.connect(self.browse_output)
         output_layout.addWidget(output_label)
         output_layout.addWidget(self.output_input)
@@ -82,9 +101,9 @@ class VideoProcessingApp(QMainWindow):
         main_layout.addWidget(self.log_area)
 
         button_layout = QHBoxLayout()
-        self.start_button = QPushButton("Avvia")
+        self.start_button = QPushButton("Start")
         self.start_button.clicked.connect(self.start_processing)
-        self.exit_button = QPushButton("Esci")
+        self.exit_button = QPushButton("Exit")
         self.exit_button.clicked.connect(self.close)
         button_layout.addWidget(self.start_button)
         button_layout.addWidget(self.exit_button)
@@ -95,28 +114,38 @@ class VideoProcessingApp(QMainWindow):
         self.setCentralWidget(container)
 
     def browse_file(self):
-        file_path, _ = QFileDialog.getOpenFileName(self, "Seleziona un file video", "", "Video Files (*.mp4)")
+        """
+        Opens a file dialog to select a video file (.mp4).
+        """
+        file_path, _ = QFileDialog.getOpenFileName(self, "Select a video file", "", "Video Files (*.mp4)")
         if file_path:
             self.file_input.setText(file_path)
 
     def browse_output(self):
-        output_dir = QFileDialog.getExistingDirectory(self, "Seleziona una cartella di output")
+        """
+        Opens a folder selection dialog to choose the output directory.
+        """
+        output_dir = QFileDialog.getExistingDirectory(self, "Select an output folder")
         if output_dir:
             self.output_input.setText(output_dir)
 
     def start_processing(self):
+        """
+        Validates the input file and output directory, then starts the 
+        video processing in a separate thread to keep the UI responsive.
+        """
         file_path = self.file_input.text()
         output_dir = self.output_input.text()
 
         if not file_path or not os.path.exists(file_path):
-            QMessageBox.critical(self, "Errore", "Seleziona un file video valido!")
+            QMessageBox.critical(self, "Error", "Please select a valid video file!")
             return
         if not output_dir or not os.path.exists(output_dir):
-            QMessageBox.critical(self, "Errore", "Seleziona una cartella di output valida!")
+            QMessageBox.critical(self, "Error", "Please select a valid output folder!")
             return
 
-        self.log_area.appendPlainText("Elaborazione avviata... attendere il completamento.\n")
-        logging.info("Iniziato il thread di elaborazione del video.")
+        self.log_area.appendPlainText("Processing started... please wait for completion.\n")
+        logging.info("Thread for video processing started.")
 
         threading.Thread(
             target=self.process_video,
@@ -125,17 +154,24 @@ class VideoProcessingApp(QMainWindow):
         ).start()
 
     def process_video(self, file_path, output_dir):
+        """
+        Calls the function 'process_single_video' to do the actual processing.
+        Catches exceptions and logs them if needed.
+        """
         try:
-            logging.debug(f"Chiamata a process_single_video con file: {file_path}, cartella di output: {output_dir}")
+            logging.debug(f"Calling process_single_video with file: {file_path}, output folder: {output_dir}")
             process_single_video(file_path, output_dir)
-            self.append_log("Elaborazione completata!")
+            self.append_log("Processing completed!")
         except Exception as e:
-            logging.error(f"Errore durante l'elaborazione: {e}", exc_info=True)
-            self.append_log(f"Errore durante l'elaborazione: {str(e)}")
+            logging.error(f"Error during processing: {e}", exc_info=True)
+            self.append_log(f"Error during processing: {str(e)}")
         finally:
-            logging.info("Processo completato.")
+            logging.info("Process completed.")
 
     def append_log(self, message):
+        """
+        Appends a log message to the log_area (in a thread-safe manner).
+        """
         QMetaObject.invokeMethod(
             self.log_area,
             "appendPlainText",
@@ -144,6 +180,9 @@ class VideoProcessingApp(QMainWindow):
         )
 
 def main():
+    """
+    Main function that initializes the QApplication and shows the main window.
+    """
     app = QApplication(sys.argv)
     window = VideoProcessingApp()
     window.show()
