@@ -6,7 +6,7 @@ import threading
 import tkinter as tk
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
-from motion_compression_opt import process_single_video
+from motion_compression_opt import process_single_video_of
 
 class TkinterLogHandler(logging.Handler):
     """
@@ -161,7 +161,7 @@ class VideoProcessingApp(ctk.CTk):
         e aggiorna le barre di avanzamento.
         """
         try:
-            process_single_video(
+            process_single_video_of(
                 video_path=file_path,
                 output_dir=output_dir,
                 progress_callback_motion=self.update_progress_motion,
