@@ -1,8 +1,5 @@
-customtkinter==5.2.2
-darkdetect==0.8.0
 numpy==1.24.4
 opencv-python==4.11.0.86
-packaging==24.2
 PyQt5==5.15.11
 PyQt5-Qt5==5.15.2
 PyQt5_sip==12.15.0
