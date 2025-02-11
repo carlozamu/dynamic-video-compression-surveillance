@@ -1,28 +1,19 @@
 import sys
 import os
-import logging
 import threading
+import logging
 from PyQt5.QtWidgets import (
-    QApplication,
-    QMainWindow,
-    QVBoxLayout,
-    QHBoxLayout,
-    QLabel,
-    QLineEdit,
-    QPushButton,
-    QFileDialog,
-    QPlainTextEdit,
-    QWidget,
-    QMessageBox,
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+    QLabel, QLineEdit, QPushButton, QFileDialog, QComboBox, QPlainTextEdit, QMessageBox
 )
-from PyQt5.QtCore import pyqtSignal, QObject, QMetaObject, Qt, Q_ARG
-from motion_compression_opt import process_single_video
+from PyQt5.QtCore import Qt, pyqtSignal, QObject, QMetaObject, Q_ARG
 
-class LogHandler(logging.Handler, QObject):
-    """
-    Custom logging handler that emits logs through a Qt signal
-    so they can be displayed in the GUI.
-    """
+# Importa le funzioni di processing in base alla tecnica
+from motion_compression_opt import process_single_video_of
+from frame_differencing import process_single_video_fd
+
+class QtLogHandler(logging.Handler, QObject):
+    """Handler personalizzato per inviare i log all'area di testo dell'interfaccia."""
     log_signal = pyqtSignal(str)
 
     def __init__(self):
@@ -30,148 +21,78 @@ class LogHandler(logging.Handler, QObject):
         QObject.__init__(self)
 
     def emit(self, record):
-        """
-        When a log record is emitted, convert it to text and
-        send it through the signal.
-        """
-        log_message = self.format(record)
-        self.log_signal.emit(log_message)
+        msg = self.format(record)
+        self.log_signal.emit(msg)
 
-class VideoProcessingApp(QMainWindow):
-    """
-    Main window of the application. It contains:
-      - A file selector for the input video.
-      - A directory selector for the output folder.
-      - A text area for logs.
-      - Buttons to start and exit the processing.
-    """
+class VideoProcessingWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Video Processing")
-        self.setGeometry(100, 100, 800, 600)
-
+        self.setGeometry(100, 100, 600, 400)
         self.init_ui()
-
-        self.log_handler = LogHandler()
-        self.log_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-        self.log_handler.log_signal.connect(self.append_log)
-
-        root_logger = logging.getLogger()
-        root_logger.setLevel(logging.DEBUG)
-
-        console_handler = logging.StreamHandler()
-        console_handler.setLevel(logging.DEBUG)
-        console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-
-        if not any(isinstance(handler, LogHandler) for handler in root_logger.handlers):
-            root_logger.addHandler(console_handler)
-            root_logger.addHandler(self.log_handler)
+        self.setup_logging()
 
     def init_ui(self):
-        """
-        Builds the layout and widgets of the main window. 
-        Includes text fields, buttons, and the log display area.
-        """
-        main_layout = QVBoxLayout()
+        central_widget = QWidget()
+        self.setCentralWidget(central_widget)
+        layout = QVBoxLayout()
 
-        file_layout = QHBoxLayout()
-        file_label = QLabel("Select a video file to process:")
-        self.file_input = QLineEdit()
-        self.file_input.setReadOnly(True)
-        file_button = QPushButton("Browse")
-        file_button.clicked.connect(self.browse_file)
-        file_layout.addWidget(file_label)
-        file_layout.addWidget(self.file_input)
-        file_layout.addWidget(file_button)
-        main_layout.addLayout(file_layout)
+        # Sezione: selezione file di input
+        input_layout = QHBoxLayout()
+        input_label = QLabel("Input Video:")
+        self.input_line = QLineEdit()
+        self.input_line.setPlaceholderText("Seleziona il file video")
+        browse_input_btn = QPushButton("Browse")
+        browse_input_btn.clicked.connect(self.browse_input)
+        input_layout.addWidget(input_label)
+        input_layout.addWidget(self.input_line)
+        input_layout.addWidget(browse_input_btn)
+        layout.addLayout(input_layout)
 
+        # Sezione: selezione cartella di output
         output_layout = QHBoxLayout()
-        output_label = QLabel("Select the output folder:")
-        self.output_input = QLineEdit()
-        self.output_input.setReadOnly(True)
-        output_button = QPushButton("Browse")
-        output_button.clicked.connect(self.browse_output)
+        output_label = QLabel("Output Folder:")
+        self.output_line = QLineEdit()
+        self.output_line.setPlaceholderText("Seleziona la cartella di output")
+        browse_output_btn = QPushButton("Browse")
+        browse_output_btn.clicked.connect(self.browse_output)
         output_layout.addWidget(output_label)
-        output_layout.addWidget(self.output_input)
-        output_layout.addWidget(output_button)
-        main_layout.addLayout(output_layout)
+        output_layout.addWidget(self.output_line)
+        output_layout.addWidget(browse_output_btn)
+        layout.addLayout(output_layout)
 
+        # Sezione: selezione tecnica
+        technique_layout = QHBoxLayout()
+        technique_label = QLabel("Select Technique:")
+        self.technique_combo = QComboBox()
+        self.technique_combo.addItems(["Optical Flow", "Frame Differencing"])
+        technique_layout.addWidget(technique_label)
+        technique_layout.addWidget(self.technique_combo)
+        layout.addLayout(technique_layout)
+
+        # Pulsante di avvio
+        self.start_btn = QPushButton("Start")
+        self.start_btn.clicked.connect(self.start_processing)
+        layout.addWidget(self.start_btn)
+
+        # Area di log
         self.log_area = QPlainTextEdit()
         self.log_area.setReadOnly(True)
-        main_layout.addWidget(self.log_area)
+        layout.addWidget(self.log_area)
 
-        button_layout = QHBoxLayout()
-        self.start_button = QPushButton("Start")
-        self.start_button.clicked.connect(self.start_processing)
-        self.exit_button = QPushButton("Exit")
-        self.exit_button.clicked.connect(self.close)
-        button_layout.addWidget(self.start_button)
-        button_layout.addWidget(self.exit_button)
-        main_layout.addLayout(button_layout)
+        central_widget.setLayout(layout)
 
-        container = QWidget()
-        container.setLayout(main_layout)
-        self.setCentralWidget(container)
-
-    def browse_file(self):
-        """
-        Opens a file dialog to select a video file (.mp4).
-        """
-        file_path, _ = QFileDialog.getOpenFileName(self, "Select a video file", "", "Video Files (*.mp4)")
-        if file_path:
-            self.file_input.setText(file_path)
-
-    def browse_output(self):
-        """
-        Opens a folder selection dialog to choose the output directory.
-        """
-        output_dir = QFileDialog.getExistingDirectory(self, "Select an output folder")
-        if output_dir:
-            self.output_input.setText(output_dir)
-
-    def start_processing(self):
-        """
-        Validates the input file and output directory, then starts the 
-        video processing in a separate thread to keep the UI responsive.
-        """
-        file_path = self.file_input.text()
-        output_dir = self.output_input.text()
-
-        if not file_path or not os.path.exists(file_path):
-            QMessageBox.critical(self, "Error", "Please select a valid video file!")
-            return
-        if not output_dir or not os.path.exists(output_dir):
-            QMessageBox.critical(self, "Error", "Please select a valid output folder!")
-            return
-
-        self.log_area.appendPlainText("Processing started... please wait for completion.\n")
-        logging.info("Thread for video processing started.")
-
-        threading.Thread(
-            target=self.process_video,
-            args=(file_path, output_dir),
-            daemon=True
-        ).start()
-
-    def process_video(self, file_path, output_dir):
-        """
-        Calls the function 'process_single_video' to do the actual processing.
-        Catches exceptions and logs them if needed.
-        """
-        try:
-            logging.debug(f"Calling process_single_video with file: {file_path}, output folder: {output_dir}")
-            process_single_video(file_path, output_dir)
-            self.append_log("Processing completed!")
-        except Exception as e:
-            logging.error(f"Error during processing: {e}", exc_info=True)
-            self.append_log(f"Error during processing: {str(e)}")
-        finally:
-            logging.info("Process completed.")
+    def setup_logging(self):
+        """Configura il logging per inviare i messaggi all’area di log."""
+        self.log_handler = QtLogHandler()
+        self.log_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+        self.log_handler.log_signal.connect(self.append_log)
+        logger = logging.getLogger()
+        logger.setLevel(logging.DEBUG)
+        logger.addHandler(self.log_handler)
 
     def append_log(self, message):
-        """
-        Appends a log message to the log_area (in a thread-safe manner).
-        """
+        """Aggiunge un messaggio di log in maniera thread-safe."""
         QMetaObject.invokeMethod(
             self.log_area,
             "appendPlainText",
@@ -179,12 +100,56 @@ class VideoProcessingApp(QMainWindow):
             Q_ARG(str, message)
         )
 
+    def browse_input(self):
+        file_path, _ = QFileDialog.getOpenFileName(
+            self, "Select Video File", "", "Video Files (*.mp4 *.avi *.mov *.mkv)"
+        )
+        if file_path:
+            self.input_line.setText(file_path)
+
+    def browse_output(self):
+        folder = QFileDialog.getExistingDirectory(self, "Select Output Directory")
+        if folder:
+            self.output_line.setText(folder)
+
+    def start_processing(self):
+        input_path = self.input_line.text().strip()
+        output_folder = self.output_line.text().strip()
+        technique = self.technique_combo.currentText()
+
+        if not input_path or not os.path.isfile(input_path):
+            QMessageBox.critical(self, "Error", "Please select a valid input video file!")
+            return
+        if not output_folder or not os.path.isdir(output_folder):
+            QMessageBox.critical(self, "Error", "Please select a valid output folder!")
+            return
+
+        self.append_log("Starting processing...")
+        self.start_btn.setEnabled(False)
+        # Avvia il processing in un thread separato
+        thread = threading.Thread(target=self.process_video, args=(input_path, output_folder, technique))
+        thread.start()
+
+    def process_video(self, input_path, output_folder, technique):
+        try:
+            if technique == "Optical Flow":
+                logging.info("Technique: Optical Flow selected.")
+                process_single_video_of(input_path, output_folder)
+            elif technique == "Frame Differencing":
+                logging.info("Technique: Frame Differencing selected.")
+                process_single_video_fd(input_path, output_folder)
+            else:
+                logging.error("Unknown technique selected.")
+                return
+            logging.info("Processing completed successfully.")
+        except Exception as e:
+            logging.error(f"Error during processing: {e}", exc_info=True)
+        finally:
+            self.start_btn.setEnabled(True)
+
 def main():
-    """
-    Main function that initializes the QApplication and shows the main window.
-    """
     app = QApplication(sys.argv)
-    window = VideoProcessingApp()
+    window = VideoProcessingWindow()
     window.show()
     sys.exit(app.exec_())
 
