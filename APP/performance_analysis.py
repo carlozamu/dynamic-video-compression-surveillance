@@ -8,13 +8,9 @@ import cv2  # Necessario per leggere le proprietà dei video
 
 def parse_execution_times(file_path):
     """
-    Estrae dal file execution_times.txt i seguenti dati:
-      - md_frames, md_time, md_avg
-      - cp_frames, cp_time, cp_avg
-      - total_processing_time
-
-    Formato atteso:
+    Estrae dal file execution_times.txt i dati di performance.
     
+    Per il formato Optical Flow (execution_times.txt prodotto da motion_compression_opt.py)
       Motion Detection:
         Frames processed: <md_frames>
         Total time: <md_time> seconds
@@ -26,29 +22,91 @@ def parse_execution_times(file_path):
         Average time per frame: <cp_avg> seconds
 
       Total video processing time: <total_processing_time> seconds
+
+    Per il formato Frame Differencing (execution_times.txt prodotto da frame_differencing.py)
+      Frame Differencing:
+        Frames processed: <frames>
+        Total time: <time> seconds
+        Average time per frame: <avg> seconds
+
+      Total video processing time: <total_processing_time> seconds
+
+    Nel caso del Frame Differencing, i valori verranno assegnati alle chiavi md_*
+    e i valori relativi alla compressione (cp_*) saranno impostati a 0.
     """
     data = {}
     try:
         with open(file_path, "r") as f:
-            lines = f.readlines()
+            # Legge le linee ignorando quelle vuote
+            lines = [line.strip() for line in f if line.strip() != '']
         pattern = r":\s*([\d\.]+)"
-        md_frames = int(re.search(pattern, lines[1]).group(1))
-        md_time   = float(re.search(pattern, lines[2]).group(1))
-        md_avg    = float(re.search(pattern, lines[3]).group(1))
-        cp_frames = int(re.search(pattern, lines[6]).group(1))
-        cp_time   = float(re.search(pattern, lines[7]).group(1))
-        cp_avg    = float(re.search(pattern, lines[8]).group(1))
-        total_processing_time = float(re.search(pattern, lines[10]).group(1))
         
-        data = {
-            "md_frames": md_frames,
-            "md_time": md_time,
-            "md_avg": md_avg,
-            "cp_frames": cp_frames,
-            "cp_time": cp_time,
-            "cp_avg": cp_avg,
-            "total_processing_time": total_processing_time
-        }
+        if lines[0].startswith("Motion Detection:"):
+            # Parsing Optical Flow:
+            # Expected lines:
+            #   0: Motion Detection:
+            #   1: Frames processed: <md_frames>
+            #   2: Total time: <md_time> seconds
+            #   3: Average time per frame: <md_avg> seconds
+            md_frames = int(re.search(pattern, lines[1]).group(1))
+            md_time   = float(re.search(pattern, lines[2]).group(1))
+            md_avg    = float(re.search(pattern, lines[3]).group(1))
+            # Trova la sezione Compression:
+            comp_index = None
+            for i, line in enumerate(lines):
+                if line.startswith("Compression:"):
+                    comp_index = i
+                    break
+            if comp_index is not None:
+                cp_frames = int(re.search(pattern, lines[comp_index+1]).group(1))
+                cp_time   = float(re.search(pattern, lines[comp_index+2]).group(1))
+                cp_avg    = float(re.search(pattern, lines[comp_index+3]).group(1))
+            else:
+                cp_frames = cp_time = cp_avg = 0
+            # Trova la riga del tempo totale
+            total_line = [line for line in lines if line.startswith("Total video processing time:")]
+            if total_line:
+                total_processing_time = float(re.search(pattern, total_line[0]).group(1))
+            else:
+                total_processing_time = md_time + cp_time
+
+            data = {
+                "md_frames": md_frames,
+                "md_time": md_time,
+                "md_avg": md_avg,
+                "cp_frames": cp_frames,
+                "cp_time": cp_time,
+                "cp_avg": cp_avg,
+                "total_processing_time": total_processing_time
+            }
+        elif lines[0].startswith("Frame Differencing:"):
+            # Parsing Frame Differencing:
+            # Expected lines:
+            #   0: Frame Differencing:
+            #   1: Frames processed: <frames>
+            #   2: Total time: <time> seconds
+            #   3: Average time per frame: <avg> seconds
+            fd_frames = int(re.search(pattern, lines[1]).group(1))
+            fd_time   = float(re.search(pattern, lines[2]).group(1))
+            fd_avg    = float(re.search(pattern, lines[3]).group(1))
+            total_line = [line for line in lines if line.startswith("Total video processing time:")]
+            if total_line:
+                total_processing_time = float(re.search(pattern, total_line[0]).group(1))
+            else:
+                total_processing_time = fd_time
+
+            # Assegna i valori del Frame Differencing alle chiavi md_*
+            data = {
+                "md_frames": fd_frames,
+                "md_time": fd_time,
+                "md_avg": fd_avg,
+                "cp_frames": 0,
+                "cp_time": 0.0,
+                "cp_avg": 0.0,
+                "total_processing_time": total_processing_time
+            }
+        else:
+            raise ValueError("Formato non riconosciuto di execution_times.txt")
     except Exception as e:
         print(f"Errore nel parsing di {file_path}: {e}")
         return None
@@ -73,6 +131,23 @@ def get_file_size(file_path):
         return os.path.getsize(file_path)
     except Exception:
         return 0
+
+def get_original_and_compressed_paths(subfolder):
+    """
+    Restituisce una tuple (original_path, compressed_path) in base alla presenza
+    dei file nelle sottocartelle. Se esiste 'overlay.mp4' e 'compressed.mp4', li usa;
+    altrimenti prova con 'dilated_motion_mask_video.mp4' e 'compressed_final_video.mp4'.
+    """
+    overlay_path = os.path.join(subfolder, "overlay.mp4")
+    compressed_path = os.path.join(subfolder, "compressed.mp4")
+    if os.path.isfile(overlay_path) and os.path.isfile(compressed_path):
+        return overlay_path, compressed_path
+    else:
+        original_path = os.path.join(subfolder, "dilated_motion_mask_video.mp4")
+        compressed_path = os.path.join(subfolder, "compressed_final_video.mp4")
+        if os.path.isfile(original_path) and os.path.isfile(compressed_path):
+            return original_path, compressed_path
+    return None, None
 
 def main():
     if len(sys.argv) < 2:
@@ -100,9 +175,14 @@ def main():
                 if data is not None:
                     data["video"] = item  # Nome della sottocartella (video)
                     
-                    # Legge la durata del video da overlay.mp4
-                    overlay_path = os.path.join(subfolder, "overlay.mp4")
-                    video_duration = get_video_duration(overlay_path)
+                    # Ottiene i percorsi per il video "originale" e quello "compresso"
+                    original_path, compressed_path = get_original_and_compressed_paths(subfolder)
+                    if original_path is None or compressed_path is None:
+                        print(f"Attenzione: file video non trovati in {subfolder}")
+                        continue
+                    
+                    # Legge la durata del video originale
+                    video_duration = get_video_duration(original_path)
                     data["video_duration_seconds"] = video_duration
                     
                     # Calcola il tempo di conversione medio per minuto di video
@@ -111,9 +191,8 @@ def main():
                     else:
                         data["conversion_time_per_minute"] = 0
                         
-                    # Calcola dimensioni originali (overlay.mp4) e compresso (compressed.mp4)
-                    original_size = get_file_size(overlay_path)
-                    compressed_path = os.path.join(subfolder, "compressed.mp4")
+                    # Calcola dimensioni originali e compresso
+                    original_size = get_file_size(original_path)
                     compressed_size = get_file_size(compressed_path)
                     data["original_size_bytes"] = original_size
                     data["compressed_size_bytes"] = compressed_size
