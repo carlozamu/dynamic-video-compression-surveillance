@@ -134,6 +134,9 @@ def filter_and_dilate_movements(video_path, output_dir,
             frame_count += 1
             frame_processing_times.append(time.time() - frame_start)
 
+            if progress_callback is not None and frame_count % 50 == 0:
+                progress_callback(frame_count)
+
     except Exception as e:
         logging.error("Errore durante l'elaborazione: " + str(e), exc_info=True)
     finally:
@@ -142,11 +145,16 @@ def filter_and_dilate_movements(video_path, output_dir,
         final_out.release()
 
     total_time = time.time() - start_time
-    avg_time_per_frame = sum(frame_processing_times) / len(frame_processing_times) if frame_processing_times else 0
+    avg_time_per_frame = (sum(frame_processing_times) / len(frame_processing_times)
+                          if frame_processing_times else 0)
 
+    # Scrive il file di log delle performance con la stessa struttura di motion_compression_opt.py
     with open(time_log_path, "w") as f:
-        f.write(f"Tempo totale: {total_time:.2f} secondi\n")
-        f.write(f"Tempo medio per frame: {avg_time_per_frame:.4f} secondi\n")
+        f.write("Frame Differencing:\n")
+        f.write(f"  Frames processed: {frame_count}\n")
+        f.write(f"  Total time: {total_time:.2f} seconds\n")
+        f.write(f"  Average time per frame: {avg_time_per_frame:.4f} seconds\n\n")
+        f.write(f"Total video processing time: {total_time:.2f} seconds\n")
 
     logging.info(f"Statistiche di esecuzione salvate in: {time_log_path}")
 
