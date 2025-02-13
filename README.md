@@ -74,6 +74,9 @@ The GUI allows you to:
 - Optionally perform performance analysis after processing.
 - Monitor real-time logs and processing progress.
 
+![Example Output](./img/windows.png)
+
+
 ### 2. Run Modules via Command Line (only for Debug)
 #### Frame Differencing Processing:
 ```bash
