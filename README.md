@@ -85,21 +85,6 @@ After processing, the following files will be generated in the selected output d
     - **Compression Percentage:** A text file with the overall compression percentage.
     - **Performance Data CSV:** A CSV file with detailed statistics and performance metrics.
 
-
-### 2. Run Modules via Command Line (only for Debug)
-#### Frame Differencing Processing:
-```bash
-python frame_differencing.py
-```
-#### Optical Flow Processing:
-```bash
-python motion_compression_opt.py
-```
-#### Performance Analysis:
-```bash
-python performance_analysis.py <output_folder>
-```
-
 ---
 
 ## Reference Paper
