@@ -7,13 +7,13 @@ from collections import deque
 
 def setup_logging(output_dir):
     """
-    Configura il logging aggiungendo un file handler, 
-    senza rimuovere eventuali handler già impostati (es. QtLogHandler).
+    Configures logging by adding a file handler,
+    without removing any handlers already set (e.g., QtLogHandler).
     """
     log_file = os.path.join(output_dir, "processing.log")
     logger = logging.getLogger()
 
-    # Verifica se esiste già un handler per il file, altrimenti aggiungilo.
+    # Check if a handler for the file already exists, otherwise add it.
     file_handler_exists = any(
         isinstance(handler, logging.FileHandler) and handler.baseFilename == os.path.abspath(log_file)
         for handler in logger.handlers
@@ -30,10 +30,10 @@ def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fr
                               window_size=30, morph_kernel=2, save_name="overlay.mp4", 
                               mask_save_name="mask.mp4"):
     """
-    Esegue il rilevamento del movimento con optical flow e smussamento temporale.
-    Salva:
-      - overlay.mp4: il video originale
-      - mask.mp4: la maschera ottenuta dopo operazioni morfologiche e rettangolarizzazione
+    Performs motion detection with optical flow and temporal smoothing.
+    Saves:
+      - overlay.mp4: the original video
+      - mask.mp4: the mask obtained after morphological operations and rectangularization
     """
     start_time = time.time()
     cap = cv2.VideoCapture(video_path)
@@ -85,11 +85,11 @@ def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fr
         cumulative_mask = np.sum(np.array(mask_queue), axis=0)
         mask_smoothed = (cumulative_mask >= (alpha_fraction * len(mask_queue) * 255)).astype(np.uint8) * 255
         
-        # Operazioni morfologiche
+        # Morphological operations
         mask_smoothed = cv2.morphologyEx(mask_smoothed, cv2.MORPH_CLOSE, kernel)
         mask_smoothed = cv2.morphologyEx(mask_smoothed, cv2.MORPH_OPEN, kernel)
         
-        # Rettangolarizza le aree di movimento
+        # Rectangularize the areas of motion
         contours, _ = cv2.findContours(mask_smoothed, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         mask_rect = np.zeros((height, width), dtype=np.uint8)
         for cnt in contours:
@@ -110,10 +110,10 @@ def temporal_smoothing_flow(video_path, output_dir, flow_threshold=0.5, alpha_fr
 
 def compress_with_motion(input_video, mask_video, output_dir):
     """
-    Applica la compressione basata sul movimento:
-      - Nelle aree statiche (maschera == 0) viene applicata una compressione DCT aggressiva
-        seguita dalla conversione in scala di grigi.
-    Salva il video compresso in "compressed.mp4".
+    Applies motion-based compression:
+      - In static areas (mask == 0), aggressive DCT compression is applied
+        followed by grayscale conversion.
+    Saves the compressed video in "compressed.mp4".
     """
     start_time = time.time()
     logging.info(f"Starting motion-based compression for: {os.path.basename(input_video)}")
@@ -148,11 +148,11 @@ def compress_with_motion(input_video, mask_video, output_dir):
         if len(frame_mask.shape) == 3:
             frame_mask = cv2.cvtColor(frame_mask, cv2.COLOR_BGR2GRAY)
         
-        # Conversione del frame in YCrCb e separazione dei canali
+        # Convert the frame to YCrCb and separate the channels
         frame_ycrcb = cv2.cvtColor(frame_in, cv2.COLOR_BGR2YCrCb)
         channels = cv2.split(frame_ycrcb)
         
-        # Per ogni blocco 8x8 nelle aree statiche (maschera media == 0) applica DCT + quantizzazione
+        # For each 8x8 block in static areas (mask mean == 0) apply DCT + quantization
         for i in range(0, frame_mask.shape[0], 8):
             for j in range(0, frame_mask.shape[1], 8):
                 block_mask = frame_mask[i:i+8, j:j+8]
@@ -170,7 +170,7 @@ def compress_with_motion(input_video, mask_video, output_dir):
         frame_processed = cv2.merge(channels)
         frame_processed = cv2.cvtColor(frame_processed, cv2.COLOR_YCrCb2BGR)
         
-        # Converte in scala di grigi i blocchi statici
+        # Convert static blocks to grayscale
         for i in range(0, frame_mask.shape[0], 8):
             for j in range(0, frame_mask.shape[1], 8):
                 block_mask = frame_mask[i:i+8, j:j+8]
@@ -194,11 +194,11 @@ def compress_with_motion(input_video, mask_video, output_dir):
 
 def process_single_video_of(video_path, output_dir):
     """
-    Combina i passaggi di motion detection e compressione per un singolo video.
-    - Crea una sottocartella dedicata (usando il nome del video)
-    - Imposta il logging in quella cartella
-    - Esegue motion detection e compressione
-    - Registra i tempi di esecuzione in 'execution_times.txt'
+    Combines the steps of motion detection and compression for a single video.
+    - Creates a dedicated subfolder (using the video name)
+    - Sets up logging in that folder
+    - Performs motion detection and compression
+    - Records execution times in 'execution_times.txt'
     """
     video_name = os.path.splitext(os.path.basename(video_path))[0]
     video_output_dir = os.path.join(output_dir, video_name)

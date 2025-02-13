@@ -5,16 +5,16 @@ import logging
 import subprocess
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
-    QLabel, QLineEdit, QPushButton, QFileDialog, QComboBox, QPlainTextEdit, QMessageBox
+    QLabel, QLineEdit, QPushButton, QFileDialog, QComboBox, QPlainTextEdit, QMessageBox, QCheckBox
 )
 from PyQt5.QtCore import Qt, pyqtSignal, QObject, QMetaObject, Q_ARG
 
-# Importa le funzioni di processing in base alla tecnica
+# Import processing functions based on the selected technique
 from motion_compression_opt import process_single_video_of
 from frame_differencing import process_single_video_fd
 
 class QtLogHandler(logging.Handler, QObject):
-    """Handler personalizzato per inviare i log all’area di testo dell'interfaccia."""
+    """Custom handler to relay log messages to the interface's text area."""
     log_signal = pyqtSignal(str)
 
     def __init__(self):
@@ -32,18 +32,18 @@ class VideoProcessingWindow(QMainWindow):
         self.setGeometry(100, 100, 600, 400)
         self.init_ui()
         self.setup_logging()
-        self.input_files = []  # Lista dei file video selezionati
+        self.input_files = []  # List of selected video files
 
     def init_ui(self):
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
         layout = QVBoxLayout()
 
-        # Sezione: selezione file di input (possibilità di selezionare più video)
+        # Section: Input file selection (allowing multiple videos to be selected)
         input_layout = QHBoxLayout()
         input_label = QLabel("Input Video(s):")
         self.input_line = QLineEdit()
-        self.input_line.setPlaceholderText("Seleziona uno o più file video")
+        self.input_line.setPlaceholderText("Select one or more video files")
         browse_input_btn = QPushButton("Browse")
         browse_input_btn.clicked.connect(self.browse_input)
         input_layout.addWidget(input_label)
@@ -51,11 +51,11 @@ class VideoProcessingWindow(QMainWindow):
         input_layout.addWidget(browse_input_btn)
         layout.addLayout(input_layout)
 
-        # Sezione: selezione cartella di output
+        # Section: Output folder selection
         output_layout = QHBoxLayout()
         output_label = QLabel("Output Folder:")
         self.output_line = QLineEdit()
-        self.output_line.setPlaceholderText("Seleziona la cartella di output")
+        self.output_line.setPlaceholderText("Select the output folder")
         browse_output_btn = QPushButton("Browse")
         browse_output_btn.clicked.connect(self.browse_output)
         output_layout.addWidget(output_label)
@@ -63,7 +63,7 @@ class VideoProcessingWindow(QMainWindow):
         output_layout.addWidget(browse_output_btn)
         layout.addLayout(output_layout)
 
-        # Sezione: selezione tecnica
+        # Section: Technique selection
         technique_layout = QHBoxLayout()
         technique_label = QLabel("Select Technique:")
         self.technique_combo = QComboBox()
@@ -72,12 +72,19 @@ class VideoProcessingWindow(QMainWindow):
         technique_layout.addWidget(self.technique_combo)
         layout.addLayout(technique_layout)
 
-        # Pulsante di avvio
+        # New section: Flag to perform performance analysis after conversion
+        performance_layout = QHBoxLayout()
+        self.performance_checkbox = QCheckBox("Perform performance analysis after conversion")
+        self.performance_checkbox.setChecked(True)  # Enabled by default
+        performance_layout.addWidget(self.performance_checkbox)
+        layout.addLayout(performance_layout)
+
+        # Start button
         self.start_btn = QPushButton("Start")
         self.start_btn.clicked.connect(self.start_processing)
         layout.addWidget(self.start_btn)
 
-        # Area di log
+        # Log area
         self.log_area = QPlainTextEdit()
         self.log_area.setReadOnly(True)
         layout.addWidget(self.log_area)
@@ -85,7 +92,7 @@ class VideoProcessingWindow(QMainWindow):
         central_widget.setLayout(layout)
 
     def setup_logging(self):
-        """Configura il logging per inviare i messaggi all’area di log."""
+        """Configure logging to send messages to the log area."""
         self.log_handler = QtLogHandler()
         self.log_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
         self.log_handler.log_signal.connect(self.append_log)
@@ -94,7 +101,7 @@ class VideoProcessingWindow(QMainWindow):
         logger.addHandler(self.log_handler)
 
     def append_log(self, message):
-        """Aggiunge un messaggio di log in maniera thread-safe."""
+        """Append a log message in a thread-safe manner."""
         QMetaObject.invokeMethod(
             self.log_area,
             "appendPlainText",
@@ -126,12 +133,14 @@ class VideoProcessingWindow(QMainWindow):
             return
 
         self.append_log("Starting processing of selected videos...")
-        # Disabilita il pulsante per evitare doppie esecuzioni
+        # Disable the button to prevent multiple executions
         QMetaObject.invokeMethod(self.start_btn, "setEnabled", Qt.QueuedConnection, Q_ARG(bool, False))
         technique = self.technique_combo.currentText()
+        # Capture the state of the checkbox before initiating the thread
+        run_performance = self.performance_checkbox.isChecked()
 
         def process_videos():
-            # Elaborazione dei video selezionati
+            # Process the selected videos
             for input_path in self.input_files:
                 if not os.path.isfile(input_path):
                     logging.error(f"File not found: {input_path}")
@@ -151,34 +160,38 @@ class VideoProcessingWindow(QMainWindow):
             logging.info("All selected videos processed.")
             self.append_log("Processing completed.")
 
-            # Avvio dell'analisi delle performance
-            logging.info("Starting performance analysis.")
-            self.append_log("Starting performance analysis.")
-            try:
-                # Costruisci il path dello script performance_analysis.py
-                performance_script = os.path.join(os.path.dirname(__file__), "performance_analysis.py")
-                # Esegui lo script passando la cartella di output come argomento
-                result = subprocess.run(
-                    ["python", performance_script, output_folder],
-                    capture_output=True, text=True
-                )
-                if result.returncode != 0:
-                    logging.error("Performance analysis failed: " + result.stderr)
-                    self.append_log("Performance analysis failed.")
-                else:
-                    logging.info("Performance analysis completed successfully.")
-                    self.append_log("Performance analysis completed successfully.")
-                    log_msg = f"Performance files saved in: {output_folder}"
-                    logging.info(log_msg)
-                    self.append_log(log_msg)
-            except Exception as e:
-                logging.error("Error running performance analysis: " + str(e), exc_info=True)
-                self.append_log("Error running performance analysis.")
+            # Execute performance analysis based on the selected flag
+            if run_performance:
+                logging.info("Starting performance analysis.")
+                self.append_log("Starting performance analysis.")
+                try:
+                    # Construct the path to the performance_analysis.py script
+                    performance_script = os.path.join(os.path.dirname(__file__), "performance_analysis.py")
+                    # Run the script, passing the output folder as an argument
+                    result = subprocess.run(
+                        ["python", performance_script, output_folder],
+                        capture_output=True, text=True
+                    )
+                    if result.returncode != 0:
+                        logging.error("Performance analysis failed: " + result.stderr)
+                        self.append_log("Performance analysis failed.")
+                    else:
+                        logging.info("Performance analysis completed successfully.")
+                        self.append_log("Performance analysis completed successfully.")
+                        log_msg = f"Performance files saved in: {output_folder}"
+                        logging.info(log_msg)
+                        self.append_log(log_msg)
+                except Exception as e:
+                    logging.error("Error running performance analysis: " + str(e), exc_info=True)
+                    self.append_log("Error running performance analysis.")
+            else:
+                logging.info("Skipping performance analysis as per user choice.")
+                self.append_log("Skipping performance analysis.")
 
-            # Riabilita il pulsante di avvio
+            # Re-enable the Start button
             QMetaObject.invokeMethod(self.start_btn, "setEnabled", Qt.QueuedConnection, Q_ARG(bool, True))
 
-        # Avvia l'elaborazione in un thread separato per non bloccare la GUI
+        # Start processing in a separate thread to avoid blocking the GUI
         thread = threading.Thread(target=process_videos)
         thread.start()
 

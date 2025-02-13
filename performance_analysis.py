@@ -4,13 +4,13 @@ import sys
 import re
 import csv
 import matplotlib.pyplot as plt
-import cv2  # Necessario per leggere le proprietà dei video
+import cv2  # Necessary to read video properties
 
 def parse_execution_times(file_path):
     """
-    Estrae dal file execution_times.txt i dati di performance.
+    Extracts performance data from the execution_times.txt file.
     
-    Per il formato Optical Flow (execution_times.txt prodotto da motion_compression_opt.py)
+    For the Optical Flow format (execution_times.txt produced by motion_compression_opt.py)
       Motion Detection:
         Frames processed: <md_frames>
         Total time: <md_time> seconds
@@ -23,7 +23,7 @@ def parse_execution_times(file_path):
 
       Total video processing time: <total_processing_time> seconds
 
-    Per il formato Frame Differencing (execution_times.txt prodotto da frame_differencing.py)
+    For the Frame Differencing format (execution_times.txt produced by frame_differencing.py)
       Frame Differencing:
         Frames processed: <frames>
         Total time: <time> seconds
@@ -31,13 +31,13 @@ def parse_execution_times(file_path):
 
       Total video processing time: <total_processing_time> seconds
 
-    Nel caso del Frame Differencing, i valori verranno assegnati alle chiavi md_*
-    e i valori relativi alla compressione (cp_*) saranno impostati a 0.
+    In the case of Frame Differencing, the values will be assigned to the md_* keys
+    and the compression values (cp_*) will be set to 0.
     """
     data = {}
     try:
         with open(file_path, "r") as f:
-            # Legge le linee ignorando quelle vuote
+            # Reads lines ignoring empty ones
             lines = [line.strip() for line in f if line.strip() != '']
         pattern = r":\s*([\d\.]+)"
         
@@ -51,7 +51,7 @@ def parse_execution_times(file_path):
             md_frames = int(re.search(pattern, lines[1]).group(1))
             md_time   = float(re.search(pattern, lines[2]).group(1))
             md_avg    = float(re.search(pattern, lines[3]).group(1))
-            # Trova la sezione Compression:
+            # Finds the Compression section:
             comp_index = None
             for i, line in enumerate(lines):
                 if line.startswith("Compression:"):
@@ -63,7 +63,7 @@ def parse_execution_times(file_path):
                 cp_avg    = float(re.search(pattern, lines[comp_index+3]).group(1))
             else:
                 cp_frames = cp_time = cp_avg = 0
-            # Trova la riga del tempo totale
+            # Finds the total time line
             total_line = [line for line in lines if line.startswith("Total video processing time:")]
             if total_line:
                 total_processing_time = float(re.search(pattern, total_line[0]).group(1))
@@ -95,7 +95,7 @@ def parse_execution_times(file_path):
             else:
                 total_processing_time = fd_time
 
-            # Assegna i valori del Frame Differencing alle chiavi md_*
+            # Assigns Frame Differencing values to md_* keys
             data = {
                 "md_frames": fd_frames,
                 "md_time": fd_time,
@@ -106,14 +106,14 @@ def parse_execution_times(file_path):
                 "total_processing_time": total_processing_time
             }
         else:
-            raise ValueError("Formato non riconosciuto di execution_times.txt")
+            raise ValueError("Unrecognized format of execution_times.txt")
     except Exception as e:
-        print(f"Errore nel parsing di {file_path}: {e}")
+        print(f"Error parsing {file_path}: {e}")
         return None
     return data
 
 def get_video_duration(video_path):
-    """Restituisce la durata del video in secondi utilizzando cv2."""
+    """Returns the duration of the video in seconds using cv2."""
     duration = 0
     if os.path.isfile(video_path):
         cap = cv2.VideoCapture(video_path)
@@ -126,7 +126,7 @@ def get_video_duration(video_path):
     return duration
 
 def get_file_size(file_path):
-    """Restituisce la dimensione del file in byte."""
+    """Returns the file size in bytes."""
     try:
         return os.path.getsize(file_path)
     except Exception:
@@ -134,9 +134,9 @@ def get_file_size(file_path):
 
 def get_original_and_compressed_paths(subfolder):
     """
-    Restituisce una tuple (original_path, compressed_path) in base alla presenza
-    dei file nelle sottocartelle. Se esiste 'overlay.mp4' e 'compressed.mp4', li usa;
-    altrimenti prova con 'dilated_motion_mask_video.mp4' e 'compressed_final_video.mp4'.
+    Returns a tuple (original_path, compressed_path) based on the presence
+    of files in the subfolders. If 'overlay.mp4' and 'compressed.mp4' exist, it uses them;
+    otherwise, it tries with 'dilated_motion_mask_video.mp4' and 'compressed_final_video.mp4'.
     """
     overlay_path = os.path.join(subfolder, "overlay.mp4")
     compressed_path = os.path.join(subfolder, "compressed.mp4")
@@ -151,21 +151,21 @@ def get_original_and_compressed_paths(subfolder):
 
 def main():
     if len(sys.argv) < 2:
-        print("Uso: python performance_analysis.py <output_folder>")
+        print("Usage: python performance_analysis.py <output_folder>")
         sys.exit(1)
         
     output_folder = sys.argv[1]
     if not os.path.isdir(output_folder):
-        print(f"Cartella di output non valida: {output_folder}")
+        print(f"Invalid output folder: {output_folder}")
         sys.exit(1)
     
-    # Creazione della sottocartella 'performance'
+    # Create the 'performance' subfolder
     performance_folder = os.path.join(output_folder, "performance")
     os.makedirs(performance_folder, exist_ok=True)
     
     performance_data = []
     
-    # Scorriamo tutte le sottocartelle della cartella di output
+    # Iterate through all subfolders in the output folder
     for item in os.listdir(output_folder):
         subfolder = os.path.join(output_folder, item)
         if os.path.isdir(subfolder):
@@ -173,25 +173,25 @@ def main():
             if os.path.isfile(exec_file):
                 data = parse_execution_times(exec_file)
                 if data is not None:
-                    data["video"] = item  # Nome della sottocartella (video)
+                    data["video"] = item  # Name of the subfolder (video)
                     
-                    # Ottiene i percorsi per il video "originale" e quello "compresso"
+                    # Get paths for the "original" and "compressed" videos
                     original_path, compressed_path = get_original_and_compressed_paths(subfolder)
                     if original_path is None or compressed_path is None:
-                        print(f"Attenzione: file video non trovati in {subfolder}")
+                        print(f"Warning: video files not found in {subfolder}")
                         continue
                     
-                    # Legge la durata del video originale
+                    # Read the duration of the original video
                     video_duration = get_video_duration(original_path)
                     data["video_duration_seconds"] = video_duration
                     
-                    # Calcola il tempo di conversione medio per minuto di video
+                    # Calculate the average conversion time per minute of video
                     if video_duration > 0:
                         data["conversion_time_per_minute"] = data["total_processing_time"] * 60 / video_duration
                     else:
                         data["conversion_time_per_minute"] = 0
                         
-                    # Calcola dimensioni originali e compresso
+                    # Calculate original and compressed sizes
                     original_size = get_file_size(original_path)
                     compressed_size = get_file_size(compressed_path)
                     data["original_size_bytes"] = original_size
@@ -206,10 +206,10 @@ def main():
                     performance_data.append(data)
     
     if not performance_data:
-        print("Nessun dato di performance trovato.")
+        print("No performance data found.")
         sys.exit(1)
     
-    # Definisce i nomi estesi per il CSV
+    # Define extended names for the CSV
     fieldnames = [
         "video",
         "md_frames",
@@ -246,46 +246,46 @@ def main():
                 "compressed_size_bytes": d.get("compressed_size_bytes", ""),
                 "reduction_percentage (%)": d.get("reduction_percentage", "")
             })
-    print(f"CSV salvato in: {csv_file}")
+    print(f"CSV saved in: {csv_file}")
     
-    # Grafico lineare: Tempo di conversione totale e conversione per minuto per ogni video
+    # Line chart: Total conversion time and conversion per minute for each video
     videos = [d["video"] for d in performance_data]
     total_times = [d["total_processing_time"] for d in performance_data]
     conv_time_per_min = [d["conversion_time_per_minute"] for d in performance_data]
     
     plt.figure(figsize=(10, 6))
-    plt.plot(videos, total_times, marker='o', label="Tempo Conversione Totale (s)")
-    plt.plot(videos, conv_time_per_min, marker='o', label="Tempo di Conversione per Minuto (s/min)")
+    plt.plot(videos, total_times, marker='o', label="Total Conversion Time (s)")
+    plt.plot(videos, conv_time_per_min, marker='o', label="Conversion Time per Minute (s/min)")
     plt.xlabel("Video")
-    plt.ylabel("Tempo (s)")
-    plt.title("Tempo di Conversione Totale e per Minuto per Video")
+    plt.ylabel("Time (s)")
+    plt.title("Total Conversion Time and per Minute per Video")
     plt.xticks(rotation=45, ha="right")
     plt.legend()
     plt.tight_layout()
     line_chart_path = os.path.join(performance_folder, "conversion_times_line_chart.png")
     plt.savefig(line_chart_path)
     plt.close()
-    print(f"Grafico lineare salvato in: {line_chart_path}")
+    print(f"Line chart saved in: {line_chart_path}")
     
-    # Grafico a barre: Percentuale di riduzione per ogni video con media complessiva
+    # Bar chart: Reduction percentage for each video with overall average
     reduction_percentages = [d["reduction_percentage"] for d in performance_data]
     avg_reduction = sum(reduction_percentages) / len(reduction_percentages)
     
     plt.figure(figsize=(10, 6))
-    plt.bar(videos, reduction_percentages, color="cornflowerblue", label="Riduzione (%)")
-    plt.axhline(y=avg_reduction, color="red", linestyle="--", label=f"Media Riduzione ({avg_reduction:.2f}%)")
+    plt.bar(videos, reduction_percentages, color="cornflowerblue", label="Reduction (%)")
+    plt.axhline(y=avg_reduction, color="red", linestyle="--", label=f"Average Reduction ({avg_reduction:.2f}%)")
     plt.xlabel("Video")
-    plt.ylabel("Riduzione (%)")
-    plt.title("Percentuale di Compressione per Video")
+    plt.ylabel("Reduction (%)")
+    plt.title("Compression Percentage per Video")
     plt.xticks(rotation=45, ha="right")
     plt.legend()
     plt.tight_layout()
     bar_chart_path = os.path.join(performance_folder, "reduction_percentage_bar_chart.png")
     plt.savefig(bar_chart_path)
     plt.close()
-    print(f"Grafico a barre salvato in: {bar_chart_path}")
+    print(f"Bar chart saved in: {bar_chart_path}")
     
-    print("Analisi delle performance completata con successo.")
+    print("Performance analysis completed successfully.")
 
 if __name__ == "__main__":
     main()
