@@ -1,110 +1,106 @@
-# Dynamic Video Compression with Motion-Based Processing
+# Dynamic Compression for Video Surveillance
 
-This project implements a motion-based video compression system using Python, OpenCV, and a graphical user interface (GUI) powered by PySimpleGUI. The system identifies areas of motion in a video and applies different levels of compression to static and dynamic regions, resulting in efficient storage without significant quality loss in areas of interest.
+**Authors:** Gianluigi Vazzoler & Carlo Zamuner  
+**Course:** Signal, Image and Video – UniTn 2024/2025  
+**Project Domain:** Video Surveillance & Storage Optimization
 
-## Features
-- **Motion Detection:** Uses optical flow to detect areas of motion in videos.
-- **Dynamic Compression:** Compresses static areas more aggressively while preserving quality in regions with motion.
-- **Graphical User Interface (GUI):** Users can select input videos and output directories through a simple and intuitive GUI.
-- **Real-Time Logging:** Displays processing logs in real-time within the GUI.
-- **Batch Processing Support:** Processes multiple videos in the `Dataset/input/` folder when run in batch mode.
+---
 
-## Installation
+## Overview
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/your-repo/dynamic-video-compression.git
-   cd dynamic-video-compression
-   ```
+Video surveillance systems produce vast amounts of data, making storage and management challenging—especially in environments with limited hardware or bandwidth. This project introduces a **dynamic compression** system that intelligently distinguishes between high-relevance (motion-intensive) and low-relevance (static) areas in surveillance videos. By applying aggressive compression only to static regions, the system achieves significant file size reduction while preserving critical visual details in motion areas.
 
-2. **Install Dependencies**
-   Ensure you have Python 3.x installed. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+The project implements two complementary motion detection techniques:
 
-   The main dependencies include:
-   - `opencv-python`
-   - `numpy`
-   - `PySimpleGUI`
+- **Optical Flow:** Utilizes OpenCV’s `calcOpticalFlowFarneback` to compute motion vectors, generating binary masks that isolate moving areas. This technique offers a good trade-off between processing time and compression quality.
+- **Frame Differencing:** Compares consecutive frames to detect pixel-level differences, applying temporal smoothing and morphological filtering to accurately segment static and dynamic regions, albeit with higher computational cost.
 
-## Usage
+A user-friendly graphical interface built with PyQt5 (invoked via `windows.py`) allows users to select input videos, set output directories, choose the processing technique, and even perform an automated performance analysis after conversion.
 
-### Graphical User Interface (GUI)
-The GUI allows users to process videos interactively.
+---
 
-1. Run the `windows.py` script:
-   ```bash
-   python windows.py
-   ```
-
-2. Select the input video file and output directory using the file and folder browser.
-
-3. Click the **"Avvia"** button to start the processing.
-
-4. Observe the logs in the GUI to monitor the progress. Once completed, the results will be saved in the selected output directory.
-
-### Batch Processing (Command Line)
-To process all `.mp4` files in the `Dataset/input/` folder and save results in `Dataset/output/`:
-
-1. Place the videos to be processed in the `Dataset/input/` directory.
-2. Run the `motion_compression.py` script:
-   ```bash
-   python motion_compression.py
-   ```
-3. Processed videos will be saved in `Dataset/output/` with subdirectories for each input file.
-
-## Output Files
-For each input video, the following files are generated:
-- **`overlay.mp4`**: A copy of the video with motion regions highlighted.
-- **`mask.mp4`**: A binary mask video showing the detected motion areas.
-- **`compressed.mp4`**: The final compressed video with motion-aware adjustments.
-
-## Code Structure
+## Project Structure
 
 ```
 .
-├── motion_compression.py   # Main processing script
-├── windows.py              # GUI for user interaction
-├── Dataset/
-│   ├── input/              # Folder for input videos
-│   ├── output/             # Folder for output results
-├── requirements.txt        # Required Python dependencies
-└── README.md               # Project documentation
+├── frame_differencing.py       # Motion detection & compression using frame differencing.
+├── motion_compression_opt.py   # Motion detection & compression using optical flow.
+├── performance_analysis.py     # Parses logs and generates performance reports/charts.
+├── windows.py                  # PyQt5-based GUI for interactive video processing.
+├── requirements.txt            # Project dependencies.
+└── README.md                   # This file.
 ```
 
-## Key Functions
+---
 
-### `motion_compression.py`
-- **`setup_logging(output_dir)`**: Configures logging for real-time feedback.
-- **`temporal_smoothing_flow(video_path, output_dir, ...)`**: Detects motion using optical flow and generates mask and overlay videos.
-- **`compress_with_motion(input_video, mask_video, output_dir)`**: Compresses static and dynamic regions differently.
-- **`process_single_video(video_path, output_dir)`**: Combines all processing steps for a single video.
+## Installation
 
-### `windows.py`
-- Implements the GUI for video selection and output management.
-- Displays logs in real-time within the application.
+### 1. Clone the Repository
+```bash
+git clone <repository_url>
+cd <repository_folder>
+```
 
-## Example Workflow
+### 2. Create a Virtual Environment
+#### On Linux/Mac:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+#### On Windows:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
 
-1. Start the GUI:
-   ```bash
-   python windows.py
-   ```
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-2. Select a video file and an output directory.
+---
 
-3. Click **"Avvia"** to begin processing. Logs will display the progress.
+## Usage
 
-4. Check the output directory for the resulting videos (`overlay.mp4`, `mask.mp4`, `compressed.mp4`).
+### 1. Launch the GUI
+Start the application using:
+```bash
+python windows.py
+```
+The GUI allows you to:
+- Select one or multiple input video files.
+- Choose the output folder.
+- Pick the processing technique (Optical Flow or Frame Differencing).
+- Optionally perform performance analysis after processing.
+- Monitor real-time logs and processing progress.
 
-5. For batch processing, place videos in `Dataset/input/` and run:
-   ```bash
-   python motion_compression.py
-   ```
+### 2. Run Modules via Command Line (only for Debug)
+#### Frame Differencing Processing:
+```bash
+python frame_differencing.py
+```
+#### Optical Flow Processing:
+```bash
+python motion_compression_opt.py
+```
+#### Performance Analysis:
+```bash
+python performance_analysis.py <output_folder>
+```
+
+---
+
+## Reference Paper
+
+### **DYNAMIC COMPRESSION FOR VIDEO SURVEILLANCE**  
+**Gianluigi Vazzoler - Carlo Zamuner**  
+**Project Course: Signal, Image and Video – UniTn 2024/2025**  
+
+#### **Abstract:**
+The paper addresses the challenges of video surveillance data management. It critiques conventional uniform compression methods that often degrade critical details and presents a novel dynamic compression approach. By differentiating between static and motion-intensive areas, the proposed system applies aggressive compression selectively—preserving important visual information while significantly reducing file size. The study evaluates both Optical Flow and Frame Differencing techniques, providing a detailed analysis of their performance trade-offs in terms of quality and processing efficiency.
+
+---
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Contributions
-Feel free to submit issues or pull requests to improve the project. Feedback is welcome!
+This project is licensed under the MIT License.
