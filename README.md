@@ -74,7 +74,8 @@ The GUI allows you to:
 - Optionally perform performance analysis after processing.
 - Monitor real-time logs and processing progress.
 
-![Example Output](./img/windows.png)
+<img src="./img/windows.png" alt="Example Output" width="50%">
+
 
 
 ### 2. Run Modules via Command Line (only for Debug)
