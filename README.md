@@ -76,6 +76,14 @@ The GUI allows you to:
 
 <img src="./img/windows.png" alt="Example Output" width="50%">
 
+### 2. Output Files
+After processing, the following files will be generated in the selected output directory:
+- **Compressed Video File:** The dynamically compressed video.
+- **Compression Mask:** A binary mask used for dynamic compression.
+- **Debug files:** Other files.
+- **Performance Data Folder (if selected):** Contains:
+    - **Compression Percentage:** A text file with the overall compression percentage.
+    - **Performance Data CSV:** A CSV file with detailed statistics and performance metrics.
 
 
 ### 2. Run Modules via Command Line (only for Debug)
